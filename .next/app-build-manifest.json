@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/page": [
+    "/products/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/products/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -16,10 +16,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/about/page.js"
     ],
-    "/products/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/products/page.js"
+      "static/chunks/app/page.js"
+    ],
+    "/about-human-hair/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/about-human-hair/page.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/contact/page.js"
     ]
   }
 }

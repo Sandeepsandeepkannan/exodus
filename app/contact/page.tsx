@@ -60,7 +60,7 @@ export default function ContactPage() {
                     <div>
                       <div className="font-semibold text-slate-900">Manufacturing Unit Address</div>
                       <div className="text-slate-600 text-xs mt-0.5 leading-relaxed">
-                        56A Thanduma Nagar, 100 ft Road,<br />
+                        No. 56, Thanduma Nagar, Near 100 Ft Road,<br />
                         St. Thomas Mount, Chennai – 600016,<br />
                         Tamil Nadu, India.
                       </div>
@@ -98,10 +98,7 @@ export default function ContactPage() {
                     <div>
                       <div className="font-semibold text-slate-900">Business Hours</div>
                       <div className="text-slate-600 text-xs mt-0.5">
-                        Monday – Saturday: 09:30 – 18:30 (IST / GMT+5:30)
-                      </div>
-                      <div className="text-slate-500 text-xs">
-                        Instant WhatsApp response for registered international buyers
+                        9 AM – 5 PM IST
                       </div>
                     </div>
                   </li>

@@ -7,13 +7,13 @@ const features = [
     icon: ShieldCheck,
     title: "100% Raw Indian Temple Hair",
     description:
-      "Ethically sourced raw virgin hair cuticles intact, guaranteeing 100% tangle-free longevity, natural luster, and seamless color bleaching up to #613.",
+      "Ethically sourced raw virgin hair with cuticles intact, ensuring minimal tangling, maximum longevity, and the versatility to be coloured, bleached, and heat styled.",
   },
   {
     icon: Globe,
     title: "In-House Chennai Manufacturing",
     description:
-      "Hand-tied wefts, micro wefts, 13x4 frontals, and full lace wigs crafted by master artisans under strict single-donor quality control.",
+      "Hand-tied wefts, micro wefts, lace frontals, full lace wigs, and cranial prostheses crafted in-house under strict quality control.",
   },
   {
     icon: Handshake,

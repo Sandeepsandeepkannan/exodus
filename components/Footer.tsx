@@ -112,7 +112,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-slate-400">
               <li className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 text-sky-400 shrink-0 mt-1" />
-                <span>56A Thanduma Nagar, 100 ft Road, St. Thomas Mount, Chennai – 600016, Tamil Nadu, India</span>
+                <span>No. 56, Thanduma Nagar, Near 100 Ft Road, St. Thomas Mount, Chennai – 600016, Tamil Nadu, India</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-sky-400 shrink-0" />
