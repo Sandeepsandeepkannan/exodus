@@ -1,7 +1,6 @@
 {
-  "/products/page": "app/products/page.js",
-  "/about/page": "app/about/page.js",
-  "/about-human-hair/page": "app/about-human-hair/page.js",
   "/page": "app/page.js",
-  "/contact/page": "app/contact/page.js"
+  "/about/page": "app/about/page.js",
+  "/products/page": "app/products/page.js",
+  "/about-human-hair/page": "app/about-human-hair/page.js"
 }
