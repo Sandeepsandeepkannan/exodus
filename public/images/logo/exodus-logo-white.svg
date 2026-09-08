@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 80" width="420" height="80" fill="none">
+  <!-- Symbol Icon: Global Export Emblem in White & Light Accent -->
+  <g transform="translate(10, 10)">
+    <circle cx="30" cy="30" r="28" stroke="#FFFFFF" stroke-width="3" fill="none" opacity="0.95"/>
+    <path d="M 2 30 H 58" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+    <path d="M 6 18 C 18 22 42 22 54 18" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.5"/>
+    <path d="M 6 42 C 18 38 42 38 54 42" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.5"/>
+    <ellipse cx="30" cy="30" rx="14" ry="28" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M 16 38 L 44 16 M 44 16 H 30 M 44 16 V 30" stroke="#38BDF8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Typography: EXODUS EXPORTS in White -->
+  <text x="85" y="42" font-family="'Inter', 'Manrope', 'Helvetica Neue', sans-serif" font-size="28" font-weight="800" fill="#FFFFFF" letter-spacing="3">EXODUS</text>
+  <text x="85" y="60" font-family="'Inter', 'Manrope', 'Helvetica Neue', sans-serif" font-size="13" font-weight="600" fill="#94A3B8" letter-spacing="6">EXPORTS</text>
+</svg>
