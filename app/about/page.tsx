@@ -74,7 +74,7 @@ export default function AboutPage() {
                 />
                 <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/90 via-slate-900/60 to-transparent p-6 text-white">
                   <div className="font-bold text-xl font-display">Mrs. Sheeba Paul</div>
-                  <div className="text-sky-300 text-xs font-medium mt-0.5">Managing Director, Exodus Exports Pvt. Ltd.</div>
+                  <div className="text-rose-300 text-xs font-medium mt-0.5">Managing Director, Exodus Exports Pvt. Ltd.</div>
                   <div className="text-slate-300 text-xs mt-2 italic">
                     "Commercial success is meaningful only when accompanied by social responsibility and respect for people at every level of the value chain."
                   </div>
@@ -166,17 +166,17 @@ export default function AboutPage() {
       </section>
 
       {/* 4. SOCIAL IMPACT & SUSTAINABLE LIVELIHOOD INITIATIVE */}
-      <section className="py-24 bg-slate-900 text-white relative overflow-hidden">
+      <section className="py-24 bg-[#1E040B] text-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           
           <ScrollReveal className="max-w-3xl mb-16 space-y-4">
-            <span className="text-xs font-bold tracking-widest uppercase text-sky-400 font-display flex items-center gap-2">
-              <HeartHandshake className="h-4 w-4 text-sky-400" /> SOCIAL RESPONSIBILITY INITIATIVE
+            <span className="text-xs font-bold tracking-widest uppercase text-rose-400 font-display flex items-center gap-2">
+              <HeartHandshake className="h-4 w-4 text-rose-400" /> SOCIAL RESPONSIBILITY INITIATIVE
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display">
               Empowering Beedi Rolling Women with Dignified Livelihoods
             </h2>
-            <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
+            <p className="text-rose-100/80 text-base sm:text-lg leading-relaxed">
               Since 2021, teaming up with the Cancer Institute (WIA), Chennai, Exodus Exports has actively provided alternative, sustainable livelihood opportunities to women previously engaged in hazardous beedi rolling.
             </p>
           </ScrollReveal>
@@ -184,7 +184,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             <ScrollReveal direction="right" className="lg:col-span-7 space-y-6">
-              <div className="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+              <div className="space-y-4 text-rose-100/80 text-sm sm:text-base leading-relaxed">
                 <p>
                   Launched under the leadership of <strong>Dr. Shanta</strong>, Chairperson of the Cancer Institute WIA, Adyar-Chennai, with additional support from District Administration, Skill India, and NABARD, this collaborative initiative has successfully rehabilitated nearly <strong>160 women</strong>.
                 </p>
@@ -196,35 +196,35 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <div className="p-4 rounded-xl bg-slate-800/90 border border-slate-700 text-xs text-sky-200 flex items-center gap-3">
-                <Sparkles className="h-6 w-6 text-sky-400 shrink-0" />
+              <div className="p-4 rounded-xl bg-[#340713]/90 border border-[#520A1E] text-xs text-rose-200 flex items-center gap-3">
+                <Sparkles className="h-6 w-6 text-rose-400 shrink-0" />
                 <span>We employ a <strong>100% all-women workforce</strong> in our production units, proving that commercial growth must go hand-in-hand with human dignity.</span>
               </div>
             </ScrollReveal>
 
-            <ScrollReveal direction="left" className="lg:col-span-5 bg-slate-800/80 p-8 rounded-xl border border-slate-700 space-y-6">
+            <ScrollReveal direction="left" className="lg:col-span-5 bg-[#340713]/80 p-8 rounded-xl border border-[#520A1E] space-y-6">
               <h3 className="text-xl font-bold text-white font-display flex items-center gap-2">
-                <Users className="h-5 w-5 text-sky-400" /> Employee Welfare & Workplace Standards
+                <Users className="h-5 w-5 text-rose-400" /> Employee Welfare & Workplace Standards
               </h3>
-              <ul className="space-y-3 text-xs text-slate-300">
+              <ul className="space-y-3 text-xs text-rose-100/80">
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-sky-400 shrink-0" />
+                  <CheckCircle2 className="h-4 w-4 text-rose-400 shrink-0" />
                   <span><strong>5S Standards:</strong> Clean, organized, safe workplace environment.</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-sky-400 shrink-0" />
+                  <CheckCircle2 className="h-4 w-4 text-rose-400 shrink-0" />
                   <span><strong>Social Security:</strong> Retirement benefits, annual bonus & incentives.</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-sky-400 shrink-0" />
+                  <CheckCircle2 className="h-4 w-4 text-rose-400 shrink-0" />
                   <span><strong>Family Support:</strong> Emergency loans & educational support for children.</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-sky-400 shrink-0" />
+                  <CheckCircle2 className="h-4 w-4 text-rose-400 shrink-0" />
                   <span><strong>Health & Wellness:</strong> Paid maternity leave, counselling & workshops.</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-sky-400 shrink-0" />
+                  <CheckCircle2 className="h-4 w-4 text-rose-400 shrink-0" />
                   <span><strong>Child Protection:</strong> Strictly 100% No Child Labour policy.</span>
                 </li>
               </ul>

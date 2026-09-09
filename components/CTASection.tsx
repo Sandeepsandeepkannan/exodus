@@ -28,7 +28,7 @@ export default function CTASection({
           <div
             className={`p-10 sm:p-16 rounded-2xl border ${
               darkVariant
-                ? "bg-[#051C52] border-brand-lightNavy/40 shadow-elevated"
+                ? "bg-[#3B0716] border-[#B91941]/40 shadow-elevated"
                 : "bg-white border-slate-200/80 shadow-subtle hover:border-brand-navy/30 transition-all duration-300"
             }`}
           >
@@ -38,7 +38,7 @@ export default function CTASection({
               <div className="lg:col-span-8 space-y-4">
                 <span
                   className={`text-xs font-bold tracking-widest uppercase font-display flex items-center gap-2 ${
-                    darkVariant ? "text-sky-300" : "text-brand-navy"
+                    darkVariant ? "text-rose-200" : "text-brand-navy"
                   }`}
                 >
                   <span className="h-1.5 w-1.5 rounded-full bg-brand-red"></span>
@@ -53,7 +53,7 @@ export default function CTASection({
                 </h2>
                 <p
                   className={`text-base sm:text-lg leading-relaxed max-w-2xl ${
-                    darkVariant ? "text-slate-200" : "text-slate-600"
+                    darkVariant ? "text-rose-100/90" : "text-slate-600"
                   }`}
                 >
                   {subtitle}
@@ -77,7 +77,7 @@ export default function CTASection({
                 <a
                   href="mailto:exodus.exports@gmail.com"
                   className={`inline-flex items-center justify-center gap-2 text-sm font-medium transition-colors ${
-                    darkVariant ? "text-slate-300 hover:text-white" : "text-slate-600 hover:text-brand-navy"
+                    darkVariant ? "text-rose-200 hover:text-white" : "text-slate-600 hover:text-brand-navy"
                   }`}
                 >
                   <Mail className="h-4 w-4 text-brand-red" /> exodus.exports@gmail.com

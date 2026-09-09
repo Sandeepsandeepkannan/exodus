@@ -24,7 +24,7 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.4, delay: 0.1 }}
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#B91941]/5 border border-[#B91941]/10 text-[#B91941] text-xs font-semibold tracking-wider uppercase"
+              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-navy/5 border border-brand-navy/10 text-brand-navy text-xs font-semibold tracking-wider uppercase"
             >
               <span className="h-1.5 w-1.5 rounded-full bg-brand-red animate-pulse"></span>
               Indian Human Hair Manufacturer & Exporter
@@ -38,7 +38,7 @@ export default function Hero() {
               className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.12] font-display"
             >
               Premium Indian Human Hair,{" "}
-              <span className="text-[#B91941] block sm:inline">Crafted for the World.</span>
+              <span className="text-brand-navy block sm:inline">Crafted for the World.</span>
             </motion.h1>
 
             {/* Supporting Copy */}
@@ -60,7 +60,7 @@ export default function Hero() {
             >
               <Link
                 href="/products"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-[#B91941] hover:bg-[#9E1537] hover:-translate-y-0.5 rounded-md shadow-sm transition-all duration-300 group text-center"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-brand-navy hover:bg-brand-navyHover hover:-translate-y-0.5 rounded-md shadow-sm transition-all duration-300 group text-center"
               >
                 Explore Our Products
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1.5" />
@@ -81,19 +81,19 @@ export default function Hero() {
               className="pt-8 border-t border-slate-100 grid grid-cols-3 gap-6 text-slate-700"
             >
               <div className="space-y-1">
-                <div className="flex items-center gap-1.5 text-[#B91941] font-bold text-xl sm:text-2xl font-display">
+                <div className="flex items-center gap-1.5 text-brand-navy font-bold text-xl sm:text-2xl font-display">
                   <StatCounter value={100} suffix="%" />
                 </div>
                 <div className="text-xs text-slate-500 font-medium">Virgin Indian Remy</div>
               </div>
               <div className="space-y-1">
-                <div className="flex items-center gap-1.5 text-[#B91941] font-bold text-xl sm:text-2xl font-display">
+                <div className="flex items-center gap-1.5 text-brand-navy font-bold text-xl sm:text-2xl font-display">
                   Hand-Made
                 </div>
                 <div className="text-xs text-slate-500 font-medium">In-House Wefts & Wigs</div>
               </div>
               <div className="space-y-1">
-                <div className="flex items-center gap-1.5 text-[#B91941] font-bold text-xl sm:text-2xl font-display">
+                <div className="flex items-center gap-1.5 text-brand-navy font-bold text-xl sm:text-2xl font-display">
                   Global B2B
                 </div>
                 <div className="text-xs text-slate-500 font-medium">Direct Export Facility</div>
@@ -110,7 +110,7 @@ export default function Hero() {
             className="lg:col-span-5 relative"
           >
             <div className="relative mx-auto max-w-md lg:max-w-none group">
-              <div className="absolute -inset-2 bg-[#B91941]/5 rounded-2xl blur-xl transition-all duration-500 group-hover:bg-[#B91941]/10"></div>
+              <div className="absolute -inset-2 bg-brand-navy/5 rounded-2xl blur-xl transition-all duration-500 group-hover:bg-brand-navy/10"></div>
               
               <div className="relative rounded-xl overflow-hidden shadow-elevated border border-slate-100 bg-white">
                 <Image
@@ -130,7 +130,7 @@ export default function Hero() {
                     </div>
                     <div className="text-sm font-bold text-slate-900">Cuticle Intact Remy Hair</div>
                   </div>
-                  <div className="h-8 w-8 rounded-full bg-[#B91941]/10 flex items-center justify-center text-[#B91941] font-bold text-xs">
+                  <div className="h-8 w-8 rounded-full bg-brand-navy/10 flex items-center justify-center text-brand-navy font-bold text-xs">
                     EE
                   </div>
                 </div>

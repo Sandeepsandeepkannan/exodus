@@ -18,7 +18,6 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
-  const isHome = pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,20 +65,14 @@ export default function Navbar() {
                   href={link.href}
                   className={`text-sm font-medium transition-colors duration-200 relative py-1 flex items-center gap-1.5 ${
                     isActive
-                      ? isHome
-                        ? "text-[#B91941] font-semibold"
-                        : "text-brand-navy font-semibold"
-                      : isHome
-                      ? "text-slate-700 hover:text-[#B91941]"
+                      ? "text-brand-navy font-semibold"
                       : "text-slate-700 hover:text-brand-navy"
                   }`}
                 >
                   {link.name}
                   {isActive && (
                     <>
-                      <span className={`absolute bottom-0 left-0 right-0 h-0.5 rounded-full ${
-                        isHome ? "bg-[#B91941]" : "bg-brand-navy"
-                      }`} />
+                      <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-navy rounded-full" />
                       <span className="h-1 w-1 rounded-full bg-brand-red inline-block ml-0.5"></span>
                     </>
                   )}
@@ -92,11 +85,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-4">
             <Link
               href="/contact"
-              className={`inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-white rounded-md shadow-sm transition-all duration-200 group ${
-                isHome
-                  ? "bg-[#B91941] hover:bg-[#9E1537]"
-                  : "bg-brand-navy hover:bg-brand-navyHover"
-              }`}
+              className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-white bg-brand-navy hover:bg-brand-navyHover rounded-md shadow-sm transition-all duration-200 group"
             >
               Enquire Now
               <ArrowUpRight className="ml-1.5 h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -107,11 +96,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className={`p-2 text-slate-700 rounded-md focus:outline-none focus:ring-2 ${
-                isHome
-                  ? "hover:text-[#B91941] focus:ring-[#B91941]/20"
-                  : "hover:text-brand-navy focus:ring-brand-navy/20"
-              }`}
+              className="p-2 text-slate-700 hover:text-brand-navy rounded-md focus:outline-none focus:ring-2 focus:ring-brand-navy/20"
               aria-label="Toggle mobile menu"
             >
               {mobileMenuOpen ? (
@@ -138,11 +123,7 @@ export default function Navbar() {
                   onClick={() => setMobileMenuOpen(false)}
                   className={`flex items-center justify-between px-3 py-2 text-base font-medium rounded-md transition-colors ${
                     isActive
-                      ? isHome
-                        ? "text-[#B91941] bg-slate-50 font-semibold"
-                        : "text-brand-navy bg-slate-50 font-semibold"
-                      : isHome
-                      ? "text-slate-700 hover:text-[#B91941] hover:bg-slate-50"
+                      ? "text-brand-navy bg-slate-50 font-semibold"
                       : "text-slate-700 hover:text-brand-navy hover:bg-slate-50"
                   }`}
                 >
@@ -155,11 +136,7 @@ export default function Navbar() {
               <Link
                 href="/contact"
                 onClick={() => setMobileMenuOpen(false)}
-                className={`w-full inline-flex items-center justify-center px-5 py-3 text-base font-semibold text-white rounded-md shadow-sm transition-all ${
-                  isHome
-                    ? "bg-[#B91941] hover:bg-[#9E1537]"
-                    : "bg-brand-navy hover:bg-brand-navyHover"
-                }`}
+                className="w-full inline-flex items-center justify-center px-5 py-3 text-base font-semibold text-white bg-brand-navy hover:bg-brand-navyHover rounded-md shadow-sm transition-all"
               >
                 Enquire Now
                 <ArrowUpRight className="ml-2 h-4 w-4" />

@@ -161,17 +161,17 @@ export default function HomePage() {
       <WhyChooseUs />
 
       {/* 5. FROM TEMPLE TO CRAFT (5-STAGE MANUFACTURING PROCESS) */}
-      <section className="py-24 bg-slate-900 text-white relative overflow-hidden">
+      <section className="py-24 bg-[#1E040B] text-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           
           <ScrollReveal className="text-center mb-16 max-w-3xl mx-auto space-y-4">
-            <span className="text-xs font-bold tracking-widest uppercase text-sky-400 font-display flex items-center justify-center gap-2">
-              <Sparkles className="h-4 w-4 text-sky-400" /> MANUFACTURING PROCESS
+            <span className="text-xs font-bold tracking-widest uppercase text-rose-400 font-display flex items-center justify-center gap-2">
+              <Sparkles className="h-4 w-4 text-rose-400" /> MANUFACTURING PROCESS
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display">
               Processing Hair: From Temple to Finished Product
             </h2>
-            <p className="text-slate-300 text-base leading-relaxed">
+            <p className="text-rose-100/80 text-base leading-relaxed">
               Every product at Exodus Exports is manufactured in-house, ensuring complete quality control. Approximately 25–35% weight loss occurs during processing due to removal of impurities and short hair.
             </p>
           </ScrollReveal>
@@ -185,13 +185,13 @@ export default function HomePage() {
               { step: "5", title: "Quality Control", desc: "Manual inspection of each bundle; optional SGS / INTERTEK inspections." },
             ].map((st, sIdx) => (
               <ScrollReveal key={sIdx} delay={sIdx * 0.1}>
-                <div className="p-6 rounded-xl bg-slate-800/80 border border-slate-700/60 hover:border-brand-navy/60 transition-all duration-300 hover:-translate-y-1 space-y-3 h-full flex flex-col justify-between">
+                <div className="p-6 rounded-xl bg-[#340713]/90 border border-[#520A1E] hover:border-brand-navy transition-all duration-300 hover:-translate-y-1 space-y-3 h-full flex flex-col justify-between">
                   <div className="space-y-3">
-                    <div className="h-10 w-10 rounded-full bg-sky-500/20 text-sky-400 font-bold flex items-center justify-center mx-auto text-sm">
+                    <div className="h-10 w-10 rounded-full bg-brand-navy/20 text-rose-300 font-bold flex items-center justify-center mx-auto text-sm border border-brand-navy/30">
                       {st.step}
                     </div>
                     <h3 className="font-bold text-white text-base font-display">{st.title}</h3>
-                    <p className="text-xs text-slate-400 leading-relaxed">{st.desc}</p>
+                    <p className="text-xs text-rose-200/70 leading-relaxed">{st.desc}</p>
                   </div>
                 </div>
               </ScrollReveal>

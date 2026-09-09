@@ -107,11 +107,11 @@ export default function ContactPage() {
 
               {/* B2B Export Box */}
               <div className="bg-brand-navy text-white p-8 rounded-xl border border-brand-navyHover shadow-elevated space-y-4">
-                <div className="flex items-center gap-2 text-xs font-semibold text-sky-300 uppercase tracking-widest font-display">
+                <div className="flex items-center gap-2 text-xs font-semibold text-rose-200 uppercase tracking-widest font-display">
                   <Globe className="h-4 w-4" /> Worldwide Export Express
                 </div>
                 <h4 className="text-xl font-bold font-display">International Air Courier Delivery</h4>
-                <p className="text-slate-300 text-xs leading-relaxed">
+                <p className="text-rose-100/90 text-xs leading-relaxed">
                   Fast 3–5 business day door-to-door express delivery across USA, UK, Europe, Canada, Australia, and Africa via DHL Express, FedEx, and UPS.
                 </p>
                 <div className="pt-2 flex items-center gap-2 text-xs font-semibold text-white">

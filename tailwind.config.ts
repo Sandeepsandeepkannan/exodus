@@ -10,10 +10,10 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          DEFAULT: "#022C83",
-          navy: "#022C83",
-          navyHover: "#011F5E",
-          lightNavy: "#053BAE",
+          DEFAULT: "#B91941",
+          navy: "#B91941",
+          navyHover: "#9E1537",
+          lightNavy: "#D3234F",
           red: "#DC2626", // Red accent from official Exodus Exports logo
           redLight: "#FEE2E2",
           dark: "#0A0F1D",
@@ -46,8 +46,8 @@ const config: Config = {
       },
       boxShadow: {
         subtle: "0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03)",
-        card: "0 10px 30px -10px rgba(2, 44, 131, 0.08)",
-        elevated: "0 20px 40px -15px rgba(2, 44, 131, 0.12)",
+        card: "0 10px 30px -10px rgba(185, 25, 65, 0.08)",
+        elevated: "0 20px 40px -15px rgba(185, 25, 65, 0.12)",
       },
     },
   },

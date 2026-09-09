@@ -1,12 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, Phone, MapPin, Sparkles, ShieldCheck } from "lucide-react";
+import { Mail, Phone, MapPin, ShieldCheck } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-slate-300 pt-16 pb-12 border-t border-slate-800">
+    <footer className="bg-[#1A030A] text-slate-300 pt-16 pb-12 border-t border-[#380614]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 pb-16 border-b border-slate-800">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 pb-16 border-b border-[#380614]">
           
           {/* Col 1 & 2: Brand Logo Card & Overview */}
           <div className="lg:col-span-2 space-y-6">
@@ -111,17 +111,17 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3 text-sm text-slate-400">
               <li className="flex items-start gap-3">
-                <MapPin className="h-4 w-4 text-sky-400 shrink-0 mt-1" />
+                <MapPin className="h-4 w-4 text-rose-400 shrink-0 mt-1" />
                 <span>No. 56, Thanduma Nagar, Near 100 Ft Road, St. Thomas Mount, Chennai – 600016, Tamil Nadu, India</span>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="h-4 w-4 text-sky-400 shrink-0" />
+                <Mail className="h-4 w-4 text-rose-400 shrink-0" />
                 <a href="mailto:exodus.exports@gmail.com" className="hover:text-white transition-colors">
                   exodus.exports@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="h-4 w-4 text-sky-400 shrink-0" />
+                <Phone className="h-4 w-4 text-rose-400 shrink-0" />
                 <a href="tel:+917550001106" className="hover:text-white transition-colors">
                   +91 7550001106
                 </a>
