@@ -389,32 +389,32 @@ export default function ProductsPage() {
       </section>
 
       {/* 6. CRANIAL PROSTHESIS MEDICAL HIGHLIGHT */}
-      <section className="py-20 bg-[#1E040B] text-white relative overflow-hidden">
+      <section className="py-20 bg-[#B91941] text-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             <ScrollReveal direction="right" className="lg:col-span-6 space-y-6">
-              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-rose-400 font-display">
-                <HeartPulse className="h-4 w-4 text-rose-400" /> SPECIALIZED MEDICAL DIVISION
+              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-white font-display">
+                <HeartPulse className="h-4 w-4 text-white" /> SPECIALIZED MEDICAL DIVISION
               </div>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white font-display">
                 Cranial Prosthesis
               </h2>
-              <p className="text-rose-100/80 text-sm sm:text-base leading-relaxed">
+              <p className="text-white/90 text-sm sm:text-base leading-relaxed">
                 Medical-grade wigs designed for comfort and confidence during hair loss from chemotherapy or alopecia. Custom-made in-house with 100% authentic Indian human hair.
               </p>
 
-              <div className="space-y-3 pt-2 text-xs sm:text-sm text-rose-100/80">
+              <div className="space-y-3 pt-2 text-xs sm:text-sm text-white/90">
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-rose-400 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-white shrink-0 mt-0.5" />
                   <span><strong>100% Authentic Indian Human Hair:</strong> Hand-crafted using pure virgin Indian human hair.</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-rose-400 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-white shrink-0 mt-0.5" />
                   <span><strong>Comfort & Confidence:</strong> Designed specifically for sensitive scalps during medical hair loss.</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-rose-400 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-white shrink-0 mt-0.5" />
                   <span><strong>Custom In-House Tailoring:</strong> Custom-made and tailored to client specifications.</span>
                 </div>
               </div>
@@ -422,7 +422,7 @@ export default function ProductsPage() {
               <div className="pt-4">
                 <Link
                   href="/contact?product=Cranial%20Prosthesis"
-                  className="inline-flex items-center px-6 py-3.5 text-sm font-bold text-slate-950 bg-white hover:bg-slate-100 hover:-translate-y-0.5 rounded-lg shadow-sm transition-all group"
+                  className="inline-flex items-center px-6 py-3.5 text-sm font-bold text-[#B91941] bg-white hover:bg-white/90 hover:-translate-y-0.5 rounded-lg shadow-sm transition-all group"
                 >
                   Enquire About Cranial Prosthesis
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -431,7 +431,7 @@ export default function ProductsPage() {
             </ScrollReveal>
 
             <ScrollReveal direction="left" className="lg:col-span-6">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-[#520A1E] bg-[#340713] group">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20 bg-white/10 group">
                 <Image
                   src="/images/products/cranial_prostheses.jpg"
                   alt="Medical Cranial Hair Prostheses"

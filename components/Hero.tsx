@@ -24,10 +24,10 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.4, delay: 0.1 }}
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-navy/5 border border-brand-navy/10 text-brand-navy text-xs font-semibold tracking-wider uppercase"
+              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-navy/5 border border-brand-navy/10 text-brand-navy text-xs font-bold tracking-wider uppercase"
             >
               <span className="h-1.5 w-1.5 rounded-full bg-brand-red animate-pulse"></span>
-              Indian Human Hair Manufacturer & Exporter
+              EXODUS EXPORTS PVT. LTD. - INDIAN HUMAN HAIR EXPORTS
             </motion.div>
 
             {/* Main Headline */}
@@ -35,21 +35,25 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.12] font-display"
+              className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15] font-display"
             >
-              Premium Indian Human Hair,{" "}
-              <span className="text-brand-navy block sm:inline">Crafted for the World.</span>
+              Premium Indian Human Hair Extensions & Wigs – <span className="text-brand-navy">Ethically Sourced from India</span>
             </motion.h1>
 
             {/* Supporting Copy */}
-            <motion.p
+            <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-lg sm:text-xl text-slate-600 leading-relaxed font-normal max-w-2xl"
+              className="space-y-3 text-base sm:text-lg text-slate-600 leading-relaxed font-normal max-w-2xl"
             >
-              Exodus Exports manufactures and exports 100% authentic virgin Indian human hair, hand-tied wefts, full lace wigs, HD closures, toppers, and medical cranial prostheses for international B2B partners.
-            </motion.p>
+              <p>
+                Indian human hair has become the most sought-after raw material in the global hair industry, valued for its strength, durability, versatility, and natural texture. With changing fashion trends and increasing demand for hair extensions and wigs, Indian human hair continues to dominate the global market. India is the largest source of human hair in the world, with consistent availability of premium-grade virgin hair sourced ethically from South Indian temples
+              </p>
+              <p className="font-semibold text-slate-800">
+                At Exodus Exports Pvt. Ltd., we specialize in supplying 100% authentic Indian Remy human hair to clients worldwide.
+              </p>
+            </motion.div>
 
             {/* CTA Buttons */}
             <motion.div

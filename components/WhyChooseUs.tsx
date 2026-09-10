@@ -1,68 +1,85 @@
 import SectionHeading from "./SectionHeading";
 import ScrollReveal from "./ScrollReveal";
-import { ShieldCheck, Globe, Handshake, FileCheck2 } from "lucide-react";
+import { 
+  CheckCircle2, 
+  Sparkles, 
+  Building2, 
+  HeartHandshake, 
+  ShieldCheck, 
+  Globe, 
+  Layers, 
+  Clock, 
+  Users 
+} from "lucide-react";
 
-const features = [
+const whyChoosePoints = [
   {
     icon: ShieldCheck,
-    title: "100% Raw Indian Temple Hair",
-    description:
-      "Ethically sourced raw virgin hair with cuticles intact, ensuring minimal tangling, maximum longevity, and the versatility to be coloured, bleached, and heat styled.",
+    title: "100% genuine Indian Human Hair supply source",
+  },
+  {
+    icon: Sparkles,
+    title: "Temple-auction procured & ethically sourced",
+  },
+  {
+    icon: Building2,
+    title: "In-house processing from raw hair to final finished products",
+  },
+  {
+    icon: Layers,
+    title: "Customized solutions for salons, brands & distributors",
+  },
+  {
+    icon: CheckCircle2,
+    title: "Strict adherence to international standards",
   },
   {
     icon: Globe,
-    title: "In-House Chennai Manufacturing",
-    description:
-      "Hand-tied wefts, micro wefts, lace frontals, full lace wigs, and cranial prostheses crafted in-house under strict quality control.",
+    title: "Global shipping & export expertise",
   },
   {
-    icon: Handshake,
-    title: "Global B2B Supply Partner",
-    description:
-      "Long-term wholesale supply agreements with international salons, wig makers, and beauty distributors across USA, Europe, Australia, and Africa.",
+    icon: Users,
+    title: "Capacity to handle orders from small batches to bulk export",
   },
   {
-    icon: FileCheck2,
-    title: "Custom Order Specifications",
-    description:
-      "Tailored bundle length ratios, customized cap sizes, private labeling, and express 3–5 day international air courier shipping.",
+    icon: Clock,
+    title: "Consistent delivery schedules",
+  },
+  {
+    icon: HeartHandshake,
+    title: "Long-term partnership approach",
   },
 ];
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-24 bg-slate-50/50 border-y border-slate-100">
+    <section className="py-24 bg-slate-50/70 border-y border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <ScrollReveal className="mb-16">
+        <ScrollReveal className="mb-14 text-center max-w-3xl mx-auto">
           <SectionHeading
-            eyebrow="WHY EXODUS EXPORTS"
-            title="The Exodus Distinction"
-            subtitle="Built upon authentic South Indian temple sourcing, in-house master craftsmanship, and transparent B2B governance."
+            eyebrow="EXODUS ADVANTAGE"
+            title="Why Choose Exodus Exports?"
+            subtitle="At Exodus, we don’t sell products—we build relationships. We guide clients, educate them, and ensure they receive the right product for their exact needs."
+            centered
           />
         </ScrollReveal>
 
-        {/* 4 Feature Pillars Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, idx) => {
-            const Icon = feature.icon;
+        {/* 9 Feature Points Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {whyChoosePoints.map((point, idx) => {
+            const Icon = point.icon;
             return (
-              <ScrollReveal key={idx} delay={idx * 0.1}>
-                <div className="bg-white p-8 rounded-lg border border-slate-200/80 shadow-subtle hover:border-brand-navy/40 hover:-translate-y-1 transition-all duration-300 group h-full flex flex-col justify-between">
-                  <div>
-                    <div className="h-12 w-12 rounded-md bg-brand-navy/5 text-brand-navy flex items-center justify-center mb-6 group-hover:bg-brand-navy group-hover:text-white transition-colors duration-300">
-                      <Icon className="h-6 w-6" />
-                    </div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-3 font-display group-hover:text-brand-navy transition-colors">
-                      {feature.title}
-                    </h3>
-                    <p className="text-slate-600 text-sm leading-relaxed">
-                      {feature.description}
-                    </p>
+              <ScrollReveal key={idx} delay={idx * 0.05}>
+                <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-subtle hover:border-brand-navy/40 hover:-translate-y-1 transition-all duration-300 group h-full flex items-start gap-4">
+                  <div className="h-10 w-10 rounded-lg bg-brand-navy/5 text-brand-navy flex items-center justify-center shrink-0 group-hover:bg-brand-navy group-hover:text-white transition-colors duration-300">
+                    <Icon className="h-5 w-5" />
                   </div>
-                  <div className="pt-4 flex items-center gap-1.5 text-xs font-semibold text-brand-navy">
-                    <span className="h-1.5 w-1.5 rounded-full bg-brand-red"></span> Guaranteed Standard
+                  <div>
+                    <h3 className="text-base font-bold text-slate-900 font-display group-hover:text-brand-navy transition-colors">
+                      {point.title}
+                    </h3>
                   </div>
                 </div>
               </ScrollReveal>
@@ -74,3 +91,4 @@ export default function WhyChooseUs() {
     </section>
   );
 }
+

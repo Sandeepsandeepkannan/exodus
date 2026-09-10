@@ -19,7 +19,7 @@ export default function CTASection({
     <section
       className={`py-24 relative overflow-hidden ${
         darkVariant
-          ? "bg-brand-navy text-white"
+          ? "bg-[#B91941] text-white"
           : "bg-gradient-to-b from-white to-slate-50 border-t border-slate-100"
       }`}
     >
@@ -28,8 +28,8 @@ export default function CTASection({
           <div
             className={`p-10 sm:p-16 rounded-2xl border ${
               darkVariant
-                ? "bg-[#3B0716] border-[#B91941]/40 shadow-elevated"
-                : "bg-white border-slate-200/80 shadow-subtle hover:border-brand-navy/30 transition-all duration-300"
+                ? "bg-white/10 border-white/20 shadow-elevated text-white"
+                : "bg-white border-slate-200/80 shadow-subtle hover:border-[#B91941]/30 transition-all duration-300"
             }`}
           >
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
@@ -38,10 +38,10 @@ export default function CTASection({
               <div className="lg:col-span-8 space-y-4">
                 <span
                   className={`text-xs font-bold tracking-widest uppercase font-display flex items-center gap-2 ${
-                    darkVariant ? "text-rose-200" : "text-brand-navy"
+                    darkVariant ? "text-white" : "text-[#B91941]"
                   }`}
                 >
-                  <span className="h-1.5 w-1.5 rounded-full bg-brand-red"></span>
+                  <span className={`h-1.5 w-1.5 rounded-full ${darkVariant ? "bg-white" : "bg-brand-red"}`}></span>
                   WHOLESALE HUMAN HAIR INQUIRIES
                 </span>
                 <h2
@@ -53,7 +53,7 @@ export default function CTASection({
                 </h2>
                 <p
                   className={`text-base sm:text-lg leading-relaxed max-w-2xl ${
-                    darkVariant ? "text-rose-100/90" : "text-slate-600"
+                    darkVariant ? "text-white/90" : "text-slate-600"
                   }`}
                 >
                   {subtitle}
@@ -66,8 +66,8 @@ export default function CTASection({
                   href="/contact"
                   className={`inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-md shadow-sm hover:-translate-y-0.5 transition-all duration-300 group text-center ${
                     darkVariant
-                      ? "bg-white text-brand-navy hover:bg-slate-100"
-                      : "bg-brand-navy text-white hover:bg-brand-navyHover"
+                      ? "bg-white text-[#B91941] hover:bg-white/90"
+                      : "bg-[#B91941] text-white hover:opacity-95"
                   }`}
                 >
                   {buttonText}
@@ -77,10 +77,10 @@ export default function CTASection({
                 <a
                   href="mailto:exodus.exports@gmail.com"
                   className={`inline-flex items-center justify-center gap-2 text-sm font-medium transition-colors ${
-                    darkVariant ? "text-rose-200 hover:text-white" : "text-slate-600 hover:text-brand-navy"
+                    darkVariant ? "text-white/90 hover:text-white" : "text-slate-600 hover:text-[#B91941]"
                   }`}
                 >
-                  <Mail className="h-4 w-4 text-brand-red" /> exodus.exports@gmail.com
+                  <Mail className={`h-4 w-4 ${darkVariant ? "text-white" : "text-brand-red"}`} /> exodus.exports@gmail.com
                 </a>
               </div>
 

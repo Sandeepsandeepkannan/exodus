@@ -4,9 +4,9 @@ import { Mail, Phone, MapPin, ShieldCheck } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1A030A] text-slate-300 pt-16 pb-12 border-t border-[#380614]">
+    <footer className="bg-[#B91941] text-white pt-16 pb-12 border-t border-[#B91941]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 pb-16 border-b border-[#380614]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 pb-16 border-b border-white/20">
           
           {/* Col 1 & 2: Brand Logo Card & Overview */}
           <div className="lg:col-span-2 space-y-6">
@@ -22,16 +22,16 @@ export default function Footer() {
               />
             </Link>
 
-            <p className="text-slate-400 text-sm leading-relaxed max-w-md">
+            <p className="text-white/90 text-sm leading-relaxed max-w-md">
               Exodus Exports is a premier Indian human hair manufacturer and exporter based in Chennai, India. Specializing in 100% virgin Indian temple hair, hand-tied wefts, full lace wigs, HD closures, toppers, and medical cranial prostheses for international B2B partners.
             </p>
 
-            <div className="pt-2 flex flex-wrap items-center gap-4 text-xs text-slate-400">
-              <span className="inline-flex items-center gap-1.5 font-medium text-slate-300">
-                <span className="h-1.5 w-1.5 rounded-full bg-brand-red"></span> 100% Raw Virgin Hair
+            <div className="pt-2 flex flex-wrap items-center gap-4 text-xs text-white/90">
+              <span className="inline-flex items-center gap-1.5 font-medium text-white">
+                <span className="h-1.5 w-1.5 rounded-full bg-white"></span> 100% Raw Virgin Hair
               </span>
-              <span className="inline-flex items-center gap-1.5 font-medium text-slate-300">
-                <ShieldCheck className="h-4 w-4 text-emerald-400" /> Cuticle Intact Guarantee
+              <span className="inline-flex items-center gap-1.5 font-medium text-white">
+                <ShieldCheck className="h-4 w-4 text-white" /> Cuticle Intact Guarantee
               </span>
             </div>
           </div>
@@ -39,9 +39,9 @@ export default function Footer() {
           {/* Col 3: Navigation */}
           <div className="space-y-4">
             <h3 className="text-white text-sm font-semibold tracking-wider uppercase font-display flex items-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-brand-red"></span> Navigation
+              <span className="h-1.5 w-1.5 rounded-full bg-white"></span> Navigation
             </h3>
-            <ul className="space-y-2.5 text-sm">
+            <ul className="space-y-2.5 text-sm text-white/90">
               <li>
                 <Link href="/" className="hover:text-white transition-colors duration-200">
                   Home
@@ -73,9 +73,9 @@ export default function Footer() {
           {/* Col 4: Hair Collections */}
           <div className="space-y-4">
             <h3 className="text-white text-sm font-semibold tracking-wider uppercase font-display flex items-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-brand-red"></span> Hair Collections
+              <span className="h-1.5 w-1.5 rounded-full bg-white"></span> Hair Collections
             </h3>
-            <ul className="space-y-2.5 text-sm text-slate-400">
+            <ul className="space-y-2.5 text-sm text-white/90">
               <li>
                 <Link href="/products" className="hover:text-white transition-colors">
                   Hand-Tied & Micro Wefts
@@ -107,21 +107,21 @@ export default function Footer() {
           {/* Col 5: Chennai Head Office */}
           <div className="space-y-4">
             <h3 className="text-white text-sm font-semibold tracking-wider uppercase font-display flex items-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-brand-red"></span> Chennai Office
+              <span className="h-1.5 w-1.5 rounded-full bg-white"></span> Chennai Office
             </h3>
-            <ul className="space-y-3 text-sm text-slate-400">
+            <ul className="space-y-3 text-sm text-white/90">
               <li className="flex items-start gap-3">
-                <MapPin className="h-4 w-4 text-rose-400 shrink-0 mt-1" />
+                <MapPin className="h-4 w-4 text-white shrink-0 mt-1" />
                 <span>No. 56, Thanduma Nagar, Near 100 Ft Road, St. Thomas Mount, Chennai – 600016, Tamil Nadu, India</span>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="h-4 w-4 text-rose-400 shrink-0" />
+                <Mail className="h-4 w-4 text-white shrink-0" />
                 <a href="mailto:exodus.exports@gmail.com" className="hover:text-white transition-colors">
                   exodus.exports@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="h-4 w-4 text-rose-400 shrink-0" />
+                <Phone className="h-4 w-4 text-white shrink-0" />
                 <a href="tel:+917550001106" className="hover:text-white transition-colors">
                   +91 7550001106
                 </a>
@@ -132,12 +132,12 @@ export default function Footer() {
         </div>
 
         {/* Bottom copyright bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/80 gap-4">
           <p>© {new Date().getFullYear()} Exodus Exports. All rights reserved. Premium Indian Human Hair Manufacturer & Exporter.</p>
-          <div className="flex space-x-6">
-            <span className="hover:text-slate-400 cursor-pointer">Export Terms</span>
-            <span className="hover:text-slate-400 cursor-pointer">Quality Guarantee</span>
-            <span className="hover:text-slate-400 cursor-pointer">B2B Trade Inquiries</span>
+          <div className="flex space-x-6 text-white/80">
+            <span className="hover:text-white cursor-pointer">Export Terms</span>
+            <span className="hover:text-white cursor-pointer">Quality Guarantee</span>
+            <span className="hover:text-white cursor-pointer">B2B Trade Inquiries</span>
           </div>
         </div>
       </div>

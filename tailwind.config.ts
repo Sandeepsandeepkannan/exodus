@@ -12,8 +12,8 @@ const config: Config = {
         brand: {
           DEFAULT: "#B91941",
           navy: "#B91941",
-          navyHover: "#9E1537",
-          lightNavy: "#D3234F",
+          navyHover: "#B91941",
+          lightNavy: "#B91941",
           red: "#DC2626", // Red accent from official Exodus Exports logo
           redLight: "#FEE2E2",
           dark: "#0A0F1D",
