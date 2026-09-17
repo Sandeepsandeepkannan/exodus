@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { X, Award, Package, CheckCircle2, MapPin, ArrowRight, ShieldCheck } from "lucide-react";
-import { ProductItem } from "./ProductCard";
+import { ProductItem } from "@/data/products";
 
 interface ProductModalProps {
   product: ProductItem | null;
@@ -42,8 +42,8 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent md:hidden" />
           
           <div className="absolute top-4 left-4">
-            <span className="bg-brand-navy text-white text-xs font-bold px-3 py-1 rounded-md uppercase tracking-wider shadow-sm flex items-center gap-1.5">
-              <span className="h-1.5 w-1.5 rounded-full bg-brand-red"></span>
+            <span className="bg-[#B91941] text-white text-xs font-bold px-3 py-1 rounded-md uppercase tracking-wider shadow-sm flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-white"></span>
               {product.category}
             </span>
           </div>
@@ -53,9 +53,9 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
         <div className="p-6 sm:p-8 md:w-7/12 overflow-y-auto space-y-6 flex flex-col justify-between">
           <div className="space-y-4">
             <div>
-              <div className="inline-flex items-center gap-1.5 text-xs font-bold text-brand-navy tracking-widest uppercase font-display">
-                <ShieldCheck className="h-4 w-4 text-brand-navy" />
-                EXODUS EXPORTS PRODUCT SPECIFICATION
+              <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#B91941] tracking-widest uppercase font-display">
+                <ShieldCheck className="h-4 w-4 text-[#B91941]" />
+                EXODUS EXPORTS PRODUCT RANGE
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-display mt-1.5">
                 {product.name}
@@ -66,55 +66,48 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
               {product.description}
             </p>
 
-            {/* Verified Specifications */}
-            <div className="bg-slate-50 p-4 sm:p-5 rounded-xl border border-slate-200/80 space-y-3 text-xs text-slate-700">
-              <div className="flex items-center justify-between border-b border-slate-200/60 pb-2.5">
-                <span className="flex items-center gap-2 text-slate-500 font-medium">
-                  <Award className="h-4 w-4 text-brand-navy shrink-0" /> Product Type:
-                </span>
-                <span className="font-bold text-slate-900 text-right">{product.specs.type}</span>
-              </div>
+            {/* Specifications */}
+            {product.specs && (
+              <div className="bg-slate-50 p-4 sm:p-5 rounded-xl border border-slate-200/80 space-y-3 text-xs text-slate-700">
+                {product.specs.type && (
+                  <div className="flex items-center justify-between border-b border-slate-200/60 pb-2.5">
+                    <span className="flex items-center gap-2 text-slate-500 font-medium">
+                      <Award className="h-4 w-4 text-[#B91941] shrink-0" /> Product Type:
+                    </span>
+                    <span className="font-bold text-slate-900 text-right">{product.specs.type}</span>
+                  </div>
+                )}
 
-              <div className="flex items-center justify-between border-b border-slate-200/60 pb-2.5">
-                <span className="flex items-center gap-2 text-slate-500 font-medium">
-                  <MapPin className="h-4 w-4 text-brand-navy shrink-0" /> Ethical Sourcing:
-                </span>
-                <span className="font-bold text-slate-900 text-right">{product.specs.sourcing}</span>
-              </div>
+                {product.specs.processing && (
+                  <div className="flex items-center justify-between border-b border-slate-200/60 pb-2.5">
+                    <span className="flex items-center gap-2 text-slate-500 font-medium">
+                      <Package className="h-4 w-4 text-[#B91941] shrink-0" /> Manufacturing:
+                    </span>
+                    <span className="font-bold text-slate-900 text-right">{product.specs.processing}</span>
+                  </div>
+                )}
 
-              <div className="flex items-center justify-between border-b border-slate-200/60 pb-2.5">
-                <span className="flex items-center gap-2 text-slate-500 font-medium">
-                  <Package className="h-4 w-4 text-brand-navy shrink-0" /> Manufacturing:
-                </span>
-                <span className="font-bold text-slate-900 text-right">{product.specs.processing}</span>
+                {product.specs.customization && (
+                  <div className="flex items-center justify-between">
+                    <span className="flex items-center gap-2 text-slate-500 font-medium">
+                      <CheckCircle2 className="h-4 w-4 text-[#B91941] shrink-0" /> Customization:
+                    </span>
+                    <span className="font-bold text-[#B91941] text-right">{product.specs.customization}</span>
+                  </div>
+                )}
               </div>
-
-              <div className="flex items-center justify-between">
-                <span className="flex items-center gap-2 text-slate-500 font-medium">
-                  <CheckCircle2 className="h-4 w-4 text-brand-navy shrink-0" /> Supply Availability:
-                </span>
-                <span className="font-bold text-brand-navy text-right">{product.specs.availability}</span>
-              </div>
-            </div>
-
-            {/* Sourcing Guarantee Footer */}
-            <div className="p-3 bg-brand-navy/5 border border-brand-navy/10 rounded-lg text-xs text-slate-600 flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-brand-red shrink-0" />
-              <span>
-                <strong>100% Indian Human Hair:</strong> Sourced ethically from South Indian temples. In-house manufactured with zero synthetic blends.
-              </span>
-            </div>
+            )}
           </div>
 
-          {/* Action CTAs */}
-          <div className="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center gap-3">
+          {/* Action Row */}
+          <div className="pt-4 border-t border-slate-100 flex items-center justify-between gap-3">
             <Link
-              href={`/contact?product=${encodeURIComponent(product.name)}`}
+              href="/contact"
               onClick={onClose}
-              className="w-full inline-flex items-center justify-center px-6 py-3.5 text-sm font-bold text-white bg-brand-navy hover:bg-brand-navyHover rounded-lg shadow-sm transition-all duration-200 group text-center"
+              className="flex-1 inline-flex items-center justify-center px-4 py-2.5 text-xs font-bold text-white bg-[#B91941] hover:bg-[#B91941]/90 rounded-lg shadow-sm transition-all"
             >
-              Request Product Quotation
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
+              Enquire About This Product
+              <ArrowRight className="ml-1.5 h-3.5 w-3.5" />
             </Link>
           </div>
         </div>

@@ -9,86 +9,100 @@ import {
   Globe, 
   Layers, 
   Clock, 
-  Users 
+  Users,
+  Heart
 } from "lucide-react";
 
 const whyChoosePoints = [
-  {
-    icon: ShieldCheck,
-    title: "100% genuine Indian Human Hair supply source",
-  },
-  {
-    icon: Sparkles,
-    title: "Temple-auction procured & ethically sourced",
-  },
-  {
-    icon: Building2,
-    title: "In-house processing from raw hair to final finished products",
-  },
-  {
-    icon: Layers,
-    title: "Customized solutions for salons, brands & distributors",
-  },
-  {
-    icon: CheckCircle2,
-    title: "Strict adherence to international standards",
-  },
-  {
-    icon: Globe,
-    title: "Global shipping & export expertise",
-  },
-  {
-    icon: Users,
-    title: "Capacity to handle orders from small batches to bulk export",
-  },
-  {
-    icon: Clock,
-    title: "Consistent delivery schedules",
-  },
-  {
-    icon: HeartHandshake,
-    title: "Long-term partnership approach",
-  },
+  "100% genuine Indian Human Hair supply source",
+  "Temple-auction procured & ethically sourced",
+  "In-house processing from raw hair to final finished products",
+  "Customized solutions for salons, brands & distributors",
+  "Strict adherence to international standards",
+  "Global shipping & export expertise",
+  "Capacity to handle orders from small batches to bulk export",
+  "Consistent delivery schedules",
+  "Long-term partnership approach",
+];
+
+const welfarePrograms = [
+  "Implementing 5S Standards",
+  "Safe working conditions",
+  "Retirement benefits",
+  "Annual bonus & incentives",
+  "Loans & emergency support",
+  "Maternity leave",
+  "Counselling & workshops",
+  "Educational support for employees’ children",
+  "Recreational outings",
+  "Strictly No Child Labour",
 ];
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-24 bg-slate-50/70 border-y border-slate-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 bg-slate-50/70 border-y border-slate-100 space-y-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         
-        {/* Section Header */}
-        <ScrollReveal className="mb-14 text-center max-w-3xl mx-auto">
+        {/* Why Choose Section Header */}
+        <ScrollReveal className="text-center max-w-3xl mx-auto space-y-4">
           <SectionHeading
             eyebrow="EXODUS ADVANTAGE"
             title="Why Choose Exodus Exports?"
-            subtitle="At Exodus, we don’t sell products—we build relationships. We guide clients, educate them, and ensure they receive the right product for their exact needs."
             centered
           />
         </ScrollReveal>
 
         {/* 9 Feature Points Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {whyChoosePoints.map((point, idx) => {
-            const Icon = point.icon;
-            return (
-              <ScrollReveal key={idx} delay={idx * 0.05}>
-                <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-subtle hover:border-brand-navy/40 hover:-translate-y-1 transition-all duration-300 group h-full flex items-start gap-4">
-                  <div className="h-10 w-10 rounded-lg bg-brand-navy/5 text-brand-navy flex items-center justify-center shrink-0 group-hover:bg-brand-navy group-hover:text-white transition-colors duration-300">
-                    <Icon className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <h3 className="text-base font-bold text-slate-900 font-display group-hover:text-brand-navy transition-colors">
-                      {point.title}
-                    </h3>
-                  </div>
+          {whyChoosePoints.map((title, idx) => (
+            <ScrollReveal key={idx} delay={idx * 0.04}>
+              <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-subtle hover:border-[#B91941]/40 hover:-translate-y-1 transition-all duration-300 group h-full flex items-start gap-4">
+                <div className="h-10 w-10 rounded-lg bg-[#B91941]/5 text-[#B91941] flex items-center justify-center shrink-0 group-hover:bg-[#B91941] group-hover:text-white transition-colors duration-300">
+                  <CheckCircle2 className="h-5 w-5" />
                 </div>
-              </ScrollReveal>
-            );
-          })}
+                <div>
+                  <h3 className="text-sm sm:text-base font-bold text-slate-900 font-display group-hover:text-[#B91941] transition-colors">
+                    {title}
+                  </h3>
+                </div>
+              </div>
+            </ScrollReveal>
+          ))}
         </div>
 
+        {/* Relationship Callout Box */}
+        <ScrollReveal className="max-w-4xl mx-auto">
+          <div className="p-8 rounded-2xl bg-white border border-slate-200 shadow-subtle text-center space-y-2">
+            <p className="text-base sm:text-lg font-bold text-slate-900">
+              At Exodus, we don’t sell products—we build relationships.We guide clients, educate them, and ensure they receive the right product for their exact needs.
+            </p>
+          </div>
+        </ScrollReveal>
+
+      </div>
+
+      {/* EMPLOYEE WELFARE */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <ScrollReveal className="text-center max-w-3xl mx-auto space-y-3">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 font-display">
+            EMPLOYEE WELFARE
+          </h2>
+          <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+            We are committed to ethical labour practices with a strong all-women workforce.Our welfare programs include:
+          </p>
+        </ScrollReveal>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          {welfarePrograms.map((prog, idx) => (
+            <ScrollReveal key={idx} delay={idx * 0.03}>
+              <div className="p-5 rounded-xl bg-white border border-slate-200 shadow-subtle text-center h-full flex flex-col items-center justify-center space-y-2">
+                <CheckCircle2 className="h-5 w-5 text-[#B91941]" />
+                <span className="text-xs sm:text-sm font-semibold text-slate-800">{prog}</span>
+              </div>
+            </ScrollReveal>
+          ))}
+        </div>
       </div>
     </section>
   );
 }
-

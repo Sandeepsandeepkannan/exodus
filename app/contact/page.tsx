@@ -1,12 +1,12 @@
 import { Suspense } from "react";
 import SectionHeading from "@/components/SectionHeading";
 import ContactForm from "@/components/ContactForm";
-import { Mail, Phone, MapPin, Clock, Globe, Sparkles } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Globe, Sparkles, Building2, CheckCircle2, FileText } from "lucide-react";
 
 export const metadata = {
-  title: "Contact Us | Exodus Exports - Indian Human Hair Desk",
+  title: "Contact Us | Exodus Exports Pvt. Ltd. - Indian Human Hair Exports",
   description:
-    "Contact Exodus Exports in Chennai, India for wholesale human hair inquiries, custom hand-tied weft ratios, full lace wig orders, and international export pricing.",
+    "Contact Exodus Exports Pvt. Ltd. Regd Office: EXODUS EXPORTS PVT. LTD. No. 56 A, Thanduma Nagar, Near 100 Ft Road, St. Thomas Mount, Chennai – 600016, India. Factory: Tirunelveli district. For Factory visit kindly contact us.",
 };
 
 export default function ContactPage() {
@@ -14,22 +14,22 @@ export default function ContactPage() {
     <div className="space-y-0 pt-28">
       
       {/* PAGE HERO */}
-      <section className="py-16 bg-slate-50 border-b border-slate-100">
+      <section className="py-20 bg-slate-50 border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4 max-w-3xl">
-          <span className="text-xs font-bold tracking-widest uppercase text-brand-navy font-display">
-            EXODUS CHENNAI TRADE DESK
-          </span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#B91941]/5 border border-[#B91941]/10 text-[#B91941] text-xs font-bold uppercase tracking-wider">
+            <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> GET IN TOUCH
+          </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight font-display">
-            Let's Work Together
+            Contact Us
           </h1>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-            Connect with our hair manufacturing representatives for custom length specifications, wholesale bundle pricing, sample orders, and international air shipping.
+            We welcome distributors, partners, and JV enquiries worldwide.Grow your business with a trusted Indian human hair manufacturer.
           </p>
         </div>
       </section>
 
       {/* MAIN CONTACT SECTION */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
             
@@ -47,76 +47,60 @@ export default function ContactPage() {
             {/* Right Column: Contact Info */}
             <div className="lg:col-span-5 space-y-8">
               
-              <div className="bg-slate-50 p-8 rounded-xl border border-slate-200/80 space-y-6">
+              <div className="bg-slate-50 p-8 rounded-2xl border border-slate-200/80 space-y-6">
                 <h3 className="text-xl font-bold text-slate-900 font-display">
-                  Factory & Export Headquarters
+                  Contact Us
                 </h3>
 
-                <ul className="space-y-5 text-sm text-slate-700">
+                <ul className="space-y-6 text-sm text-slate-700">
                   <li className="flex items-start gap-4">
-                    <div className="h-10 w-10 rounded-md bg-brand-navy/10 text-brand-navy flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="h-10 w-10 rounded-xl bg-[#B91941]/10 text-[#B91941] flex items-center justify-center shrink-0 mt-0.5">
                       <MapPin className="h-5 w-5" />
                     </div>
-                    <div>
-                      <div className="font-semibold text-slate-900">Manufacturing Unit Address</div>
-                      <div className="text-slate-600 text-xs mt-0.5 leading-relaxed">
-                        No. 56, Thanduma Nagar, Near 100 Ft Road,<br />
-                        St. Thomas Mount, Chennai – 600016,<br />
-                        Tamil Nadu, India.
+                    <div className="space-y-1">
+                      <div className="font-bold text-slate-900 text-xs uppercase tracking-wider text-[#B91941]">Regd Office:</div>
+                      <div className="text-slate-800 text-sm leading-relaxed font-medium">
+                        EXODUS EXPORTS PVT. LTD.No. 56 A, Thanduma Nagar,Near 100 Ft Road,St. Thomas Mount,Chennai – 600016, India
                       </div>
                     </div>
                   </li>
 
                   <li className="flex items-start gap-4">
-                    <div className="h-10 w-10 rounded-md bg-brand-navy/10 text-brand-navy flex items-center justify-center shrink-0 mt-0.5">
-                      <Mail className="h-5 w-5" />
+                    <div className="h-10 w-10 rounded-xl bg-[#B91941]/10 text-[#B91941] flex items-center justify-center shrink-0 mt-0.5">
+                      <Building2 className="h-5 w-5" />
                     </div>
-                    <div>
-                      <div className="font-semibold text-slate-900">Direct Email Inquiry</div>
-                      <a href="mailto:exodus.exports@gmail.com" className="text-brand-navy font-semibold text-xs hover:underline mt-0.5 block">
-                        exodus.exports@gmail.com
-                      </a>
+                    <div className="space-y-1">
+                      <div className="font-bold text-slate-900 text-xs uppercase tracking-wider text-[#B91941]">Factory:</div>
+                      <div className="text-slate-800 font-semibold text-sm">Tirunelveli district.</div>
+                      <div className="text-slate-600 text-xs italic">
+                        For Factory visit kindly contact us
+                      </div>
                     </div>
                   </li>
 
                   <li className="flex items-start gap-4">
-                    <div className="h-10 w-10 rounded-md bg-brand-navy/10 text-brand-navy flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="h-10 w-10 rounded-xl bg-[#B91941]/10 text-[#B91941] flex items-center justify-center shrink-0 mt-0.5">
                       <Phone className="h-5 w-5" />
                     </div>
-                    <div>
-                      <div className="font-semibold text-slate-900">Phone & WhatsApp Export Desk</div>
-                      <a href="tel:+917550001106" className="text-slate-700 font-medium text-xs hover:underline mt-0.5 block">
-                        +91 7550001106
-                      </a>
-                    </div>
-                  </li>
-
-                  <li className="flex items-start gap-4">
-                    <div className="h-10 w-10 rounded-md bg-brand-navy/10 text-brand-navy flex items-center justify-center shrink-0 mt-0.5">
-                      <Clock className="h-5 w-5" />
-                    </div>
-                    <div>
-                      <div className="font-semibold text-slate-900">Business Hours</div>
-                      <div className="text-slate-600 text-xs mt-0.5">
-                        9 AM – 5 PM IST
+                    <div className="space-y-0.5">
+                      <div className="font-bold text-slate-900 text-xs uppercase tracking-wider text-[#B91941]">Phone & Email:</div>
+                      <div className="text-slate-800 font-bold text-sm">
+                        📞 +91 75500 01106 (9 AM – 5 PM IST)📧 exodus.exports@gmail.com
                       </div>
                     </div>
                   </li>
                 </ul>
               </div>
 
-              {/* B2B Export Box */}
-              <div className="bg-[#B91941] text-white p-8 rounded-xl border border-[#B91941] shadow-elevated space-y-4">
-                <div className="flex items-center gap-2 text-xs font-semibold text-white uppercase tracking-widest font-display">
-                  <Globe className="h-4 w-4" /> Worldwide Export Express
+              {/* Distributor & Wholesale Enquiries Box */}
+              <div className="bg-[#B91941] text-white p-8 rounded-2xl shadow-subtle space-y-3">
+                <div className="text-xs font-bold text-white uppercase tracking-wider flex items-center gap-2">
+                  <Globe className="h-4 w-4" /> B2B PARTNERSHIPS
                 </div>
-                <h4 className="text-xl font-bold font-display">International Air Courier Delivery</h4>
-                <p className="text-white/90 text-xs leading-relaxed">
-                  Fast 3–5 business day door-to-door express delivery across USA, UK, Europe, Canada, Australia, and Africa via DHL Express, FedEx, and UPS.
+                <h4 className="text-xl font-bold font-display">Distributor & Wholesale Enquiries</h4>
+                <p className="text-white/95 text-xs sm:text-sm leading-relaxed">
+                  We welcome distributors, partners, and JV enquiries worldwide.Grow your business with a trusted Indian human hair manufacturer.
                 </p>
-                <div className="pt-2 flex items-center gap-2 text-xs font-semibold text-white">
-                  <Sparkles className="h-4 w-4 text-white" /> Custom Private Labeling & Barcoding Available
-                </div>
               </div>
 
             </div>
@@ -125,25 +109,46 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* LOCATION MAP SECTION */}
-      <section className="py-16 bg-slate-50 border-t border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="HEADQUARTERS LOCATION"
-            title="Chennai Manufacturing Unit"
-            subtitle="Located in St. Thomas Mount, Chennai, minutes away from Chennai International Airport."
-          />
-          <div className="mt-8 rounded-xl overflow-hidden border border-slate-200 shadow-subtle bg-slate-200 h-96 relative">
-            <iframe
-              title="Exodus Exports Chennai Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.2185568164344!2d80.19777!3d13.00392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526715f1122221%3A0x1122334455667788!2sSt.%20Thomas%20Mount%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-              width="100%"
-              height="100%"
-              style={{ border: 0, filter: "grayscale(0.5) contrast(1.1)" }}
-              allowFullScreen={false}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+      {/* TERMS & CONDITIONS OF SALE */}
+      <section className="py-20 bg-slate-50 border-b border-slate-200/80">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+          <div className="text-center max-w-3xl mx-auto space-y-3">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-display">
+              TERMS & CONDITIONS OF SALE
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+            <div className="p-5 rounded-xl bg-white border border-slate-200 shadow-subtle flex items-start gap-3">
+              <CheckCircle2 className="h-5 w-5 text-[#B91941] shrink-0 mt-0.5" />
+              <span className="text-xs sm:text-sm text-slate-700 font-medium">100% Indian Human Hair only</span>
+            </div>
+            <div className="p-5 rounded-xl bg-white border border-slate-200 shadow-subtle flex items-start gap-3">
+              <CheckCircle2 className="h-5 w-5 text-[#B91941] shrink-0 mt-0.5" />
+              <span className="text-xs sm:text-sm text-slate-700 font-medium">No synthetic blends</span>
+            </div>
+            <div className="p-5 rounded-xl bg-white border border-slate-200 shadow-subtle flex items-start gap-3">
+              <CheckCircle2 className="h-5 w-5 text-[#B91941] shrink-0 mt-0.5" />
+              <span className="text-xs sm:text-sm text-slate-700 font-medium">100% advance payment via bank transfer</span>
+            </div>
+            <div className="p-5 rounded-xl bg-white border border-slate-200 shadow-subtle flex items-start gap-3">
+              <CheckCircle2 className="h-5 w-5 text-[#B91941] shrink-0 mt-0.5" />
+              <span className="text-xs sm:text-sm text-slate-700 font-medium">Ex-Factory Chennai, India</span>
+            </div>
+            <div className="p-5 rounded-xl bg-white border border-slate-200 shadow-subtle flex items-start gap-3">
+              <CheckCircle2 className="h-5 w-5 text-[#B91941] shrink-0 mt-0.5" />
+              <span className="text-xs sm:text-sm text-slate-700 font-medium">Exchange within 7 business days (conditions apply)</span>
+            </div>
+            <div className="p-5 rounded-xl bg-white border border-slate-200 shadow-subtle flex items-start gap-3">
+              <CheckCircle2 className="h-5 w-5 text-[#B91941] shrink-0 mt-0.5" />
+              <span className="text-xs sm:text-sm text-slate-700 font-medium">No refund policy</span>
+            </div>
+          </div>
+
+          <div className="p-5 rounded-xl bg-white border border-slate-200 text-center max-w-2xl mx-auto shadow-subtle">
+            <p className="text-xs sm:text-sm font-semibold text-slate-800">
+              Human hair is a natural product, and slight variations are inherent.
+            </p>
           </div>
         </div>
       </section>
