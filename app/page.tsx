@@ -274,11 +274,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 6. WHY CHOOSE EXODUS EXPORTS? */}
-      <WhyChooseUs />
-
-      {/* 7. CTA SECTION */}
-      <CTASection />
+    
+      
 
       {/* QUICK VIEW MODAL */}
       {selectedProduct && (
