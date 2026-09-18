@@ -19,7 +19,7 @@ export default function CTASection({
     <section
       className={`py-24 relative overflow-hidden ${
         darkVariant
-          ? "bg-[#B91941] text-white"
+          ? "bg-[#A9153B] text-white"
           : "bg-gradient-to-b from-white to-slate-50 border-t border-slate-100"
       }`}
     >
@@ -29,7 +29,7 @@ export default function CTASection({
             className={`p-10 sm:p-16 rounded-2xl border ${
               darkVariant
                 ? "bg-white/10 border-white/20 shadow-elevated text-white"
-                : "bg-white border-slate-200/80 shadow-subtle hover:border-[#B91941]/30 transition-all duration-300"
+                : "bg-white border-slate-200/80 shadow-subtle hover:border-[#A9153B]/30 transition-all duration-300"
             }`}
           >
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
@@ -37,22 +37,22 @@ export default function CTASection({
               {/* Left Narrative */}
               <div className="lg:col-span-8 space-y-4">
                 <span
-                  className={`text-xs font-bold tracking-widest uppercase font-display flex items-center gap-2 ${
-                    darkVariant ? "text-white" : "text-[#B91941]"
+                  className={`text-[11px] sm:text-xs font-bold tracking-widest uppercase font-display flex items-center gap-2 ${
+                    darkVariant ? "text-white" : "text-[#A9153B]"
                   }`}
                 >
                   <span className={`h-1.5 w-1.5 rounded-full ${darkVariant ? "bg-white" : "bg-brand-red"}`}></span>
                   Wholesale human hair inquiries
                 </span>
                 <h2
-                  className={`text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight ${
+                  className={`text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight ${
                     darkVariant ? "text-white" : "text-slate-900"
                   }`}
                 >
                   {title}
                 </h2>
                 <p
-                  className={`text-base sm:text-lg leading-relaxed max-w-2xl ${
+                  className={`text-sm sm:text-base leading-relaxed max-w-2xl ${
                     darkVariant ? "text-white/90" : "text-slate-600"
                   }`}
                 >
@@ -64,20 +64,20 @@ export default function CTASection({
               <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-4 items-stretch lg:items-end justify-center">
                 <Link
                   href="/contact"
-                  className={`inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-md shadow-sm hover:-translate-y-0.5 transition-all duration-300 group text-center ${
+                  className={`inline-flex items-center justify-center px-7 py-3.5 text-sm font-semibold rounded-md shadow-sm hover:-translate-y-0.5 transition-all duration-300 group text-center ${
                     darkVariant
-                      ? "bg-white text-[#B91941] hover:bg-white/90"
-                      : "bg-[#B91941] text-white hover:opacity-95"
+                      ? "bg-white text-[#A9153B] hover:bg-white/90"
+                      : "bg-[#A9153B] text-white hover:opacity-95"
                   }`}
                 >
                   {buttonText}
-                  <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1.5" />
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1.5" />
                 </Link>
                 
                 <a
                   href="mailto:exodus.exports@gmail.com"
-                  className={`inline-flex items-center justify-center gap-2 text-sm font-medium transition-colors ${
-                    darkVariant ? "text-white/90 hover:text-white" : "text-slate-600 hover:text-[#B91941]"
+                  className={`inline-flex items-center justify-center gap-2 text-xs sm:text-sm font-medium transition-colors ${
+                    darkVariant ? "text-white/90 hover:text-white" : "text-slate-600 hover:text-[#A9153B]"
                   }`}
                 >
                   <Mail className={`h-4 w-4 ${darkVariant ? "text-white" : "text-brand-red"}`} /> exodus.exports@gmail.com

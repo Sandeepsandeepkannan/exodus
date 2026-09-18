@@ -19,13 +19,13 @@ export default function SectionHeading({
         <div className={`inline-flex items-center gap-2 ${centered ? "justify-center" : ""}`}>
           <span className="h-px w-6 bg-brand-navy"></span>
           <span className="h-1.5 w-1.5 rounded-full bg-brand-red"></span>
-          <span className="text-xs font-bold tracking-widest uppercase text-brand-navy font-display">
+          <span className="text-[11px] sm:text-xs font-bold tracking-widest uppercase text-brand-navy font-display">
             {eyebrow}
           </span>
         </div>
       )}
       <h2
-        className={`text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight ${
+        className={`text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight ${
           lightBackground ? "text-slate-900" : "text-white"
         }`}
       >
@@ -33,7 +33,7 @@ export default function SectionHeading({
       </h2>
       {subtitle && (
         <p
-          className={`text-base sm:text-lg leading-relaxed ${
+          className={`text-sm sm:text-base leading-relaxed ${
             lightBackground ? "text-slate-600" : "text-slate-300"
           }`}
         >

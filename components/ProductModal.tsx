@@ -42,7 +42,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent md:hidden" />
           
           <div className="absolute top-4 left-4">
-            <span className="bg-[#B91941] text-white text-xs font-bold px-3 py-1 rounded-md uppercase tracking-wider shadow-sm flex items-center gap-1.5">
+            <span className="bg-[#A9153B] text-white text-[11px] font-bold px-3 py-1 rounded-md uppercase tracking-wider shadow-sm flex items-center gap-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-white"></span>
               {product.category}
             </span>
@@ -53,16 +53,16 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
         <div className="p-6 sm:p-8 md:w-7/12 overflow-y-auto space-y-6 flex flex-col justify-between">
           <div className="space-y-4">
             <div>
-              <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#B91941] tracking-widest uppercase font-display">
-                <ShieldCheck className="h-4 w-4 text-[#B91941]" />
+              <div className="inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-bold text-[#A9153B] tracking-widest uppercase font-display">
+                <ShieldCheck className="h-4 w-4 text-[#A9153B]" />
                 Exodus Exports product range
               </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-display mt-1.5">
+              <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 font-display mt-1.5">
                 {product.name}
               </h2>
             </div>
 
-            <p className="text-sm text-slate-600 leading-relaxed">
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
               {product.description}
             </p>
 
@@ -72,7 +72,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                 {product.specs.type && (
                   <div className="flex items-center justify-between border-b border-slate-200/60 pb-2.5">
                     <span className="flex items-center gap-2 text-slate-500 font-medium">
-                      <Award className="h-4 w-4 text-[#B91941] shrink-0" /> Product Type:
+                      <Award className="h-4 w-4 text-[#A9153B] shrink-0" /> Product Type:
                     </span>
                     <span className="font-bold text-slate-900 text-right">{product.specs.type}</span>
                   </div>
@@ -81,7 +81,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                 {product.specs.processing && (
                   <div className="flex items-center justify-between border-b border-slate-200/60 pb-2.5">
                     <span className="flex items-center gap-2 text-slate-500 font-medium">
-                      <Package className="h-4 w-4 text-[#B91941] shrink-0" /> Manufacturing:
+                      <Package className="h-4 w-4 text-[#A9153B] shrink-0" /> Manufacturing:
                     </span>
                     <span className="font-bold text-slate-900 text-right">{product.specs.processing}</span>
                   </div>
@@ -90,9 +90,9 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                 {product.specs.customization && (
                   <div className="flex items-center justify-between">
                     <span className="flex items-center gap-2 text-slate-500 font-medium">
-                      <CheckCircle2 className="h-4 w-4 text-[#B91941] shrink-0" /> Customization:
+                      <CheckCircle2 className="h-4 w-4 text-[#A9153B] shrink-0" /> Customization:
                     </span>
-                    <span className="font-bold text-[#B91941] text-right">{product.specs.customization}</span>
+                    <span className="font-bold text-[#A9153B] text-right">{product.specs.customization}</span>
                   </div>
                 )}
               </div>
@@ -104,7 +104,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
             <Link
               href="/contact"
               onClick={onClose}
-              className="flex-1 inline-flex items-center justify-center px-4 py-2.5 text-xs font-bold text-white bg-[#B91941] hover:bg-[#B91941]/90 rounded-lg shadow-sm transition-all"
+              className="flex-1 inline-flex items-center justify-center px-4 py-2.5 text-xs font-bold text-white bg-[#A9153B] hover:bg-[#A9153B]/90 rounded-lg shadow-sm transition-all"
             >
               Enquire about this product
               <ArrowRight className="ml-1.5 h-3.5 w-3.5" />

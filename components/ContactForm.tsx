@@ -44,10 +44,10 @@ export default function ContactForm() {
 
   return (
     <div className="bg-white p-8 sm:p-10 rounded-xl border border-slate-200 shadow-subtle">
-      <h3 className="text-2xl font-bold text-slate-900 font-display mb-2">
+      <h3 className="text-xl font-bold text-slate-900 font-display mb-2">
         Send a B2B hair export inquiry
       </h3>
-      <p className="text-sm text-slate-600 mb-8">
+      <p className="text-xs sm:text-sm text-slate-600 mb-8">
         Fill in your requirements below. Our Chennai international export specialists respond within 24 business hours.
       </p>
 
@@ -68,7 +68,7 @@ export default function ContactForm() {
           
           {/* Name */}
           <div>
-            <label className="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">
+            <label className="block text-[11px] font-semibold text-slate-700 uppercase tracking-wider mb-2">
               Full Name <span className="text-brand-red">*</span>
             </label>
             <input
@@ -83,7 +83,7 @@ export default function ContactForm() {
 
           {/* Company */}
           <div>
-            <label className="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">
+            <label className="block text-[11px] font-semibold text-slate-700 uppercase tracking-wider mb-2">
               Company / Salon / Business <span className="text-brand-red">*</span>
             </label>
             <input
@@ -102,7 +102,7 @@ export default function ContactForm() {
           
           {/* Email */}
           <div>
-            <label className="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">
+            <label className="block text-[11px] font-semibold text-slate-700 uppercase tracking-wider mb-2">
               Corporate / Business Email <span className="text-brand-red">*</span>
             </label>
             <input
@@ -117,7 +117,7 @@ export default function ContactForm() {
 
           {/* Phone */}
           <div>
-            <label className="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">
+            <label className="block text-[11px] font-semibold text-slate-700 uppercase tracking-wider mb-2">
               Phone / WhatsApp
             </label>
             <input
@@ -133,7 +133,7 @@ export default function ContactForm() {
 
         {/* Product Interest */}
         <div>
-          <label className="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">
+          <label className="block text-[11px] font-semibold text-slate-700 uppercase tracking-wider mb-2">
             Hair Product Interest
           </label>
           <input
@@ -147,7 +147,7 @@ export default function ContactForm() {
 
         {/* Message */}
         <div>
-          <label className="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">
+          <label className="block text-[11px] font-semibold text-slate-700 uppercase tracking-wider mb-2">
             Inquiry & Specifications <span className="text-brand-red">*</span>
           </label>
           <textarea
@@ -164,7 +164,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={status === "submitting"}
-          className="w-full inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-brand-navy hover:bg-brand-navyHover rounded-md shadow-sm transition-all duration-200 disabled:opacity-70"
+          className="w-full inline-flex items-center justify-center px-7 py-3.5 text-sm font-semibold text-white bg-brand-navy hover:bg-brand-navyHover rounded-md shadow-sm transition-all duration-200 disabled:opacity-70"
         >
           {status === "submitting" ? (
             "Processing Inquiry..."

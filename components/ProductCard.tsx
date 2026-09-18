@@ -21,7 +21,7 @@ export default function ProductCard({ product, onQuickView, onSelect }: ProductC
   return (
     <div
       onClick={handleClick}
-      className="group bg-white rounded-xl border border-slate-200/90 hover:border-[#B91941]/50 shadow-subtle hover:shadow-card transition-all duration-300 flex flex-col h-full overflow-hidden cursor-pointer hover:-translate-y-1"
+      className="group bg-white rounded-xl border border-slate-200/90 hover:border-[#A9153B]/50 shadow-subtle hover:shadow-card transition-all duration-300 flex flex-col h-full overflow-hidden cursor-pointer hover:-translate-y-1"
     >
       {/* 1. Product Image Container */}
       <div className="relative aspect-[4/3] w-full bg-slate-100 overflow-hidden shrink-0">
@@ -34,8 +34,8 @@ export default function ProductCard({ product, onQuickView, onSelect }: ProductC
         />
         
         {/* Category Badge */}
-        <div className="absolute top-3.5 left-3.5 flex items-center gap-1.5 px-3 py-1 rounded-md bg-white/95 backdrop-blur-md border border-slate-200/90 text-xs font-bold text-[#B91941] uppercase tracking-wide shadow-sm">
-          <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span>
+        <div className="absolute top-3.5 left-3.5 flex items-center gap-1.5 px-3 py-1 rounded-md bg-white/95 backdrop-blur-md border border-slate-200/90 text-[11px] font-bold text-[#A9153B] uppercase tracking-wide shadow-sm">
+          <span className="h-1.5 w-1.5 rounded-full bg-[#A9153B]"></span>
           {product.category}
         </div>
       </div>
@@ -43,21 +43,21 @@ export default function ProductCard({ product, onQuickView, onSelect }: ProductC
       {/* 2. Product Details Body */}
       <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between space-y-4">
         <div className="space-y-2">
-          <h3 className="text-lg font-bold text-slate-900 group-hover:text-[#B91941] transition-colors duration-200 font-display line-clamp-1">
+          <h3 className="text-base font-bold text-slate-900 group-hover:text-[#A9153B] transition-colors duration-200 font-display line-clamp-1">
             {product.name}
           </h3>
 
-          <p className="text-slate-600 text-xs sm:text-sm leading-relaxed line-clamp-2 min-h-[2.5rem]">
+          <p className="text-slate-600 text-xs leading-relaxed line-clamp-2 min-h-[2.5rem]">
             {product.description}
           </p>
         </div>
 
         {/* 3. Action Row */}
-        <div className="pt-3 flex items-center justify-between text-xs font-bold text-[#B91941] border-t border-slate-100 group-hover:text-[#B91941]">
+        <div className="pt-3 flex items-center justify-between text-[11px] sm:text-xs font-bold text-[#A9153B] border-t border-slate-100 group-hover:text-[#A9153B]">
           <span className="inline-flex items-center gap-1">
             View Product Details
           </span>
-          <div className="h-7 w-7 rounded-full bg-slate-100 group-hover:bg-[#B91941] group-hover:text-white flex items-center justify-center transition-all duration-200">
+          <div className="h-7 w-7 rounded-full bg-slate-100 group-hover:bg-[#A9153B] group-hover:text-white flex items-center justify-center transition-all duration-200">
             <ArrowUpRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
         </div>

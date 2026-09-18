@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin, ShieldCheck, HeartHandshake, Building2 } from "luc
 
 export default function Footer() {
   return (
-    <footer className="bg-[#B91941] text-white pt-16 pb-12 border-t border-[#B91941]">
+    <footer className="bg-[#A9153B] text-white pt-16 pb-12 border-t border-[#A9153B]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 pb-16 border-b border-white/20">
           

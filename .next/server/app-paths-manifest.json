@@ -1,8 +1,8 @@
 {
-  "/products/page": "app/products/page.js",
+  "/page": "app/page.js",
+  "/about/page": "app/about/page.js",
   "/cranial-prosthesis/page": "app/cranial-prosthesis/page.js",
   "/contact/page": "app/contact/page.js",
-  "/page": "app/page.js",
   "/about-human-hair/page": "app/about-human-hair/page.js",
-  "/about/page": "app/about/page.js"
+  "/products/page": "app/products/page.js"
 }
