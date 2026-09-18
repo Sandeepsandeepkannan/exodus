@@ -23,11 +23,9 @@ export default function Hero() {
             <div className="space-y-2">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#B91941]/5 border border-[#B91941]/10 text-[#B91941] text-xs font-bold tracking-wider uppercase">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#B91941] animate-pulse"></span>
-                EXODUS EXPORTS PVT. LTD. - INDIAN HUMAN HAIR EXPORTS
+                Exodus Exports Pvt. Ltd. - Indian human hair exports
               </div>
-              <div className="text-xs font-bold text-slate-500 uppercase tracking-widest pl-1">
-                PAGE - 1 HOME PAGE
-              </div>
+             
             </div>
 
             {/* Main Headline */}
@@ -37,7 +35,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15] font-display"
             >
-              Premium Indian Human Hair Extensions & Wigs – <span className="text-[#B91941]">Ethically Sourced from India</span>
+              Premium indian human hair extensions & wigs – <span className="text-[#B91941]">ethically sourced from India</span>
             </motion.h1>
 
             {/* Supporting Copy */}
@@ -66,14 +64,14 @@ export default function Hero() {
                 href="/products"
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-[#B91941] hover:bg-[#B91941]/90 hover:-translate-y-0.5 rounded-md shadow-sm transition-all duration-300 group text-center"
               >
-                Explore Our Products
+                Explore our products
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1.5" />
               </Link>
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-slate-800 bg-white border border-slate-300 hover:bg-slate-50 hover:border-slate-400 hover:-translate-y-0.5 rounded-md transition-all duration-300 text-center"
               >
-                Contact Us
+                Contact us
               </Link>
             </motion.div>
 
@@ -130,7 +128,7 @@ export default function Hero() {
                 <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-lg border border-slate-100 shadow-md flex items-center justify-between transition-transform duration-300 group-hover:-translate-y-1">
                   <div>
                     <div className="text-xs font-semibold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
-                      <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> Master Craftsmanship
+                      <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> Master craftsmanship
                     </div>
                     <div className="text-sm font-bold text-slate-900">Cuticle Intact Remy Hair</div>
                   </div>

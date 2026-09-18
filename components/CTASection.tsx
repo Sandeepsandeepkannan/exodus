@@ -10,9 +10,9 @@ interface CTASectionProps {
 }
 
 export default function CTASection({
-  title = "Looking for Premium Indian Human Hair?",
+  title = "Looking for premium indian human hair?",
   subtitle = "Connect with our Chennai export desk to discuss wholesale hair supply, custom hand-tied weft ratios, sample orders, and private labeling.",
-  buttonText = "Contact Us Today",
+  buttonText = "Contact us today",
   darkVariant = false,
 }: CTASectionProps) {
   return (
@@ -42,7 +42,7 @@ export default function CTASection({
                   }`}
                 >
                   <span className={`h-1.5 w-1.5 rounded-full ${darkVariant ? "bg-white" : "bg-brand-red"}`}></span>
-                  WHOLESALE HUMAN HAIR INQUIRIES
+                  Wholesale human hair inquiries
                 </span>
                 <h2
                   className={`text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight ${

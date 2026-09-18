@@ -27,7 +27,7 @@ export default function Footer() {
             </p>
 
             <div className="p-4 rounded-xl bg-white/10 border border-white/20 text-xs text-white/95 leading-relaxed space-y-1">
-              <div className="font-bold uppercase tracking-wider text-white">Distributor & Wholesale Enquiries</div>
+              <div className="font-bold uppercase tracking-wider text-white">Distributor & wholesale enquiries</div>
               <p>We welcome distributors, partners, and JV enquiries worldwide. Grow your business with a trusted Indian human hair manufacturer.</p>
             </div>
           </div>
@@ -45,7 +45,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/about" className="hover:text-white transition-colors duration-200">
-                  About Us
+                  About us
                 </Link>
               </li>
               <li>
@@ -55,17 +55,17 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/about-human-hair" className="hover:text-white transition-colors duration-200">
-                  About Hair
+                  About hair
                 </Link>
               </li>
               <li>
                 <Link href="/cranial-prosthesis" className="hover:text-white transition-colors duration-200">
-                  Cranial Prosthesis
+                  Cranial prosthesis
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="hover:text-white transition-colors duration-200">
-                  Contact Us
+                  Contact us
                 </Link>
               </li>
             </ul>
@@ -74,7 +74,7 @@ export default function Footer() {
           {/* Col 4: Hair Range */}
           <div className="space-y-4">
             <h3 className="text-white text-sm font-semibold tracking-wider uppercase font-display flex items-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-white"></span> Product Range
+              <span className="h-1.5 w-1.5 rounded-full bg-white"></span> Product range
             </h3>
             <ul className="space-y-2.5 text-sm text-white/90">
               <li>
@@ -94,12 +94,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/products" className="hover:text-white transition-colors">
-                  Hand-Tied & Machine Wefts
+                  Hand-tied & machine wefts
                 </Link>
               </li>
               <li>
                 <Link href="/cranial-prosthesis" className="hover:text-white transition-colors">
-                  Cranial Prosthesis (Medical Wigs)
+                  Cranial prosthesis (medical wigs)
                 </Link>
               </li>
             </ul>
@@ -108,11 +108,11 @@ export default function Footer() {
           {/* Col 5: Registered Office & Factory */}
           <div className="space-y-4">
             <h3 className="text-white text-sm font-semibold tracking-wider uppercase font-display flex items-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-white"></span> Contact Us
+              <span className="h-1.5 w-1.5 rounded-full bg-white"></span> Contact us
             </h3>
             <div className="space-y-3 text-xs text-white/90">
               <div>
-                <div className="font-bold text-white uppercase tracking-wider text-[11px]">Regd Office:</div>
+                <div className="font-bold text-white uppercase tracking-wider text-[11px]">Regd office:</div>
                 <div className="mt-0.5">EXODUS EXPORTS PVT. LTD.</div>
                 <div>No. 56 A, Thanduma Nagar, Near 100 Ft Road, St. Thomas Mount, Chennai – 600016, India</div>
               </div>

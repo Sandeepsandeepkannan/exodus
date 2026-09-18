@@ -46,8 +46,8 @@ export default function WhyChooseUs() {
         {/* Why Choose Section Header */}
         <ScrollReveal className="text-center max-w-3xl mx-auto space-y-4">
           <SectionHeading
-            eyebrow="EXODUS ADVANTAGE"
-            title="Why Choose Exodus Exports?"
+            eyebrow="Exodus advantage"
+            title="Why choose Exodus Exports?"
             centered
           />
         </ScrollReveal>
@@ -85,7 +85,7 @@ export default function WhyChooseUs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         <ScrollReveal className="text-center max-w-3xl mx-auto space-y-3">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 font-display">
-            EMPLOYEE WELFARE
+            Employee welfare
           </h2>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
             We are committed to ethical labour practices with a strong all-women workforce.Our welfare programs include:

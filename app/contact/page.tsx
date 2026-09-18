@@ -17,10 +17,10 @@ export default function ContactPage() {
       <section className="py-20 bg-slate-50 border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4 max-w-3xl">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#B91941]/5 border border-[#B91941]/10 text-[#B91941] text-xs font-bold uppercase tracking-wider">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> GET IN TOUCH
+            <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> Get in touch
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight font-display">
-            Contact Us
+            Contact us
           </h1>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
             We welcome distributors, partners, and JV enquiries worldwide.Grow your business with a trusted Indian human hair manufacturer.
@@ -49,7 +49,7 @@ export default function ContactPage() {
               
               <div className="bg-slate-50 p-8 rounded-2xl border border-slate-200/80 space-y-6">
                 <h3 className="text-xl font-bold text-slate-900 font-display">
-                  Contact Us
+                  Contact us
                 </h3>
 
                 <ul className="space-y-6 text-sm text-slate-700">
@@ -58,7 +58,7 @@ export default function ContactPage() {
                       <MapPin className="h-5 w-5" />
                     </div>
                     <div className="space-y-1">
-                      <div className="font-bold text-slate-900 text-xs uppercase tracking-wider text-[#B91941]">Regd Office:</div>
+                      <div className="font-bold text-slate-900 text-xs uppercase tracking-wider text-[#B91941]">Regd office:</div>
                       <div className="text-slate-800 text-sm leading-relaxed font-medium">
                         EXODUS EXPORTS PVT. LTD.No. 56 A, Thanduma Nagar,Near 100 Ft Road,St. Thomas Mount,Chennai – 600016, India
                       </div>
@@ -83,7 +83,7 @@ export default function ContactPage() {
                       <Phone className="h-5 w-5" />
                     </div>
                     <div className="space-y-0.5">
-                      <div className="font-bold text-slate-900 text-xs uppercase tracking-wider text-[#B91941]">Phone & Email:</div>
+                      <div className="font-bold text-slate-900 text-xs uppercase tracking-wider text-[#B91941]">Phone & email:</div>
                       <div className="text-slate-800 font-bold text-sm">
                         📞 +91 75500 01106 (9 AM – 5 PM IST)📧 exodus.exports@gmail.com
                       </div>
@@ -95,9 +95,9 @@ export default function ContactPage() {
               {/* Distributor & Wholesale Enquiries Box */}
               <div className="bg-[#B91941] text-white p-8 rounded-2xl shadow-subtle space-y-3">
                 <div className="text-xs font-bold text-white uppercase tracking-wider flex items-center gap-2">
-                  <Globe className="h-4 w-4" /> B2B PARTNERSHIPS
+                  <Globe className="h-4 w-4" /> B2B partnerships
                 </div>
-                <h4 className="text-xl font-bold font-display">Distributor & Wholesale Enquiries</h4>
+                <h4 className="text-xl font-bold font-display">Distributor & wholesale enquiries</h4>
                 <p className="text-white/95 text-xs sm:text-sm leading-relaxed">
                   We welcome distributors, partners, and JV enquiries worldwide.Grow your business with a trusted Indian human hair manufacturer.
                 </p>
@@ -114,7 +114,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
           <div className="text-center max-w-3xl mx-auto space-y-3">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-display">
-              TERMS & CONDITIONS OF SALE
+              Terms & conditions of sale
             </h2>
           </div>
 

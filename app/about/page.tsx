@@ -32,14 +32,11 @@ export default function AboutPage() {
   return (
     <div className="space-y-0 pt-28">
       
-      {/* 1. WHO WE ARE HERO */}
+      {/* WHO WE ARE HERO */}
       <section className="py-20 bg-slate-50 border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 max-w-4xl">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#B91941]/5 border border-[#B91941]/10 text-[#B91941] text-xs font-bold uppercase tracking-wider">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> PAGE - 2 ABOUT US
-          </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight font-display">
-            1.Who We Are
+            Who we are
           </h1>
           <div className="space-y-4 text-lg sm:text-xl text-slate-600 leading-relaxed font-normal">
             <p>
@@ -72,7 +69,7 @@ export default function AboutPage() {
               {/* Core Philosophy Callout */}
               <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-3">
                 <h4 className="font-bold text-slate-900 text-sm font-display uppercase tracking-wider text-[#B91941]">
-                  Our Philosophy
+                  Our philosophy
                 </h4>
                 <p className="text-sm font-semibold text-slate-800">
                   Our philosophy is rooted in the belief that business must grow alongside humanity.
@@ -85,8 +82,8 @@ export default function AboutPage() {
 
             <ScrollReveal direction="left" className="lg:col-span-7 space-y-6">
               <SectionHeading
-                eyebrow="OUR IDENTITY & VALUES"
-                title="1.Who We Are"
+                eyebrow="Our identity & values"
+                title="Who we are"
               />
 
               <div className="space-y-5 text-slate-600 text-base sm:text-lg leading-relaxed">
@@ -117,16 +114,13 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 2. LEADERSHIP SECTION */}
+      {/* LEADERSHIP SECTION */}
       <section className="py-24 bg-slate-50 border-b border-slate-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
           
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-3">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#B91941]/5 border border-[#B91941]/10 text-[#B91941] text-xs font-bold uppercase tracking-wider">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> SECTION 2
-            </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 font-display">
-              2.  Leadership
+              Leadership
             </h2>
             <div className="space-y-1">
               <p className="text-2xl font-bold text-slate-900 font-display">
@@ -164,7 +158,7 @@ export default function AboutPage() {
                   </div>
 
                   <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-2.5 py-1 rounded-md text-[10px] font-bold text-[#B91941] border border-slate-200 uppercase tracking-wider">
-                    28+ Years Experience
+                    28+ years experience
                   </div>
 
                 </div>
@@ -183,7 +177,7 @@ export default function AboutPage() {
               {/* Leadership Philosophy Box */}
               <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-subtle space-y-3">
                 <h4 className="font-bold text-slate-900 text-sm font-display uppercase tracking-wider text-[#B91941] flex items-center gap-2">
-                  <Award className="h-4 w-4 text-[#B91941]" /> Leadership Philosophy
+                  <Award className="h-4 w-4 text-[#B91941]" /> Leadership philosophy
                 </h4>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed italic">
                   "Mrs. Sheeba Paul believes that true business success is built on integrity, knowledge, and human values. Under her leadership, Exodus Exports has grown not only in scale, but in reputation—earning long-term trust through ethical sourcing, consistent quality, and responsible employment practices."
@@ -215,7 +209,7 @@ export default function AboutPage() {
               {/* Professional Credentials & International Training */}
               <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-subtle space-y-4">
                 <h3 className="text-xl font-bold text-slate-900 font-display flex items-center gap-2">
-                  <GraduationCap className="h-5 w-5 text-[#B91941]" /> Professional Credentials & International Training
+                  <GraduationCap className="h-5 w-5 text-[#B91941]" /> Professional credentials & international training
                 </h3>
                 <ul className="space-y-2.5 text-xs sm:text-sm text-slate-700">
                   <li className="flex items-start gap-2.5">
@@ -256,7 +250,7 @@ export default function AboutPage() {
               {/* Key Achievements & Milestones */}
               <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-subtle space-y-4">
                 <h3 className="text-xl font-bold text-slate-900 font-display flex items-center gap-2">
-                  <Trophy className="h-5 w-5 text-[#B91941]" /> Key Achievements & Milestones
+                  <Trophy className="h-5 w-5 text-[#B91941]" /> Key achievements & milestones
                 </h3>
                 <ul className="space-y-2.5 text-xs sm:text-sm text-slate-700">
                   <li className="flex items-start gap-2.5">
@@ -312,15 +306,12 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 3. AWARDS & ACCOLADES */}
+      {/* AWARDS & ACCOLADES */}
       <section className="py-20 bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-3">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#B91941]/5 border border-[#B91941]/10 text-[#B91941] text-xs font-bold uppercase tracking-wider">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> SECTION 3
-            </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 font-display">
-              3. Awards & Accolades
+              Awards & accolades
             </h2>
           </ScrollReveal>
 
@@ -332,7 +323,7 @@ export default function AboutPage() {
                 </div>
                 <div className="space-y-1">
                   <h3 className="font-bold text-slate-900 text-base font-display">
-                    Best Woman Entrepreneur Award
+                    Best woman entrepreneur award
                   </h3>
                   <p className="text-sm text-slate-600 leading-relaxed">
                     Honoured as “Best Woman Entrepreneur” by Indian Overseas Bank, Mount Road Branch, presented by the CMD of IOB on International Women’s Day (2013).
@@ -348,7 +339,7 @@ export default function AboutPage() {
                 </div>
                 <div className="space-y-1">
                   <h3 className="font-bold text-slate-900 text-base font-display">
-                    Dun & Bradstreet (D&B) Credit Rated
+                    Dun & Bradstreet (D&B) credit rated
                   </h3>
                   <p className="text-sm text-slate-600 leading-relaxed">
                     Company credit-rated by Dun & Bradstreet (D&B) and assigned a D-U-N-S® Number.
@@ -360,17 +351,13 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 4. PRESS & TV INTERVIEWS */}
+      {/* PRESS & TV INTERVIEWS */}
       <section className="py-24 bg-slate-50 border-b border-slate-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
           
           <ScrollReveal className="text-center max-w-4xl mx-auto space-y-4">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#B91941]/5 border border-[#B91941]/10 text-[#B91941] text-xs font-bold uppercase tracking-wider">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> SECTION 4
-            </div>
-            
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 font-display">
-              4. Press & TV Interviews
+              Press & TV interviews
             </h2>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4 text-left">

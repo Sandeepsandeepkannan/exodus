@@ -45,7 +45,7 @@ export default function ContactForm() {
   return (
     <div className="bg-white p-8 sm:p-10 rounded-xl border border-slate-200 shadow-subtle">
       <h3 className="text-2xl font-bold text-slate-900 font-display mb-2">
-        Send a B2B Hair Export Inquiry
+        Send a B2B hair export inquiry
       </h3>
       <p className="text-sm text-slate-600 mb-8">
         Fill in your requirements below. Our Chennai international export specialists respond within 24 business hours.

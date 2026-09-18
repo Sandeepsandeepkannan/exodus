@@ -28,10 +28,10 @@ export default function AboutHumanHairPage() {
       <section className="py-20 bg-slate-50 border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 max-w-4xl">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#B91941]/5 border border-[#B91941]/10 text-[#B91941] text-xs font-bold uppercase tracking-wider">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> PAGE – 4 ABOUT HAIR
+            <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> About hair
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight font-display">
-            Why Indian Human Hair?
+            Why indian human hair?
           </h1>
           <p className="text-lg sm:text-xl text-slate-700 font-medium leading-relaxed">
             Indian hair is naturally strong, resilient, and adaptable. It can be:
@@ -78,10 +78,10 @@ export default function AboutHumanHairPage() {
       <section className="py-24 bg-[#B91941] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center space-y-8">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs font-bold uppercase tracking-wider">
-            <Globe className="h-4 w-4" /> GLOBAL INDUSTRY INSIGHT
+            <Globe className="h-4 w-4" /> Global industry insight
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display">
-            The Truth About “Brazilian”, “Malaysian” & “Peruvian” Hair
+            The truth about “brazilian”, “malaysian” & “peruvian” hair
           </h2>
           <div className="space-y-6 text-white/95 text-base sm:text-xl leading-relaxed">
             <p>
@@ -100,13 +100,13 @@ export default function AboutHumanHairPage() {
           
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-4">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#B91941]/5 border border-[#B91941]/10 text-[#B91941] text-xs font-bold uppercase tracking-wider">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> BUYER’S GUIDE
+              <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> Buyer’s guide
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 font-display">
-              ALL ABOUT HUMAN HAIR
+              All about human hair
             </h2>
             <h3 className="text-xl sm:text-2xl font-bold text-slate-800 font-display">
-              Know Your Hair
+              Know your hair
             </h3>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
               Choosing the right type of hair is essential for achieving a natural look, long-lasting performance, and ease of maintenance. Human hair extensions differ significantly from synthetic fibres in appearance, feel, and durability.
@@ -123,7 +123,7 @@ export default function AboutHumanHairPage() {
                   <Sparkles className="h-4 w-4" /> 100% Authentic
                 </div>
                 <h3 className="text-2xl font-bold text-slate-900 font-display">
-                  Real Human Hair Extensions
+                  Real human hair extensions
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed">
                   Real human hair offers unmatched versatility and realism. When applied correctly by a professional, these extensions can be:
@@ -160,7 +160,7 @@ export default function AboutHumanHairPage() {
                   <AlertCircle className="h-4 w-4" /> Alternative
                 </div>
                 <h3 className="text-2xl font-bold text-slate-900 font-display">
-                  Synthetic (Artificial) Hair
+                  Synthetic (artificial) hair
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed">
                   Synthetic hair is a budget-friendly alternative, mainly chosen for short-term use.
@@ -227,10 +227,10 @@ export default function AboutHumanHairPage() {
           
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-4">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#B91941]/5 border border-[#B91941]/10 text-[#B91941] text-xs font-bold uppercase tracking-wider">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> CARE & APPLICATION
+              <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> Care & application
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 font-display">
-              APPLYING & MAINTAINING YOUR HAIR EXTENSIONS
+              Applying & maintaining hair extensions
             </h2>
           </ScrollReveal>
 
@@ -239,7 +239,7 @@ export default function AboutHumanHairPage() {
             {/* Professional Application */}
             <div className="lg:col-span-5 p-8 rounded-2xl bg-white border border-slate-200 shadow-subtle space-y-4">
               <h3 className="text-xl font-bold text-slate-900 font-display flex items-center gap-2">
-                <Scissors className="h-5 w-5 text-[#B91941]" /> Professional Application
+                <Scissors className="h-5 w-5 text-[#B91941]" /> Professional application
               </h3>
               <ul className="space-y-3 text-xs sm:text-sm text-slate-700">
                 <li className="flex items-start gap-2.5">
@@ -260,7 +260,7 @@ export default function AboutHumanHairPage() {
             {/* Maintenance Guidelines */}
             <div className="lg:col-span-7 p-8 rounded-2xl bg-white border border-slate-200 shadow-subtle space-y-4">
               <h3 className="text-xl font-bold text-slate-900 font-display flex items-center gap-2">
-                <Droplets className="h-5 w-5 text-[#B91941]" /> Maintenance Guidelines
+                <Droplets className="h-5 w-5 text-[#B91941]" /> Maintenance guidelines
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-slate-700">
                 <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-2">

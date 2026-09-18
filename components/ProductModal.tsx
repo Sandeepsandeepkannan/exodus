@@ -55,7 +55,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
             <div>
               <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#B91941] tracking-widest uppercase font-display">
                 <ShieldCheck className="h-4 w-4 text-[#B91941]" />
-                EXODUS EXPORTS PRODUCT RANGE
+                Exodus Exports product range
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-display mt-1.5">
                 {product.name}
@@ -106,7 +106,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
               onClick={onClose}
               className="flex-1 inline-flex items-center justify-center px-4 py-2.5 text-xs font-bold text-white bg-[#B91941] hover:bg-[#B91941]/90 rounded-lg shadow-sm transition-all"
             >
-              Enquire About This Product
+              Enquire about this product
               <ArrowRight className="ml-1.5 h-3.5 w-3.5" />
             </Link>
           </div>

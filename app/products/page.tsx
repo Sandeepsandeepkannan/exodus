@@ -57,10 +57,10 @@ export default function ProductsPage() {
       <section className="py-20 bg-slate-50 border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 max-w-4xl">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#B91941]/5 border border-[#B91941]/10 text-[#B91941] text-xs font-bold uppercase tracking-wider">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> PAGE – 3 PRODUCTS
+            <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> Products
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight font-display">
-            Product Range
+            Product range
           </h1>
           <p className="text-lg sm:text-xl text-slate-600 leading-relaxed font-normal">
             We manufacture and supply a complete range of Indian Remy Human Hair products, including:
@@ -132,7 +132,7 @@ export default function ProductsPage() {
                 <div key={cat.id} className="space-y-8">
                   <div className="flex items-center gap-3 border-b border-slate-100 pb-4">
                     <h2 className="text-2xl font-bold text-slate-900 font-display">
-                      {cat.name}
+                      {cat.name === "Hair Types" ? "Hair Products" : cat.name}
                     </h2>
                     <span className="text-xs px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 font-semibold">
                       {catProducts.length} items
@@ -168,17 +168,17 @@ export default function ProductsPage() {
           
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-4">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#B91941]/5 border border-[#B91941]/10 text-[#B91941] text-xs font-bold uppercase tracking-wider">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> HAIR TYPES
+              <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> Hair types
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 font-display">
-              INDIAN HUMAN HAIR TYPES
+              Indian human hair types
             </h2>
           </ScrollReveal>
 
           {/* Remy Hair Hero Callout */}
           <div className="p-8 rounded-2xl bg-white border border-slate-200 shadow-subtle max-w-4xl mx-auto text-center space-y-2">
             <h3 className="text-xl font-bold text-slate-900 font-display text-[#B91941]">
-              Remy Hair
+              Remy hair
             </h3>
             <p className="text-base text-slate-700 leading-relaxed max-w-2xl mx-auto">
               Indian Remy Hair is the highest natural grade of human hair. Cuticles are aligned in one direction, reducing tangling and increasing durability.
@@ -189,8 +189,8 @@ export default function ProductsPage() {
             
             {/* Remy Single Drawn */}
             <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-subtle space-y-3">
-              <div className="text-xs font-bold text-[#B91941] uppercase tracking-wider">Remy Hair</div>
-              <h3 className="text-lg font-bold text-slate-900 font-display">Remy Single Drawn</h3>
+              <div className="text-xs font-bold text-[#B91941] uppercase tracking-wider">Remy hair</div>
+              <h3 className="text-lg font-bold text-slate-900 font-display">Remy single drawn</h3>
               <ul className="space-y-1.5 text-xs sm:text-sm text-slate-600">
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 text-[#B91941] shrink-0" />
@@ -209,8 +209,8 @@ export default function ProductsPage() {
 
             {/* Remy Double Drawn */}
             <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-subtle space-y-3">
-              <div className="text-xs font-bold text-[#B91941] uppercase tracking-wider">Remy Hair</div>
-              <h3 className="text-lg font-bold text-slate-900 font-display">Remy Double Drawn</h3>
+              <div className="text-xs font-bold text-[#B91941] uppercase tracking-wider">Remy hair</div>
+              <h3 className="text-lg font-bold text-slate-900 font-display">Remy double drawn</h3>
               <ul className="space-y-1.5 text-xs sm:text-sm text-slate-600">
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 text-[#B91941] shrink-0" />
@@ -230,7 +230,7 @@ export default function ProductsPage() {
             {/* Non-Remy Hair */}
             <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-subtle space-y-3">
               <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">Commercial</div>
-              <h3 className="text-lg font-bold text-slate-900 font-display">Non-Remy Hair</h3>
+              <h3 className="text-lg font-bold text-slate-900 font-display">Non-Remy hair</h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Collected fallen hair with mixed cuticle directions.
               </p>
@@ -249,7 +249,7 @@ export default function ProductsPage() {
             {/* Cuticle-Free / Tangle-Free Hair */}
             <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-subtle space-y-3">
               <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">Treated</div>
-              <h3 className="text-lg font-bold text-slate-900 font-display">Cuticle-Free / Tangle-Free Hair</h3>
+              <h3 className="text-lg font-bold text-slate-900 font-display">Cuticle-free / tangle-free hair</h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Chemically treated non-Remy hair to reduce tangling. This effect is temporary and diminishes after multiple washes.
               </p>
@@ -257,8 +257,8 @@ export default function ProductsPage() {
 
             {/* Converted Remy Hair */}
             <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-subtle space-y-3 md:col-span-2 lg:col-span-2">
-              <div className="text-xs font-bold text-[#B91941] uppercase tracking-wider">Machine Processed</div>
-              <h3 className="text-lg font-bold text-slate-900 font-display">Converted Remy Hair</h3>
+              <div className="text-xs font-bold text-[#B91941] uppercase tracking-wider">Machine processed</div>
+              <h3 className="text-lg font-bold text-slate-900 font-display">Converted Remy hair</h3>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                 The inverted cuticles are converted to the same direction using a machine.
               </p>
@@ -275,10 +275,10 @@ export default function ProductsPage() {
           
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-4">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#B91941]/5 border border-[#B91941]/10 text-[#B91941] text-xs font-bold uppercase tracking-wider">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> TEXTURES
+              <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> Textures
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 font-display">
-              INDIAN HUMAN HAIR TEXTURES
+              Indian human hair textures
             </h2>
           </ScrollReveal>
 
@@ -287,7 +287,7 @@ export default function ProductsPage() {
             {/* Indian Straight Hair */}
             <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
               <h3 className="text-xl font-bold text-slate-900 font-display">
-                Indian Straight Hair
+                Indian straight hair
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 Naturally rare in India. Most straight textures are sourced from North-East India. Exodus focuses exclusively on South Indian temple hair, known for superior quality.
@@ -297,7 +297,7 @@ export default function ProductsPage() {
             {/* Indian Wavy Hair */}
             <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
               <h3 className="text-xl font-bold text-slate-900 font-display">
-                Indian Wavy Hair
+                Indian wavy hair
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 The most common and versatile texture.
@@ -321,7 +321,7 @@ export default function ProductsPage() {
             {/* Indian Curly Hair */}
             <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
               <h3 className="text-xl font-bold text-slate-900 font-display">
-                Indian Curly Hair
+                Indian curly hair
               </h3>
               <p className="text-sm font-semibold text-slate-800">
                 Extremely Rare and naturally occurring.
@@ -345,7 +345,7 @@ export default function ProductsPage() {
             {/* Indian Deep Wavy Hair */}
             <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
               <h3 className="text-xl font-bold text-slate-900 font-display">
-                Indian Deep Wavy Hair
+                Indian deep wavy hair
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 Steam-processed curls created from natural Indian Remy hair.
@@ -377,10 +377,10 @@ export default function ProductsPage() {
           
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-4">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#B91941]/5 border border-[#B91941]/10 text-[#B91941] text-xs font-bold uppercase tracking-wider">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> STANDARDS
+              <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> Standards
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 font-display">
-              Manufacturing & Quality Control
+              Manufacturing & quality control
             </h2>
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
               All hair processing is carried out in our own factories in India, ensuring complete control over quality at every stage.
@@ -428,10 +428,10 @@ export default function ProductsPage() {
           
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-4">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#B91941]/5 border border-[#B91941]/10 text-[#B91941] text-xs font-bold uppercase tracking-wider">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> IN-HOUSE PROCESSING
+              <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> In-house processing
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 font-display">
-              PROCESSING HAIR
+              Processing hair
             </h2>
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
               Every product at Exodus Exports is manufactured in-house, ensuring complete quality control.
@@ -452,7 +452,7 @@ export default function ProductsPage() {
               <div className="h-10 w-10 rounded-full bg-[#B91941] text-white font-bold flex items-center justify-center mx-auto text-sm">
                 2
               </div>
-              <h3 className="font-bold text-slate-900 text-sm font-display">Sorting & Hackling</h3>
+              <h3 className="font-bold text-slate-900 text-sm font-display">Sorting & hackling</h3>
               <p className="text-xs text-slate-600">Sorted, hackled and meticulously arranged by size</p>
             </div>
 
@@ -468,7 +468,7 @@ export default function ProductsPage() {
               <div className="h-10 w-10 rounded-full bg-[#B91941] text-white font-bold flex items-center justify-center mx-auto text-sm">
                 4
               </div>
-              <h3 className="font-bold text-slate-900 text-sm font-display">Natural Sun Drying</h3>
+              <h3 className="font-bold text-slate-900 text-sm font-display">Natural sun drying</h3>
               <p className="text-xs text-slate-600">Sun-dried naturally for softness</p>
             </div>
 
@@ -476,7 +476,7 @@ export default function ProductsPage() {
               <div className="h-10 w-10 rounded-full bg-[#B91941] text-white font-bold flex items-center justify-center mx-auto text-sm">
                 5
               </div>
-              <h3 className="font-bold text-slate-900 text-sm font-display">Final Crafting</h3>
+              <h3 className="font-bold text-slate-900 text-sm font-display">Final crafting</h3>
               <p className="text-xs text-slate-600">Processed into wefts, coloured hair, wigs, and more</p>
             </div>
           </div>
@@ -496,10 +496,10 @@ export default function ProductsPage() {
           
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-4">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#B91941]/5 border border-[#B91941]/10 text-[#B91941] text-xs font-bold uppercase tracking-wider">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> PALETTE
+              <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> Palette
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 font-display">
-              COLOUR SHADES
+              Colour shades
             </h2>
           </ScrollReveal>
 

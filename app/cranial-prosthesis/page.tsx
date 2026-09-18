@@ -70,11 +70,11 @@ export default function CranialProsthesisPage() {
       <section className="py-20 bg-slate-50 border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 max-w-4xl">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#B91941]/5 border border-[#B91941]/10 text-[#B91941] text-xs font-bold uppercase tracking-wider">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> Page – 5 Cranial Prosthesis – The Wig Bank
+            <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> Cranial prosthesis – the wig bank
           </div>
           
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight font-display">
-            Regain Your Confidence with Medical Wigs
+            Regain your confidence with medical wigs
           </h1>
           
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal max-w-3xl mx-auto">
@@ -107,7 +107,7 @@ export default function CranialProsthesisPage() {
               {/* Quality Standards Callout */}
               <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-3">
                 <h4 className="font-bold text-slate-900 text-sm font-display uppercase tracking-wider text-[#B91941]">
-                  Custom Craftsmanship
+                  Custom craftsmanship
                 </h4>
                 <ul className="space-y-2 text-xs sm:text-sm text-slate-700">
                   <li className="flex items-start gap-2">
@@ -187,7 +187,7 @@ export default function CranialProsthesisPage() {
             <div className="p-8 rounded-2xl bg-[#B91941] text-white shadow-elevated flex flex-col items-center justify-center space-y-3">
               <HeartHandshake className="h-10 w-10 text-white" />
               <h3 className="text-2xl font-extrabold tracking-wider uppercase font-display">
-                CIX WIGS
+                CIX wigs
               </h3>
             </div>
 
@@ -195,7 +195,7 @@ export default function CranialProsthesisPage() {
             <div className="p-8 rounded-2xl bg-slate-900 text-white shadow-elevated flex flex-col items-center justify-center space-y-3">
               <Building2 className="h-10 w-10 text-white" />
               <h3 className="text-2xl font-extrabold tracking-wider uppercase font-display">
-                THE WIG BANK
+                The wig bank
               </h3>
             </div>
 
@@ -210,8 +210,8 @@ export default function CranialProsthesisPage() {
           
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-4">
             <SectionHeading
-              eyebrow="EXODUS ADVANTAGE"
-              title="Why Choose Exodus Exports?"
+              eyebrow="Exodus advantage"
+              title="Why choose Exodus Exports?"
               centered
             />
           </ScrollReveal>
@@ -252,7 +252,7 @@ export default function CranialProsthesisPage() {
           
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-3">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 font-display">
-              EMPLOYEE WELFARE
+              Employee welfare
             </h2>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
               We are committed to ethical labour practices with a strong all-women workforce.Our welfare programs include:
@@ -279,7 +279,7 @@ export default function CranialProsthesisPage() {
           
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-3">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 font-display">
-              TERMS & CONDITIONS OF SALE
+              Terms & conditions of sale
             </h2>
           </ScrollReveal>
 

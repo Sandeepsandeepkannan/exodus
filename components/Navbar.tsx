@@ -8,11 +8,11 @@ import { Menu, X, ArrowUpRight } from "lucide-react";
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "About Us", href: "/about" },
+  { name: "About us", href: "/about" },
   { name: "Products", href: "/products" },
-  { name: "About Hair", href: "/about-human-hair" },
-  { name: "Cranial Prosthesis", href: "/cranial-prosthesis" },
-  { name: "Contact Us", href: "/contact" },
+  { name: "About hair", href: "/about-human-hair" },
+  { name: "Cranial prosthesis", href: "/cranial-prosthesis" },
+  { name: "Contact us", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -88,7 +88,7 @@ export default function Navbar() {
               href="/contact"
               className="inline-flex items-center justify-center px-5 py-2.5 text-xs font-bold text-white bg-[#B91941] hover:bg-[#B91941]/90 rounded-lg shadow-sm transition-all duration-200 group"
             >
-              Enquire Now
+              Enquire now
               <ArrowUpRight className="ml-1.5 h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </Link>
           </div>
@@ -137,7 +137,7 @@ export default function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
                 className="w-full inline-flex items-center justify-center px-4 py-3 text-sm font-bold text-white bg-[#B91941] rounded-lg shadow-sm"
               >
-                Enquire Now
+                Enquire now
                 <ArrowUpRight className="ml-1.5 h-4 w-4" />
               </Link>
             </div>

@@ -31,18 +31,18 @@ export default function HomePage() {
   return (
     <div className="space-y-0">
 
-      {/* 1. HERO SECTION */}
+      {/* HERO SECTION */}
       <Hero />
 
-      {/* 2. 1.ABOUT EXODUS EXPORTS PVT. LTD. & OUR PHILOSOPHY */}
+      {/* ABOUT EXODUS EXPORTS PVT. LTD. & OUR PHILOSOPHY */}
       <section className="py-24 bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
 
             <ScrollReveal direction="right" className="lg:col-span-6 space-y-6">
               <SectionHeading
-                eyebrow="ABOUT US"
-                title="1.About Exodus Exports Pvt. Ltd."
+                eyebrow="About us"
+                title="About Exodus Exports Pvt. Ltd."
                 subtitle="Established in 2002, Exodus Exports Pvt. Ltd. is an Export-Oriented Private Limited Company, headquartered in Chennai, South India."
               />
               <div className="space-y-4 text-slate-600 text-base sm:text-lg leading-relaxed pt-2">
@@ -54,7 +54,7 @@ export default function HomePage() {
               {/* Our Philosophy */}
               <div className="p-6 sm:p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-4">
                 <h3 className="text-xl font-bold text-slate-900 font-display text-[#B91941] flex items-center gap-2">
-                  <Award className="h-5 w-5 text-[#B91941]" /> Our Philosophy
+                  <Award className="h-5 w-5 text-[#B91941]" /> Our philosophy
                 </h3>
                 <p className="text-sm font-semibold text-slate-800 italic">
                   At Exodus Exports, we believe in transparency and honesty.
@@ -88,7 +88,7 @@ export default function HomePage() {
                   href="/about"
                   className="inline-flex items-center text-sm font-bold text-[#B91941] hover:underline group"
                 >
-                  Learn More About Our Company & Leadership
+                  Learn more about our company & leadership
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1.5" />
                 </Link>
               </div>
@@ -114,16 +114,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3. 2. ETHICAL SOURCING & WOMEN EMPOWERMENT */}
+      {/* ETHICAL SOURCING & WOMEN EMPOWERMENT */}
       <section className="py-24 bg-slate-50 border-b border-slate-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-3">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#B91941]/5 border border-[#B91941]/10 text-[#B91941] text-xs font-bold uppercase tracking-wider">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> SECTION 2
-            </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 font-display">
-              2. Ethical Sourcing & Women Empowerment
+              Ethical sourcing & women empowerment
             </h2>
           </ScrollReveal>
 
@@ -140,22 +137,22 @@ export default function HomePage() {
 
             <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-subtle flex items-start gap-3">
               <CheckCircle2 className="h-5 w-5 text-[#B91941] shrink-0 mt-0.5" />
-              <span className="text-sm font-semibold text-slate-800">No child labours</span>
+              <span className="text-sm font-semibold text-slate-800">No middlemen or unverified sources</span>
             </div>
 
             <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-subtle flex items-start gap-3">
               <CheckCircle2 className="h-5 w-5 text-[#B91941] shrink-0 mt-0.5" />
-              <span className="text-sm font-semibold text-slate-800">All-women workforce in our production units</span>
+              <span className="text-sm font-semibold text-slate-800">Fair compensation for our entire workforce</span>
             </div>
 
             <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-subtle flex items-start gap-3">
               <CheckCircle2 className="h-5 w-5 text-[#B91941] shrink-0 mt-0.5" />
-              <span className="text-sm font-semibold text-slate-800">Commitment to employee welfare, safety, and sustainability</span>
+              <span className="text-sm font-semibold text-slate-800">Safe, clean, and dignified working environments</span>
             </div>
 
             <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-subtle flex items-start gap-3">
               <CheckCircle2 className="h-5 w-5 text-[#B91941] shrink-0 mt-0.5" />
-              <span className="text-sm font-semibold text-[#B91941]">We employ only 100% beedi rolling women of rural India</span>
+              <span className="text-sm font-semibold text-slate-800">Empowering women artisans across our supply chain</span>
             </div>
           </div>
 
@@ -168,16 +165,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. 3. SOCIAL IMPACT & SUSTAINABLE LIVELIHOOD BUSINESS INITIATIVE */}
+      {/* SOCIAL IMPACT & SUSTAINABLE LIVELIHOOD BUSINESS INITIATIVE */}
       <section className="py-24 bg-[#B91941] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
           
           <ScrollReveal className="text-center max-w-4xl mx-auto space-y-4">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs font-bold uppercase tracking-wider">
-              <HeartHandshake className="h-4 w-4" /> SECTION 3
-            </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display">
-              3. Social Impact & Sustainable Livelihood Business Initiative
+              Social impact & sustainable livelihood business initiative
             </h2>
           </ScrollReveal>
 
@@ -195,7 +189,7 @@ export default function HomePage() {
               This program reflects our commitment to public health, women’s empowerment, and responsible business practices, ensuring that economic progress goes hand in hand with social well-being. Hence, to undertake this mission, we moved from Chennai to a remote village in the Tirunelveli district of Tamil Nadu, approximately 650 kilometres away, which lies at the heart of the state’s beedi industry. We have been operating our factory here for the past five years.
             </p>
             <div className="p-6 rounded-2xl bg-white text-slate-900 shadow-elevated space-y-2">
-              <div className="text-xs font-bold text-[#B91941] uppercase tracking-wider">New Expansion Project</div>
+              <div className="text-xs font-bold text-[#B91941] uppercase tracking-wider">Next expansion project</div>
               <p className="font-semibold text-slate-900 text-sm sm:text-base">
                 Our current project, undertaken in collaboration with NABARD and the Cancer Institute (WIA), Chennai, aims to recruit and train 300 beedi rollers in Tenkasi district. This initiative is expected to commence shortly and represents an important step towards creating sustainable livelihood opportunities while promoting awareness and healthier alternatives within the beedi-rolling community.
               </p>
@@ -205,16 +199,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 5. 4. WHO ARE THESE BEEDI WORKERS? */}
+      {/* WHO ARE THESE BEEDI WORKERS? */}
       <section className="py-24 bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           
           <ScrollReveal className="text-center max-w-4xl mx-auto space-y-4">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#B91941]/5 border border-[#B91941]/10 text-[#B91941] text-xs font-bold uppercase tracking-wider">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#B91941]"></span> SECTION 4
-            </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 font-display">
-              4. Who are these Beedi Workers?
+              Who are these beedi workers?
             </h2>
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed text-left">
               Beedi is a locally made cheaper substitute for cigarette. Across remote villages in South India, many women earn their livelihood by rolling beedis from their homes. Women beedi workers faced numerous challenges including
