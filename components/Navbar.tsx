@@ -1,10 +1,20 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, ArrowUpRight } from "lucide-react";
+import { Menu, X, ArrowUpRight, ChevronDown } from "lucide-react";
+
+const productSections = [
+  { name: "Hair products", href: "/products#hair-products" },
+  { name: "Extensions & wefts", href: "/products#extensions-wefts" },
+  { name: "Wigs & hairpieces", href: "/products#wigs-hairpieces" },
+  { name: "Cranial prosthesis", href: "/products#cranial-prosthesis" },
+  { name: "Indian human hair textures", href: "/products#indian-human-hair-textures" },
+  { name: "Manufacturing & processing", href: "/products#manufacturing-processing" },
+  { name: "Colour shades", href: "/products#colour-shades" },
+];
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -18,6 +28,9 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
+  const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -32,6 +45,24 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setProductsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  useEffect(() => {
+    setProductsDropdownOpen(false);
+    setMobileMenuOpen(false);
+  }, [pathname]);
 
   return (
     <header
@@ -59,6 +90,53 @@ export default function Navbar() {
           {/* Center/Right: Desktop Nav Links */}
           <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             {navLinks.map((link) => {
+              if (link.name === "Products") {
+                const isProductsActive = pathname === "/products" || pathname.startsWith("/products");
+                return (
+                  <div key={link.name} className="relative" ref={dropdownRef}>
+                    <button
+                      type="button"
+                      onClick={() => setProductsDropdownOpen(!productsDropdownOpen)}
+                      className={`text-sm font-medium transition-colors duration-200 relative py-1 flex items-center gap-1.5 focus:outline-none ${
+                        isProductsActive
+                          ? "text-[#A9153B] font-bold"
+                          : "text-slate-700 hover:text-[#A9153B]"
+                      }`}
+                      aria-expanded={productsDropdownOpen}
+                    >
+                      {link.name}
+                      <ChevronDown
+                        className={`h-3.5 w-3.5 transition-transform duration-200 ${
+                          productsDropdownOpen ? "rotate-180 text-[#A9153B]" : isProductsActive ? "text-[#A9153B]" : "text-slate-400"
+                        }`}
+                      />
+                      {isProductsActive && (
+                        <>
+                          <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#A9153B] rounded-full" />
+                          <span className="h-1 w-1 rounded-full bg-[#A9153B] inline-block ml-0.5"></span>
+                        </>
+                      )}
+                    </button>
+
+                    {/* Dropdown Menu */}
+                    {productsDropdownOpen && (
+                      <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-slate-200/80 py-2 z-50 animate-fadeIn">
+                        {productSections.map((section) => (
+                          <Link
+                            key={section.name}
+                            href={section.href}
+                            onClick={() => setProductsDropdownOpen(false)}
+                            className="block px-4 py-2.5 text-xs font-medium text-slate-700 hover:text-[#A9153B] hover:bg-slate-50 transition-colors"
+                          >
+                            {section.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
               const isActive = pathname === link.href;
               return (
                 <Link
@@ -115,6 +193,47 @@ export default function Navbar() {
         <div className="lg:hidden bg-white border-b border-slate-200 shadow-xl animate-fadeIn">
           <div className="px-4 pt-3 pb-6 space-y-2">
             {navLinks.map((link) => {
+              if (link.name === "Products") {
+                const isProductsActive = pathname === "/products" || pathname.startsWith("/products");
+                return (
+                  <div key={link.name} className="space-y-1">
+                    <button
+                      type="button"
+                      onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
+                      className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
+                        isProductsActive
+                          ? "bg-[#A9153B]/10 text-[#A9153B] font-bold"
+                          : "text-slate-700 hover:bg-slate-50 hover:text-slate-900"
+                      }`}
+                    >
+                      <span>{link.name}</span>
+                      <ChevronDown
+                        className={`h-4 w-4 transition-transform duration-200 ${
+                          mobileProductsOpen ? "rotate-180 text-[#A9153B]" : "text-slate-400"
+                        }`}
+                      />
+                    </button>
+
+                    {mobileProductsOpen && (
+                      <div className="pl-3 pr-2 py-1 space-y-1 bg-slate-50/70 rounded-lg border border-slate-100">
+                        {productSections.map((section) => (
+                          <Link
+                            key={section.name}
+                            href={section.href}
+                            onClick={() => {
+                              setMobileMenuOpen(false);
+                            }}
+                            className="block px-3 py-2 rounded-md text-xs font-medium text-slate-600 hover:text-[#A9153B] hover:bg-white transition-colors"
+                          >
+                            {section.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
               const isActive = pathname === link.href;
               return (
                 <Link

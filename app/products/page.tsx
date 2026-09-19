@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Image from "next/image";
 import SectionHeading from "@/components/SectionHeading";
 import ProductCard, { ProductItem } from "@/components/ProductCard";
@@ -24,10 +24,37 @@ import {
   PackageCheck
 } from "lucide-react";
 
+const categoryAnchorIds: Record<string, string> = {
+  "Hair Types": "hair-products",
+  "Extensions & Wefts": "extensions-wefts",
+  "Wigs & Hairpieces": "wigs-hairpieces",
+  "Cranial Prosthesis": "cranial-prosthesis",
+};
+
 export default function ProductsPage() {
   const [activeCategory, setActiveCategory] = useState<string>("All Products");
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedProduct, setSelectedProduct] = useState<ProductItem | null>(null);
+
+  useEffect(() => {
+    const handleHash = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        setActiveCategory("All Products");
+        const targetId = hash.replace("#", "");
+        setTimeout(() => {
+          const el = document.getElementById(targetId);
+          if (el) {
+            el.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 100);
+      }
+    };
+
+    handleHash();
+    window.addEventListener("hashchange", handleHash);
+    return () => window.removeEventListener("hashchange", handleHash);
+  }, []);
 
   // Filtered Products
   const filteredProducts = useMemo(() => {
@@ -128,8 +155,10 @@ export default function ProductsPage() {
               const catProducts = filteredProducts.filter((p) => p.category === cat.id);
               if (catProducts.length === 0) return null;
 
+              const anchorId = categoryAnchorIds[cat.id];
+
               return (
-                <div key={cat.id} className="space-y-8">
+                <div key={cat.id} id={anchorId} className="space-y-8 scroll-mt-32">
                   <div className="flex items-center gap-3 border-b border-slate-100 pb-4">
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 font-display">
                       {cat.name === "Hair Types" ? "Hair Products" : cat.name}
@@ -270,7 +299,7 @@ export default function ProductsPage() {
       </section>
 
       {/* 4. INDIAN HUMAN HAIR TEXTURES */}
-      <section className="py-24 bg-white border-b border-slate-100">
+      <section id="indian-human-hair-textures" className="py-24 bg-white border-b border-slate-100 scroll-mt-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
           
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-4">
@@ -372,7 +401,7 @@ export default function ProductsPage() {
       </section>
 
       {/* 5. MANUFACTURING & QUALITY CONTROL */}
-      <section className="py-24 bg-slate-50 border-b border-slate-200/80">
+      <section id="manufacturing-processing" className="py-24 bg-slate-50 border-b border-slate-200/80 scroll-mt-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-4">
@@ -491,7 +520,7 @@ export default function ProductsPage() {
       </section>
 
       {/* 7. COLOUR SHADES (FROM MASTER DOCUMENT) */}
-      <section className="py-24 bg-slate-50 border-b border-slate-200/80">
+      <section id="colour-shades" className="py-24 bg-slate-50 border-b border-slate-200/80 scroll-mt-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-4">

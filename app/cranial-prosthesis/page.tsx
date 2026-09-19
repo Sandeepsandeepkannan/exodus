@@ -178,20 +178,26 @@ export default function CranialProsthesisPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
             
             {/* CIX WIGS */}
-            <div className="p-8 rounded-2xl bg-[#A9153B] text-white shadow-elevated flex flex-col items-center justify-center space-y-3">
+            <Link
+              href="/cranial-prosthesis/cix-wigs"
+              className="p-8 rounded-2xl bg-[#A9153B] text-white shadow-elevated flex flex-col items-center justify-center space-y-3 hover:opacity-95 hover:scale-[1.02] transition-all duration-200 group cursor-pointer"
+            >
               <HeartHandshake className="h-10 w-10 text-white" />
               <h3 className="text-xl sm:text-2xl font-extrabold tracking-wider uppercase font-display">
                 CIX wigs
               </h3>
-            </div>
+            </Link>
 
             {/* THE WIG BANK */}
-            <div className="p-8 rounded-2xl bg-slate-900 text-white shadow-elevated flex flex-col items-center justify-center space-y-3">
+            <Link
+              href="/cranial-prosthesis/the-wig-bank"
+              className="p-8 rounded-2xl bg-slate-900 text-white shadow-elevated flex flex-col items-center justify-center space-y-3 hover:opacity-95 hover:scale-[1.02] transition-all duration-200 group cursor-pointer"
+            >
               <Building2 className="h-10 w-10 text-white" />
               <h3 className="text-xl sm:text-2xl font-extrabold tracking-wider uppercase font-display">
                 The wig bank
               </h3>
-            </div>
+            </Link>
 
           </div>
 
