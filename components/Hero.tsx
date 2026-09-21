@@ -21,11 +21,10 @@ export default function Hero() {
           >
             {/* Eyebrow badge */}
             <div className="space-y-2">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#A9153B]/5 border border-[#A9153B]/10 text-[#A9153B] text-[11px] sm:text-xs font-bold tracking-wider uppercase">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#A9153B] animate-pulse"></span>
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-[#A9153B] text-white text-[11px] sm:text-xs font-semibold tracking-wider uppercase shadow-sm">
+                <span className="h-1.5 w-1.5 rounded-full bg-white animate-pulse"></span>
                 Exodus Exports Pvt. Ltd. - Indian human hair exports
               </div>
-             
             </div>
 
             {/* Main Headline */}
@@ -116,7 +115,7 @@ export default function Hero() {
               
               <div className="relative rounded-xl overflow-hidden shadow-elevated border border-slate-100 bg-white">
                 <Image
-                  src="/images/products/hair_extensions.jpg"
+                  src="/images/products/image.png"
                   alt="Authentic Virgin Indian Human Hair Extensions"
                   width={800}
                   height={600}
