@@ -115,12 +115,12 @@ export default function Hero() {
               
               <div className="relative rounded-xl overflow-hidden shadow-elevated border border-slate-100 bg-white">
                 <Image
-                  src="/images/products/image.png"
+                  src="/images/products/IMG1.jpeg"
                   alt="Authentic Virgin Indian Human Hair Extensions"
                   width={800}
                   height={600}
                   priority
-                  className="w-full h-[420px] sm:h-[480px] object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-[420px] sm:h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 
                 {/* Overlay Badge */}
