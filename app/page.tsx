@@ -95,13 +95,13 @@ export default function HomePage() {
             </ScrollReveal>
 
             <ScrollReveal direction="left" className="lg:col-span-6 space-y-6">
-              <div className="relative rounded-2xl overflow-hidden shadow-elevated border border-slate-100 group">
+              <div className="relative w-[500px] rounded-2xl overflow-hidden shadow-elevated border border-slate-100">
                 <Image
-                  src="/images/products/hair_wigs.jpg"
+                  src="/images/products/WIG-7.png"
                   alt="Exodus Exports Pvt. Ltd. - Indian Human Hair"
-                  width={800}
-                  height={600}
-                  className="w-full h-[480px] object-cover transition-transform duration-700 group-hover:scale-105"
+                  width={700}
+                  height={700}
+                  className="w-[500px] h-[530px] "
                 />
                 <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/90 via-slate-900/60 to-transparent p-6 text-white">
                   <div className="font-bold text-lg sm:text-xl font-display">Exodus Exports Pvt. Ltd.</div>

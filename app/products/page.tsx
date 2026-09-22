@@ -7,7 +7,7 @@ import ProductCard, { ProductItem } from "@/components/ProductCard";
 import ProductModal from "@/components/ProductModal";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
-import { sampleProducts, productCategories, hairTextures, hairColours } from "@/data/products";
+import { sampleProducts, productCategories, hairTextures, hairColours, colorShades } from "@/data/products";
 import { 
   Search, 
   Sparkles, 
@@ -520,7 +520,7 @@ export default function ProductsPage() {
       </section>
 
       {/* 7. COLOUR SHADES (FROM MASTER DOCUMENT) */}
-      <section id="colour-shades" className="py-24 bg-slate-50 border-b border-slate-200/80 scroll-mt-28">
+      <section id="colour-shades" className="py-24 bg-white border-b border-slate-100 scroll-mt-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-4">
@@ -532,12 +532,26 @@ export default function ProductsPage() {
             </h2>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            {hairColours.map((shade, idx) => (
-              <div key={idx} className="p-6 rounded-xl bg-white border border-slate-200 shadow-subtle flex items-center gap-3">
-                <Palette className="h-5 w-5 text-[#A9153B] shrink-0" />
-                <span className="text-xs sm:text-sm font-bold text-slate-900 font-display">{shade}</span>
-              </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
+            {colorShades.map((shade, idx) => (
+              <ScrollReveal key={idx} delay={(idx % 5) * 0.04}>
+                <div className="group rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-subtle hover:shadow-elevated hover:border-[#A9153B]/30 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+                  <div className="relative aspect-square w-full bg-slate-100 overflow-hidden">
+                    <Image
+                      src={encodeURI(`/images/colorshades/${shade.filename}`)}
+                      alt={shade.name}
+                      fill
+                      sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 20vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="p-4 text-center border-t border-slate-100 bg-white flex-1 flex items-center justify-center">
+                    <span className="text-xs sm:text-sm font-bold text-slate-900 font-display group-hover:text-[#A9153B] transition-colors">
+                      {shade.name}
+                    </span>
+                  </div>
+                </div>
+              </ScrollReveal>
             ))}
           </div>
 

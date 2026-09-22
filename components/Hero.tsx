@@ -115,7 +115,7 @@ export default function Hero() {
               
               <div className="relative rounded-xl overflow-hidden shadow-elevated border border-slate-100 bg-white">
                 <Image
-                  src="/images/products/IMG1.jpeg"
+                  src="/images/products/model.jpg"
                   alt="Authentic Virgin Indian Human Hair Extensions"
                   width={800}
                   height={600}
@@ -124,17 +124,7 @@ export default function Hero() {
                 />
                 
                 {/* Overlay Badge */}
-                <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-lg border border-slate-100 shadow-md flex items-center justify-between transition-transform duration-300 group-hover:-translate-y-1">
-                  <div>
-                    <div className="text-[11px] font-semibold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
-                      <span className="h-1.5 w-1.5 rounded-full bg-[#A9153B]"></span> Master craftsmanship
-                    </div>
-                    <div className="text-xs sm:text-sm font-bold text-slate-900">Cuticle Intact Remy Hair</div>
-                  </div>
-                  <div className="h-7 w-7 rounded-full bg-[#A9153B]/10 flex items-center justify-center text-[#A9153B] font-bold text-[11px]">
-                    EE
-                  </div>
-                </div>
+                
               </div>
             </div>
           </motion.div>

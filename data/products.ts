@@ -11,6 +11,7 @@ export interface ProductItem {
     [key: string]: string | undefined;
   };
   image: string;
+  images?: string[];
 }
 
 export const productCategories = [
@@ -25,15 +26,15 @@ export const productCategories = [
     id: "Extensions & Wefts",
     name: "Extensions & Wefts",
     badge: "Custom Handcrafted",
-    shortDesc: "Hand-Tied Wefts, Micro Wefts, Single & Double Machine Wefts, Keratin Tips & Clip-Ins",
-    image: "/images/products/hair_extensions.jpg",
+    shortDesc: "Hand-Tied Wefts, Micro Wefts, Pre-Bonded Keratin Tips & Clip-Ins",
+    image: "/images/extensionsandwefts/Handtiedwefts/mainDSC01649.JPG",
   },
   {
     id: "Wigs & Hairpieces",
     name: "Wigs & Hairpieces",
     badge: "Master Craftsmanship",
-    shortDesc: "Lace Front Wigs, Full Lace Wigs, Workout Wigs, Closures, Frontals, Toppers & Toupees",
-    image: "/images/products/hair_wigs.jpg",
+    shortDesc: "Closure Wigs, Fishnet Wigs, Frontal Wigs & Topper Wigs",
+    image: "/images/wigsandhairpieces/Frontal-wigs/mainIMG_6856.JPG",
   },
   {
     id: "Cranial Prosthesis",
@@ -121,7 +122,7 @@ export const sampleProducts: ProductItem[] = [
 
   // --- EXTENSIONS & WEFTS ---
   {
-    id: "ext-1",
+    id: "ext-handtied",
     name: "Hand-Tied Wefts",
     category: "Extensions & Wefts",
     description: "Custom-made, processed in-house, and tailored to client specifications.",
@@ -130,10 +131,17 @@ export const sampleProducts: ProductItem[] = [
       processing: "In-house processed",
       customization: "Custom-made and tailored to client specifications",
     },
-    image: "/images/products/hair_extensions.jpg",
+    image: "/images/extensionsandwefts/Handtiedwefts/mainDSC01649.JPG",
+    images: [
+      "/images/extensionsandwefts/Handtiedwefts/mainDSC01649.JPG",
+      "/images/extensionsandwefts/Handtiedwefts/DSC00428.JPG",
+      "/images/extensionsandwefts/Handtiedwefts/HANDTIED-6.JPG",
+      "/images/extensionsandwefts/Handtiedwefts/IMG_0830.JPG",
+      "/images/extensionsandwefts/Handtiedwefts/IMG_1143.JPG",
+    ],
   },
   {
-    id: "ext-2",
+    id: "ext-micro",
     name: "Micro Wefts",
     category: "Extensions & Wefts",
     description: "Custom-made, processed in-house, and tailored to client specifications.",
@@ -142,22 +150,17 @@ export const sampleProducts: ProductItem[] = [
       processing: "In-house processed",
       customization: "Custom-made and tailored to client specifications",
     },
-    image: "/images/products/hair_extensions.jpg",
+    image: "/images/extensionsandwefts/Microwefts/mainN-3 (1).JPG",
+    images: [
+      "/images/extensionsandwefts/Microwefts/mainN-3 (1).JPG",
+      "/images/extensionsandwefts/Microwefts/DSC00429.JPG",
+      "/images/extensionsandwefts/Microwefts/IMG_0770.JPG",
+      "/images/extensionsandwefts/Microwefts/IMG_1298.JPG",
+      "/images/extensionsandwefts/Microwefts/MICRO WEFT.jpg",
+    ],
   },
   {
-    id: "ext-3",
-    name: "Single & Double Machine Wefts",
-    category: "Extensions & Wefts",
-    description: "Custom-made, processed in-house, and tailored to client specifications.",
-    specs: {
-      type: "Single & Double Machine Wefts",
-      processing: "In-house processed",
-      customization: "Custom-made and tailored to client specifications",
-    },
-    image: "/images/products/hair_extensions.jpg",
-  },
-  {
-    id: "ext-4",
+    id: "ext-keratin",
     name: "Pre-Bonded Keratin Tips",
     category: "Extensions & Wefts",
     description: "Custom-made, processed in-house, and tailored to client specifications.",
@@ -166,10 +169,19 @@ export const sampleProducts: ProductItem[] = [
       processing: "In-house processed",
       customization: "Custom-made and tailored to client specifications",
     },
-    image: "/images/products/hair_extensions.jpg",
+    image: "/images/extensionsandwefts/Keratin/mainDSC_0527.JPG",
+    images: [
+      "/images/extensionsandwefts/Keratin/mainDSC_0527.JPG",
+      "/images/extensionsandwefts/Keratin/DSC_0524.JPG",
+      "/images/extensionsandwefts/Keratin/DSC_0526.JPG",
+      "/images/extensionsandwefts/Keratin/DSC_0537.JPG",
+      "/images/extensionsandwefts/Keratin/IMG_0787.JPG",
+      "/images/extensionsandwefts/Keratin/IMG_6136.JPG",
+      "/images/extensionsandwefts/Keratin/IMG_6187.JPG",
+    ],
   },
   {
-    id: "ext-5",
+    id: "ext-clips",
     name: "Clip-In Extensions",
     category: "Extensions & Wefts",
     description: "Custom-made, processed in-house, and tailored to client specifications.",
@@ -178,48 +190,19 @@ export const sampleProducts: ProductItem[] = [
       processing: "In-house processed",
       customization: "Custom-made and tailored to client specifications",
     },
-    image: "/images/products/hair_extensions.jpg",
+    image: "/images/extensionsandwefts/Clips/mainCLIPS-14.JPG",
+    images: [
+      "/images/extensionsandwefts/Clips/mainCLIPS-14.JPG",
+      "/images/extensionsandwefts/Clips/CLIPS-21.JPG",
+      "/images/extensionsandwefts/Clips/IMG_7688.JPG",
+      "/images/extensionsandwefts/Clips/IMG_9424.JPG",
+      "/images/extensionsandwefts/Clips/IMG_9425.JPG",
+    ],
   },
 
   // --- WIGS & HAIRPIECES ---
   {
-    id: "wig-1",
-    name: "Lace Front Wigs",
-    category: "Wigs & Hairpieces",
-    description: "Custom-made, processed in-house, and tailored to client specifications.",
-    specs: {
-      type: "Lace Front Wigs",
-      processing: "In-house processed",
-      customization: "Custom-made and tailored to client specifications",
-    },
-    image: "/images/products/hair_wigs.jpg",
-  },
-  {
-    id: "wig-2",
-    name: "Full Lace Wigs",
-    category: "Wigs & Hairpieces",
-    description: "Custom-made, processed in-house, and tailored to client specifications.",
-    specs: {
-      type: "Full Lace Wigs",
-      processing: "In-house processed",
-      customization: "Custom-made and tailored to client specifications",
-    },
-    image: "/images/products/hair_wigs.jpg",
-  },
-  {
-    id: "wig-3",
-    name: "Workout Wigs",
-    category: "Wigs & Hairpieces",
-    description: "Custom-made, processed in-house, and tailored to client specifications.",
-    specs: {
-      type: "Workout Wigs",
-      processing: "In-house processed",
-      customization: "Custom-made and tailored to client specifications",
-    },
-    image: "/images/products/hair_wigs.jpg",
-  },
-  {
-    id: "wig-4",
+    id: "wig-closure",
     name: "Closure Wigs",
     category: "Wigs & Hairpieces",
     description: "Custom-made, processed in-house, and tailored to client specifications.",
@@ -228,67 +211,77 @@ export const sampleProducts: ProductItem[] = [
       processing: "In-house processed",
       customization: "Custom-made and tailored to client specifications",
     },
-    image: "/images/products/hair_wigs.jpg",
+    image: "/images/wigsandhairpieces/Closure-wigs/main20211230_104834.jpg",
+    images: [
+      "/images/wigsandhairpieces/Closure-wigs/main20211230_104834.jpg",
+      "/images/wigsandhairpieces/Closure-wigs/20211230_120302.jpg",
+      "/images/wigsandhairpieces/Closure-wigs/20220104_131403.jpg",
+      "/images/wigsandhairpieces/Closure-wigs/20220104_131403 (1).jpg",
+      "/images/wigsandhairpieces/Closure-wigs/IMG_5019.JPG",
+      "/images/wigsandhairpieces/Closure-wigs/IMG_5200.JPG",
+      "/images/wigsandhairpieces/Closure-wigs/IMG_5204.JPG",
+    ],
   },
   {
-    id: "wig-5",
-    name: "Fishnet",
+    id: "wig-fishnet",
+    name: "Fishnet Wigs",
     category: "Wigs & Hairpieces",
     description: "Custom-made, processed in-house, and tailored to client specifications.",
     specs: {
-      type: "Fishnet",
+      type: "Fishnet Wigs",
       processing: "In-house processed",
       customization: "Custom-made and tailored to client specifications",
     },
-    image: "/images/products/hair_wigs.jpg",
+    image: "/images/wigsandhairpieces/Fishnet-wigs/mainFishnet-5.jpg",
+    images: [
+      "/images/wigsandhairpieces/Fishnet-wigs/mainFishnet-5.jpg",
+      "/images/wigsandhairpieces/Fishnet-wigs/FISHNET_1.JPG",
+      "/images/wigsandhairpieces/Fishnet-wigs/Fishnet -1.jpg",
+      "/images/wigsandhairpieces/Fishnet-wigs/Fishnet-3.jpg",
+      "/images/wigsandhairpieces/Fishnet-wigs/Fishnet-4.jpg",
+      "/images/wigsandhairpieces/Fishnet-wigs/Fishnet-7.jpg",
+      "/images/wigsandhairpieces/Fishnet-wigs/Fishnet-8.jpg",
+    ],
   },
   {
-    id: "wig-6",
-    name: "Lace Closures & Frontals",
+    id: "wig-frontal",
+    name: "Frontal Wigs",
     category: "Wigs & Hairpieces",
     description: "Custom-made, processed in-house, and tailored to client specifications.",
     specs: {
-      type: "Lace Closures & Frontals",
+      type: "Frontal Wigs",
       processing: "In-house processed",
       customization: "Custom-made and tailored to client specifications",
     },
-    image: "/images/products/hair_wigs.jpg",
+    image: "/images/wigsandhairpieces/Frontal-wigs/mainIMG_6856.JPG",
+    images: [
+      "/images/wigsandhairpieces/Frontal-wigs/mainIMG_6856.JPG",
+      "/images/wigsandhairpieces/Frontal-wigs/IMG_6684.JPG",
+      "/images/wigsandhairpieces/Frontal-wigs/IMG_6854.JPG",
+      "/images/wigsandhairpieces/Frontal-wigs/IMG_7100.JPG",
+    ],
   },
   {
-    id: "wig-7",
-    name: "Toppers & Ponytails & Patches",
+    id: "wig-topper",
+    name: "Topper Wigs",
     category: "Wigs & Hairpieces",
     description: "Custom-made, processed in-house, and tailored to client specifications.",
     specs: {
-      type: "Toppers & Ponytails & Patches",
+      type: "Topper Wigs",
       processing: "In-house processed",
       customization: "Custom-made and tailored to client specifications",
     },
-    image: "/images/products/hair_wigs.jpg",
-  },
-  {
-    id: "wig-8",
-    name: "Fringes & volumizer",
-    category: "Wigs & Hairpieces",
-    description: "Custom-made, processed in-house, and tailored to client specifications.",
-    specs: {
-      type: "Fringes & volumizer",
-      processing: "In-house processed",
-      customization: "Custom-made and tailored to client specifications",
-    },
-    image: "/images/products/hair_wigs.jpg",
-  },
-  {
-    id: "wig-9",
-    name: "Toupee",
-    category: "Wigs & Hairpieces",
-    description: "Custom-made, processed in-house, and tailored to client specifications.",
-    specs: {
-      type: "Toupee",
-      processing: "In-house processed",
-      customization: "Custom-made and tailored to client specifications",
-    },
-    image: "/images/products/hair_wigs.jpg",
+    image: "/images/wigsandhairpieces/Topper-wigs/mainTopper-6.jpg",
+    images: [
+      "/images/wigsandhairpieces/Topper-wigs/mainTopper-6.jpg",
+      "/images/wigsandhairpieces/Topper-wigs/20211012_162705.jpg",
+      "/images/wigsandhairpieces/Topper-wigs/20211230_103242.jpg",
+      "/images/wigsandhairpieces/Topper-wigs/20211230_120924.jpg",
+      "/images/wigsandhairpieces/Topper-wigs/Topper close-up-3.jpg",
+      "/images/wigsandhairpieces/Topper-wigs/Topper-1.jpg",
+      "/images/wigsandhairpieces/Topper-wigs/Topper-20.JPG",
+      "/images/wigsandhairpieces/Topper-wigs/Topper-5.JPG",
+    ],
   },
 
   // --- CRANIAL PROSTHESIS ---
@@ -341,3 +334,32 @@ export const hairColours = [
   "Natural Grey Hair – Salt & Pepper",
   "White Blonde",
 ];
+
+export interface ColorShadeItem {
+  name: string;
+  filename: string;
+}
+
+export const colorShades: ColorShadeItem[] = [
+  { name: "AUBURN", filename: "AUBURN.JPG" },
+  { name: "BEIGE BLONDE", filename: "BEIGE BLONDE.JPG" },
+  { name: "CHESTNUT BROWN", filename: "CHESTNUT BROWN.JPG" },
+  { name: "CHOCOLATE BROWN", filename: "CHOCOLATE BROWN.JPG" },
+  { name: "DARK GREY", filename: "DARK GREY.JPG" },
+  { name: "GARNET", filename: "GARNET.JPG" },
+  { name: "GOLDEN BLONDE", filename: "GOLDEN BLONDE.JPG" },
+  { name: "GOLDEN BROWN", filename: "GOLDEN BROWN.JPG" },
+  { name: "HONEY BLONDE", filename: "HONEY BLONDE.JPG" },
+  { name: "JET BLACK 1", filename: "JET BLACK 1.png" },
+  { name: "LIGHT BLONDE", filename: "LIGHT BLONDE.JPG" },
+  { name: "LIGHT BROWN", filename: "LIGHT BROWN.png" },
+  { name: "LIGHT GOLDEN BLONDE", filename: "LIGHT GOLDEN BLONDE.png" },
+  { name: "MEDIUM GREY", filename: "MEDIUM GREY.JPG" },
+  { name: "MILD GREY", filename: "MILD GREY.JPG" },
+  { name: "NATURAL 1B", filename: "NATURAL 1B .png" },
+  { name: "OMBRE", filename: "OMBRE.JPG" },
+  { name: "PINK AUBURN", filename: "PINK AUBURN.JPG" },
+  { name: "RUBY RED", filename: "RUBY RED.JPG" },
+  { name: "WHITE BLONDE", filename: "WHITE BLONDE.png" },
+];
+

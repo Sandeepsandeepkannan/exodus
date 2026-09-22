@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { X, Award, Package, CheckCircle2, MapPin, ArrowRight, ShieldCheck } from "lucide-react";
@@ -11,7 +12,18 @@ interface ProductModalProps {
 }
 
 export default function ProductModal({ product, onClose }: ProductModalProps) {
+  const [activeImage, setActiveImage] = useState<string>("");
+
+  useEffect(() => {
+    if (product) {
+      setActiveImage(product.image);
+    }
+  }, [product]);
+
   if (!product) return null;
+
+  const currentImage = activeImage || product.image;
+  const galleryImages = product.images && product.images.length > 0 ? product.images : [product.image];
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-slate-950/70 backdrop-blur-md animate-in fade-in duration-200">
@@ -31,22 +43,48 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
         </button>
 
         {/* Product Image Column */}
-        <div className="relative md:w-5/12 h-64 md:h-auto bg-slate-100 shrink-0">
-          <Image
-            src={product.image}
-            alt={product.name}
-            fill
-            priority
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent md:hidden" />
-          
-          <div className="absolute top-4 left-4">
-            <span className="bg-[#A9153B] text-white text-[11px] font-bold px-3 py-1 rounded-md uppercase tracking-wider shadow-sm flex items-center gap-1.5">
-              <span className="h-1.5 w-1.5 rounded-full bg-white"></span>
-              {product.category}
-            </span>
+        <div className="relative md:w-5/12 bg-slate-100 shrink-0 flex flex-col">
+          <div className="relative h-64 md:h-80 w-full bg-slate-100 overflow-hidden">
+            <Image
+              src={currentImage}
+              alt={product.name}
+              fill
+              priority
+              className="object-cover transition-all duration-300"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent md:hidden" />
+            
+            <div className="absolute top-4 left-4">
+              <span className="bg-[#A9153B] text-white text-[11px] font-bold px-3 py-1 rounded-md uppercase tracking-wider shadow-sm flex items-center gap-1.5">
+                <span className="h-1.5 w-1.5 rounded-full bg-white"></span>
+                {product.category}
+              </span>
+            </div>
           </div>
+
+          {/* Thumbnail Gallery if multiple images exist */}
+          {galleryImages.length > 1 && (
+            <div className="p-3 bg-slate-50 border-t border-slate-200 flex items-center gap-2 overflow-x-auto">
+              {galleryImages.map((img, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setActiveImage(img)}
+                  className={`relative h-12 w-12 rounded-lg overflow-hidden border-2 shrink-0 transition-all ${
+                    currentImage === img
+                      ? "border-[#A9153B] shadow-sm scale-105"
+                      : "border-slate-200 opacity-70 hover:opacity-100"
+                  }`}
+                >
+                  <Image
+                    src={img}
+                    alt={`${product.name} thumbnail ${idx + 1}`}
+                    fill
+                    className="object-cover"
+                  />
+                </button>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Product Details Column */}

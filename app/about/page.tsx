@@ -19,8 +19,55 @@ import {
   GraduationCap,
   Trophy,
   Tv,
-  Newspaper
+  Newspaper,
+  ExternalLink,
+  Video,
+  Play
 } from "lucide-react";
+
+function FacebookIcon({ className = "h-5 w-5" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <rect width="24" height="24" rx="6" fill="#1877F2" />
+      <path
+        d="M15.12 12.75L15.6 9.6H12.58V7.55C12.58 6.69 13 5.85 14.34 5.85H15.72V3.17C15.72 3.17 14.47 2.96 13.27 2.96C10.78 2.96 9.15 4.47 9.15 7.21V9.6H6.38V12.75H9.15V20.38C9.71 20.47 10.28 20.51 10.86 20.51C11.44 20.51 12.02 20.47 12.58 20.38V12.75H15.12Z"
+        fill="#ffffff"
+      />
+    </svg>
+  );
+}
+
+function InstagramIcon({ className = "h-5 w-5" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="about-instagram-gradient" x1="100%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stopColor="#bc1888" />
+          <stop offset="30%" stopColor="#cc2366" />
+          <stop offset="60%" stopColor="#dc2743" />
+          <stop offset="85%" stopColor="#e6683c" />
+          <stop offset="100%" stopColor="#f09433" />
+        </linearGradient>
+      </defs>
+      <rect width="24" height="24" rx="6" fill="url(#about-instagram-gradient)" />
+      <rect x="4.5" y="4.5" width="15" height="15" rx="4.2" stroke="#ffffff" strokeWidth="1.6" fill="none" />
+      <circle cx="12" cy="12" r="3.6" stroke="#ffffff" strokeWidth="1.6" fill="none" />
+      <circle cx="16.5" cy="7.5" r="0.9" fill="#ffffff" />
+    </svg>
+  );
+}
+
+function LinkedInIcon({ className = "h-5 w-5" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <rect width="24" height="24" rx="6" fill="#0A66C2" />
+      <path
+        d="M7.44 9.17H4.72V17.84H7.44V9.17ZM6.08 4.96C5.21 4.96 4.5 5.67 4.5 6.54C4.5 7.41 5.21 8.12 6.08 8.12C6.95 8.12 7.66 7.41 7.66 6.54C7.66 5.67 6.95 4.96 6.08 4.96ZM19.28 12.39C19.28 9.72 17.85 8.48 15.95 8.48C14.42 8.48 13.73 9.32 13.35 9.91V9.17H10.63C10.67 9.94 10.63 17.84 10.63 17.84H13.35V13H13.35C13.35 12.75 13.37 12.49 13.44 12.31C13.65 11.8 14.12 11.26 14.92 11.26C15.96 11.26 16.38 12.05 16.38 13.22V17.84H19.1V12.87C19.1 12.71 19.28 12.55 19.28 12.39Z"
+        fill="#ffffff"
+      />
+    </svg>
+  );
+}
 
 export const metadata = {
   title: "About Us | Exodus Exports Pvt. Ltd. - Indian Human Hair Exports",
@@ -474,6 +521,136 @@ export default function AboutPage() {
             </div>
           </div>
 
+        </div>
+      </section>
+
+      {/* DIGITAL MEDIA SECTION */}
+      <section className="py-20 bg-white border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+          <ScrollReveal className="text-center max-w-3xl mx-auto space-y-3">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#A9153B]/5 border border-[#A9153B]/10 text-[#A9153B] text-[11px] sm:text-xs font-bold tracking-wider uppercase">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#A9153B]"></span> Connect & Media
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-display">
+              Digital media
+            </h2>
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {/* Facebook */}
+            <ScrollReveal delay={0.05}>
+              <a
+                href="https://www.facebook.com/exodusexportspvtltd/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-5 rounded-2xl bg-slate-50 border border-slate-200 shadow-subtle flex items-center justify-between hover:bg-white hover:border-[#A9153B]/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+              >
+                <div className="flex items-center gap-3.5">
+                  <FacebookIcon className="h-9 w-9 rounded-lg shrink-0 shadow-sm" />
+                  <span className="font-bold text-slate-900 text-sm sm:text-base font-display group-hover:text-[#A9153B] transition-colors">
+                    Facebook
+                  </span>
+                </div>
+                <ExternalLink className="h-4 w-4 text-slate-400 group-hover:text-[#A9153B] group-hover:translate-x-0.5 transition-all shrink-0" />
+              </a>
+            </ScrollReveal>
+
+            {/* Instagram */}
+            <ScrollReveal delay={0.1}>
+              <a
+                href="https://www.instagram.com/exodus.exports/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-5 rounded-2xl bg-slate-50 border border-slate-200 shadow-subtle flex items-center justify-between hover:bg-white hover:border-[#A9153B]/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+              >
+                <div className="flex items-center gap-3.5">
+                  <InstagramIcon className="h-9 w-9 rounded-lg shrink-0 shadow-sm" />
+                  <span className="font-bold text-slate-900 text-sm sm:text-base font-display group-hover:text-[#A9153B] transition-colors">
+                    Instagram
+                  </span>
+                </div>
+                <ExternalLink className="h-4 w-4 text-slate-400 group-hover:text-[#A9153B] group-hover:translate-x-0.5 transition-all shrink-0" />
+              </a>
+            </ScrollReveal>
+
+            {/* LinkedIn */}
+            <ScrollReveal delay={0.15}>
+              <a
+                href="https://www.linkedin.com/in/sheeba-paul-48123455/?originalSubdomain=in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-5 rounded-2xl bg-slate-50 border border-slate-200 shadow-subtle flex items-center justify-between hover:bg-white hover:border-[#A9153B]/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+              >
+                <div className="flex items-center gap-3.5">
+                  <LinkedInIcon className="h-9 w-9 rounded-lg shrink-0 shadow-sm" />
+                  <span className="font-bold text-slate-900 text-sm sm:text-base font-display group-hover:text-[#A9153B] transition-colors">
+                    LinkedIn
+                  </span>
+                </div>
+                <ExternalLink className="h-4 w-4 text-slate-400 group-hover:text-[#A9153B] group-hover:translate-x-0.5 transition-all shrink-0" />
+              </a>
+            </ScrollReveal>
+
+            {/* eCancer */}
+            <ScrollReveal delay={0.2}>
+              <a
+                href="https://ecancer.org/en/video/12107-alternative-livelihood-training-programme-for-rural-women-who-are-employed-in-the-tobacco-industry-in-india"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-5 rounded-2xl bg-slate-50 border border-slate-200 shadow-subtle flex items-center justify-between hover:bg-white hover:border-[#A9153B]/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+              >
+                <div className="flex items-center gap-3.5">
+                  <div className="h-9 w-9 rounded-lg bg-[#A9153B]/10 text-[#A9153B] flex items-center justify-center shrink-0 shadow-sm">
+                    <Video className="h-5 w-5" />
+                  </div>
+                  <span className="font-bold text-slate-900 text-sm sm:text-base font-display group-hover:text-[#A9153B] transition-colors">
+                    eCancer
+                  </span>
+                </div>
+                <ExternalLink className="h-4 w-4 text-slate-400 group-hover:text-[#A9153B] group-hover:translate-x-0.5 transition-all shrink-0" />
+              </a>
+            </ScrollReveal>
+
+            {/* eCancer video */}
+            <ScrollReveal delay={0.25}>
+              <a
+                href="https://vimeo.com/ecancer/download/1018634498/56d70a2b61"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-5 rounded-2xl bg-slate-50 border border-slate-200 shadow-subtle flex items-center justify-between hover:bg-white hover:border-[#A9153B]/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+              >
+                <div className="flex items-center gap-3.5">
+                  <div className="h-9 w-9 rounded-lg bg-slate-900 text-white flex items-center justify-center shrink-0 shadow-sm">
+                    <Play className="h-4 w-4 fill-white translate-x-0.5" />
+                  </div>
+                  <span className="font-bold text-slate-900 text-sm sm:text-base font-display group-hover:text-[#A9153B] transition-colors">
+                    eCancer video
+                  </span>
+                </div>
+                <ExternalLink className="h-4 w-4 text-slate-400 group-hover:text-[#A9153B] group-hover:translate-x-0.5 transition-all shrink-0" />
+              </a>
+            </ScrollReveal>
+
+            {/* World Cancer Day */}
+            <ScrollReveal delay={0.3}>
+              <a
+                href="https://www.worldcancerday.org/form/submit-wcd-activity?token=WxNBOjHWIbWeMXC3YwmVTr_sT79hLuzhenpiTY6-2Nk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-5 rounded-2xl bg-slate-50 border border-slate-200 shadow-subtle flex items-center justify-between hover:bg-white hover:border-[#A9153B]/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+              >
+                <div className="flex items-center gap-3.5">
+                  <div className="h-9 w-9 rounded-lg bg-[#A9153B]/10 text-[#A9153B] flex items-center justify-center shrink-0 shadow-sm">
+                    <Globe className="h-5 w-5" />
+                  </div>
+                  <span className="font-bold text-slate-900 text-sm sm:text-base font-display group-hover:text-[#A9153B] transition-colors">
+                    World Cancer Day
+                  </span>
+                </div>
+                <ExternalLink className="h-4 w-4 text-slate-400 group-hover:text-[#A9153B] group-hover:translate-x-0.5 transition-all shrink-0" />
+              </a>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 
