@@ -48,7 +48,7 @@ export default function ContactForm() {
         Send a B2B hair export inquiry
       </h3>
       <p className="text-xs sm:text-sm text-slate-600 mb-8">
-        Fill in your requirements below. Our Chennai international export specialists respond within 24 business hours.
+        Fill in your requirements below.
       </p>
 
       {status === "success" && (

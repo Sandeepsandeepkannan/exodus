@@ -124,7 +124,9 @@ export default function CixWigsPage() {
 
           <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-subtle max-w-4xl mx-auto space-y-3">
             <p className="text-xs sm:text-sm text-slate-800">
-              <strong className="text-slate-900">Who makes the wigs?</strong> Former beedi-rolling women, now trained artisans.
+              <strong className="text-sm sm:text-base font-bold text-[#A9153B]">
+    Who makes the wigs?
+  </strong>{" "} Former beedi-rolling women, now trained artisans.
             </p>
           </div>
 

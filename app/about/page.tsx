@@ -2,6 +2,7 @@ import Image from "next/image";
 import SectionHeading from "@/components/SectionHeading";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
+import CertificateGallery from "@/components/CertificateGallery";
 import { 
   ShieldCheck, 
   HeartHandshake, 
@@ -15,7 +16,6 @@ import {
   Phone,
   Mail,
   Award,
-  User,
   GraduationCap,
   Trophy,
   Tv,
@@ -135,7 +135,7 @@ export default function AboutPage() {
 
               <div className="space-y-5 text-slate-600 text-sm sm:text-base leading-relaxed">
                 <p>
-                  We are entrepreneurs who have built this company over more than two decades—guided by strong values, resilience, and an unwavering commitment to integrity, even though the toughest business challenges.
+                  We are entrepreneurs who have built this company over more than two decades—guided by strong values, resilience, and an unwavering commitment to integrity, even the toughest business challenges.
                 </p>
                 <p>
                   What we value most is the trust our clients place in us. We believe in the courage to take responsible risks, the discipline to deliver consistent quality, the honesty to acknowledge our mistakes, and the determination to improve every day. We are simple people offering exceptional products, backed by principles that never change.
@@ -185,29 +185,20 @@ export default function AboutPage() {
             <ScrollReveal direction="right" className="lg:col-span-5 space-y-6">
               <div className="relative rounded-2xl overflow-hidden shadow-elevated border-2 border-slate-200/80 bg-white p-2">
                 
-                {/* Founder Photo Placeholder Container */}
-                <div className="relative w-full aspect-[4/5] rounded-xl bg-slate-100 border border-dashed border-slate-300 flex flex-col items-center justify-center text-center p-8 overflow-hidden group">
-                  
-                  <div className="h-20 w-20 rounded-full bg-[#A9153B]/5 border border-[#A9153B]/20 flex items-center justify-center text-[#A9153B] mb-4 group-hover:scale-105 transition-transform duration-300">
-                    <User className="h-10 w-10 text-[#A9153B]/70" />
-                  </div>
-                  
-                  <div className="space-y-1">
-                    <div className="text-sm sm:text-base font-bold text-slate-800 font-display">
-                      Mrs. Sheeba Paul
-                    </div>
-                    <div className="text-[11px] text-[#A9153B] font-semibold">
-                      Managing Director – Exodus Exports (P). Ltd.
-                    </div>
-                    <div className="text-[10px] text-slate-400 mt-2">
-                      [Founder Photograph Area]
-                    </div>
-                  </div>
+                {/* Founder Photo Container */}
+                <div className="relative w-full aspect-[4/5] rounded-xl bg-slate-100 overflow-hidden group">
+                  <Image
+                    src="/images/founder.jpg"
+                    alt="Mrs. Sheeba Paul - Managing Director, Exodus Exports"
+                    fill
+                    priority
+                    sizes="(max-width: 1024px) 100vw, 40vw"
+                    className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                  />
 
-                  <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-2.5 py-1 rounded-md text-[10px] font-bold text-[#A9153B] border border-slate-200 uppercase tracking-wider">
+                  <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-2.5 py-1 rounded-md text-[10px] font-bold text-[#A9153B] border border-slate-200 uppercase tracking-wider shadow-sm">
                     28+ years experience
                   </div>
-
                 </div>
 
                 <div className="p-4 text-center space-y-1">
@@ -355,7 +346,7 @@ export default function AboutPage() {
 
       {/* AWARDS & ACCOLADES */}
       <section className="py-20 bg-white border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-3">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-display">
               Awards & accolades
@@ -395,132 +386,189 @@ export default function AboutPage() {
               </div>
             </ScrollReveal>
           </div>
+
+          {/* Certificate Gallery */}
+          <ScrollReveal delay={0.15}>
+            <CertificateGallery />
+          </ScrollReveal>
         </div>
       </section>
 
       {/* PRESS & TV INTERVIEWS */}
       <section className="py-24 bg-slate-50 border-b border-slate-200/80">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           
-          <ScrollReveal className="text-center max-w-4xl mx-auto space-y-4">
+          <ScrollReveal className="text-center max-w-4xl mx-auto space-y-3">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-display">
               Press & TV interviews
             </h2>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4 text-left">
-              <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-subtle space-y-1">
-                <div className="text-[11px] font-bold text-[#A9153B] flex items-center gap-1.5">
-                  <Tv className="h-3.5 w-3.5" /> SWR TV (Germany)
-                </div>
-                <div className="text-[11px] sm:text-xs text-slate-700 font-medium">
-                  International documentary (2009) telecast on DW TV & global media coverage.
-                </div>
-              </div>
-
-              <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-subtle space-y-1">
-                <div className="text-[11px] font-bold text-[#A9153B] flex items-center gap-1.5">
-                  <Newspaper className="h-3.5 w-3.5" /> Süddeutsche Zeitung
-                </div>
-                <div className="text-[11px] sm:text-xs text-slate-700 font-medium">
-                  Interview published in Germany’s leading daily newspaper (2008).
-                </div>
-              </div>
-
-              <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-subtle space-y-1">
-                <div className="text-[11px] font-bold text-[#A9153B] flex items-center gap-1.5">
-                  <Tv className="h-3.5 w-3.5" /> TF-1 TV (France)
-                </div>
-                <div className="text-[11px] sm:text-xs text-slate-700 font-medium">
-                  International documentary produced in 2025 and telecast in 2026 in France.
-                </div>
-              </div>
-
-              <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-subtle space-y-1">
-                <div className="text-[11px] font-bold text-[#A9153B] flex items-center gap-1.5">
-                  <Globe className="h-3.5 w-3.5" /> CIIS (USA)
-                </div>
-                <div className="text-[11px] sm:text-xs text-slate-700 font-medium">
-                  Featured interviewee for California Institute of Integral Studies (USA).
-                </div>
-              </div>
-            </div>
           </ScrollReveal>
 
-          {/* SÜDDEUTSCHE ZEITUNG ARTICLE FEATURE */}
-          <div className="bg-white p-8 sm:p-12 rounded-2xl border border-slate-200 shadow-subtle space-y-10">
-            <div className="text-center space-y-2 max-w-3xl mx-auto">
-              <div className="text-[11px] font-bold text-slate-500 uppercase tracking-widest">
-                Süddeutsche Zeitung — Samstag/Sonntag, 12./13. Juli 2008 Nr. 161 / Seite 3 — DIE SEITE DREI
-              </div>
-              <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 font-display">
-                Der goldene Schnitt
-              </h3>
-              <p className="text-xs sm:text-sm text-slate-600 italic">
-                „Im Tempel von Tirupati lassen sich täglich 50 000 Menschen kahlscheren – mit diesem göttlichen Opfer schmückt sich der Rest der Welt für gutes Geld“
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-              <div className="lg:col-span-5 space-y-4">
-                <div className="relative aspect-[3/4] w-full overflow-hidden rounded-xl bg-slate-950 border border-slate-200">
-                  <Image
-                    src="/images/article/suddeutsche_newspaper_page_1.jpg"
-                    alt="Süddeutsche Zeitung - Der goldene Schnitt Article Scan"
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 40vw"
-                    className="object-contain"
-                  />
-                </div>
-                <div className="grid grid-cols-3 gap-2">
-                  <div className="relative aspect-square rounded-lg overflow-hidden border border-slate-200">
-                    <Image
-                      src="/images/article/suddeutsche_article_p1_1_Im1.jpg"
-                      alt="Tirupati Temple Hair Tonsuring"
-                      fill
-                      sizes="33vw"
-                      className="object-cover"
-                    />
+          <div className="space-y-10 max-w-5xl mx-auto">
+            
+            {/* 1. SWR TV (Germany) */}
+            <ScrollReveal delay={0.05}>
+              <div className="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-subtle space-y-3">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="space-y-2">
+                    <div className="text-xs sm:text-sm font-bold text-[#A9153B] flex items-center gap-2 uppercase tracking-wider font-display">
+                      <Tv className="h-4 w-4 text-[#A9153B]" />
+                      <a
+                        href="https://drive.google.com/file/d/1XugbTp0oCTAQ0bjPrA1d7XxZyCjxiiK5/view"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline flex items-center gap-1.5"
+                      >
+                        SWR TV (Germany)
+                        <ExternalLink className="h-3.5 w-3.5" />
+                      </a>
+                    </div>
+                    <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-display">
+                      International documentary telecast on DW TV
+                    </h3>
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-3xl">
+                      International documentary (2009) telecast on DW TV &amp; global media coverage.
+                    </p>
                   </div>
-                  <div className="relative aspect-square rounded-lg overflow-hidden border border-slate-200">
-                    <Image
-                      src="/images/article/suddeutsche_article_p1_2_Im2.jpg"
-                      alt="Hair Sorting and Craftsmanship"
-                      fill
-                      sizes="33vw"
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="relative aspect-square rounded-lg overflow-hidden border border-slate-200">
-                    <Image
-                      src="/images/article/suddeutsche_article_p1_3_Im3.jpg"
-                      alt="Indian Human Hair Bundles"
-                      fill
-                      sizes="33vw"
-                      className="object-cover"
-                    />
-                  </div>
+                  <a
+                    href="https://drive.google.com/file/d/1XugbTp0oCTAQ0bjPrA1d7XxZyCjxiiK5/view"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#A9153B] text-white text-xs font-bold shrink-0 hover:bg-[#A9153B]/90 transition-all self-start sm:self-center shadow-sm"
+                  >
+                    <Play className="h-3.5 w-3.5 fill-current" />
+                    <span>Watch video</span>
+                    <ExternalLink className="h-3.5 w-3.5 ml-0.5" />
+                  </a>
                 </div>
               </div>
+            </ScrollReveal>
 
-              <div className="lg:col-span-7 space-y-4">
-                <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-3">
-                  <h4 className="font-bold text-slate-900 text-xs font-display uppercase tracking-wider text-[#A9153B]">
-                    Feature on Mrs. Sheeba Paul & Exodus Exports
-                  </h4>
-                  <blockquote className="border-l-4 border-[#A9153B] pl-4 italic text-slate-800 text-xs sm:text-sm leading-relaxed">
-                    „Sheeba Paul ist seit 2002 im Geschäft. Eine Frau, das ist in Indien einmalig. Nicht weit weg von ‚A.L. Kishore’s Hair Co‘ hat sie ihre Firma ‚Exodus Exports‘, 35 Mitarbeiter. Oben am Dach trocknet das neu gelieferte, frisch gewaschene Haar, Hunderte Zöpfe, an Wäscheständern aufgehängt.“
-                  </blockquote>
-                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                    „Sheeba Paul ist klein und energisch, das ist auch nötig in diesem Geschäft, in dem es nur Barzahlung gibt und kein Rückgaberecht. Haar gegen Geld, alles auf Vertrauen. Wer die Ware schickt, bevor das Geld da ist, hat verloren. Und ein Ende ist nicht in Sicht.“
+            {/* 2. Süddeutsche Zeitung — Der goldene Schnitt */}
+            <ScrollReveal delay={0.1}>
+              <div className="bg-white p-6 sm:p-10 lg:p-12 rounded-2xl border border-slate-200 shadow-subtle space-y-8">
+                <div className="space-y-2 border-b border-slate-100 pb-6">
+                  <div className="text-xs sm:text-sm font-bold text-[#A9153B] flex items-center gap-2 uppercase tracking-wider font-display">
+                    <Newspaper className="h-4 w-4 text-[#A9153B]" /> Süddeutsche Zeitung
+                  </div>
+                  <div className="text-[11px] font-bold text-slate-500 uppercase tracking-widest">
+                    Süddeutsche Zeitung — Samstag/Sonntag, 12./13. Juli 2008 Nr. 161 / Seite 3 — DIE SEITE DREI
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 font-display">
+                    Der goldene Schnitt
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-600 italic">
+                    „Im Tempel von Tirupati lassen sich täglich 50 000 Menschen kahlscheren – mit diesem göttlichen Opfer schmückt sich der Rest der Welt für gutes Geld“
                   </p>
-                  <blockquote className="border-l-4 border-[#A9153B] pl-4 italic text-slate-800 text-xs sm:text-sm leading-relaxed">
-                    „Sie sagt: ‚Das Haar im Süden ist besser, weil sie es im Norden mit Henna verderben.‘ Dieses Haar sei zwar verlaust, aber jungfräulich. ‚Virgin hair‘, nie gefärbt, nie gebleicht, aus Armut unbehandelt, Haar, das nur mit Öl in Berührung kam. ‚Daraus kannst du jede Farbe machen‘, sagt sie, ein paar kastanienbraune Echthaartressen in der Hand. Sie fährt über das seidige Haar. Lächelt.“
-                  </blockquote>
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+                  <div className="lg:col-span-5 space-y-4">
+                    <div className="relative aspect-[3/4] w-full overflow-hidden rounded-xl bg-slate-950 border border-slate-200">
+                      <Image
+                        src="/images/article/suddeutsche_newspaper_page_1.jpg"
+                        alt="Süddeutsche Zeitung - Der goldene Schnitt Article Scan"
+                        fill
+                        sizes="(max-width: 1024px) 100vw, 40vw"
+                        className="object-contain"
+                      />
+                    </div>
+                    <div className="grid grid-cols-3 gap-2">
+                      <div className="relative aspect-square rounded-lg overflow-hidden border border-slate-200">
+                        <Image
+                          src="/images/article/suddeutsche_article_p1_1_Im1.jpg"
+                          alt="Tirupati Temple Hair Tonsuring"
+                          fill
+                          sizes="33vw"
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="relative aspect-square rounded-lg overflow-hidden border border-slate-200">
+                        <Image
+                          src="/images/article/suddeutsche_article_p1_2_Im2.jpg"
+                          alt="Hair Sorting and Craftsmanship"
+                          fill
+                          sizes="33vw"
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="relative aspect-square rounded-lg overflow-hidden border border-slate-200">
+                        <Image
+                          src="/images/article/suddeutsche_article_p1_3_Im3.jpg"
+                          alt="Indian Human Hair Bundles"
+                          fill
+                          sizes="33vw"
+                          className="object-cover"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="lg:col-span-7 space-y-4">
+                    <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-3">
+                      <h4 className="font-bold text-slate-900 text-xs font-display uppercase tracking-wider text-[#A9153B]">
+                        Feature on Mrs. Sheeba Paul & Exodus Exports
+                      </h4>
+                      <blockquote className="border-l-4 border-[#A9153B] pl-4 italic text-slate-800 text-xs sm:text-sm leading-relaxed">
+                        „Sheeba Paul ist seit 2002 im Geschäft. Eine Frau, das ist in Indien einmalig. Nicht weit weg von ‚A.L. Kishore’s Hair Co‘ hat sie ihre Firma ‚Exodus Exports‘, 35 Mitarbeiter. Oben am Dach trocknet das neu gelieferte, frisch gewaschene Haar, Hunderte Zöpfe, an Wäscheständern aufgehängt.“
+                      </blockquote>
+                      <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                        „Sheeba Paul ist klein und energisch, das ist auch nötig in diesem Geschäft, in dem es nur Barzahlung gibt und kein Rückgaberecht. Haar gegen Geld, alles auf Vertrauen. Wer die Ware schickt, bevor das Geld da ist, hat verloren. Und ein Ende ist nicht in Sicht.“
+                      </p>
+                      <blockquote className="border-l-4 border-[#A9153B] pl-4 italic text-slate-800 text-xs sm:text-sm leading-relaxed">
+                        „Sie sagt: ‚Das Haar im Süden ist besser, weil sie es im Norden mit Henna verderben.‘ Dieses Haar sei zwar verlaust, aber jungfräulich. ‚Virgin hair‘, nie gefärbt, nie gebleicht, aus Armut unbehandelt, Haar, das nur mit Öl in Berührung kam. ‚Daraus kannst du jede Farbe machen‘, sagt sie, ein paar kastanienbraune Echthaartressen in der Hand. Sie fährt über das seidige Haar. Lächelt.“
+                      </blockquote>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </ScrollReveal>
 
+            {/* 3. TF-1 TV (France) */}
+            <ScrollReveal delay={0.15}>
+              <div className="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-subtle space-y-2">
+                <div className="text-xs sm:text-sm font-bold text-[#A9153B] flex items-center gap-2 uppercase tracking-wider font-display">
+                  <Tv className="h-4 w-4 text-[#A9153B]" /> TF-1 TV (France)
+                </div>
+                <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-display">
+                  International Documentary
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-3xl">
+                  International documentary produced in 2025 and telecast in 2026 in France.
+                </p>
+              </div>
+            </ScrollReveal>
+
+            {/* 4. eCancer */}
+            <ScrollReveal delay={0.2}>
+              <a
+                href="https://ecancer.org/en/video/12107-alternative-livelihood-training-programme-for-rural-women-who-are-employed-in-the-tobacco-industry-in-india"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-subtle hover:shadow-md hover:border-[#A9153B]/40 hover:-translate-y-0.5 transition-all duration-300"
+              >
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="space-y-2">
+                    <div className="text-xs sm:text-sm font-bold text-[#A9153B] flex items-center gap-2 uppercase tracking-wider font-display">
+                      <Video className="h-4 w-4 text-[#A9153B]" /> eCancer
+                    </div>
+                    <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-display group-hover:text-[#A9153B] transition-colors">
+                      Alternative livelihood training programme for rural women
+                    </h3>
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-3xl">
+                      Alternative livelihood training programme for rural women who are employed in the tobacco industry in India.
+                    </p>
+                  </div>
+                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#A9153B]/5 text-[#A9153B] text-xs font-bold shrink-0 group-hover:bg-[#A9153B] group-hover:text-white transition-all self-start sm:self-center">
+                    <Play className="h-3.5 w-3.5 fill-current" />
+                    <span>Watch video</span>
+                    <ExternalLink className="h-3.5 w-3.5 ml-0.5" />
+                  </div>
+                </div>
+              </a>
+            </ScrollReveal>
+
+          </div>
         </div>
       </section>
 

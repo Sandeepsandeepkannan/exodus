@@ -177,19 +177,7 @@ export default function AboutHumanHairPage() {
                 </ul>
 
                 {/* Advantages */}
-                <div className="pt-2 space-y-1.5">
-                  <div className="text-[11px] font-bold text-slate-900 uppercase tracking-wider">Advantages:</div>
-                  <ul className="space-y-1 text-xs sm:text-sm text-slate-600">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3.5 w-3.5 text-slate-500 shrink-0" />
-                      <span>Holds curls and styles for a long time</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3.5 w-3.5 text-slate-500 shrink-0" />
-                      <span>Offers higher volume per strand</span>
-                    </li>
-                  </ul>
-                </div>
+                
 
                 {/* Disadvantages */}
                 <div className="pt-2 space-y-1.5">
