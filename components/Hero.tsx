@@ -8,7 +8,7 @@ import StatCounter from "./StatCounter";
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 bg-gradient-to-b from-slate-50/80 via-white to-white overflow-hidden">
+    <section className="relative pt-32 pb-10 md:pt-36 md:pb-14 bg-gradient-to-b from-slate-50/80 via-white to-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           

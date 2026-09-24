@@ -26,6 +26,10 @@ const certificates: CertificateItem[] = [
     src: "/certificate/Screenshot 2026-09-23 123111.png",
     alt: "Accreditation Certificate Screenshot 2",
   },
+  {
+    src: "/certificate/msme.png",
+    alt: "Certificate - MSME",
+  },
 ];
 
 export default function CertificateGallery() {

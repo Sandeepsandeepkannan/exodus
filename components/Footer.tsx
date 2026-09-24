@@ -4,9 +4,10 @@ import { Mail, Phone, MapPin, ShieldCheck, HeartHandshake, Building2 } from "luc
 
 // Social Media Links (Easily edit URLs here)
 const socialLinks = {
-  instagram: "https://instagram.com/",
-  youtube: "https://youtube.com/",
-  whatsapp: "https://wa.me/",
+  instagram: "https://www.instagram.com/exodus.exports/",
+  linkedin: "https://www.linkedin.com/in/sheeba-paul-93945663/",
+  youtube: "https://www.youtube.com/@exodusexportsindianhumanha3487",
+  whatsapp: "https://wa.me/917550001107",
 };
 
 function InstagramIcon({ className = "h-6 w-6" }: { className?: string }) {
@@ -25,6 +26,18 @@ function InstagramIcon({ className = "h-6 w-6" }: { className?: string }) {
       <rect x="4.5" y="4.5" width="15" height="15" rx="4.2" stroke="#ffffff" strokeWidth="1.6" fill="none" />
       <circle cx="12" cy="12" r="3.6" stroke="#ffffff" strokeWidth="1.6" fill="none" />
       <circle cx="16.5" cy="7.5" r="0.9" fill="#ffffff" />
+    </svg>
+  );
+}
+
+function LinkedInIcon({ className = "h-6 w-6" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <rect width="24" height="24" rx="6" fill="#0A66C2" />
+      <path
+        d="M7.44 9.17H4.72V17.84H7.44V9.17ZM6.08 4.96C5.21 4.96 4.5 5.67 4.5 6.54C4.5 7.41 5.21 8.12 6.08 8.12C6.95 8.12 7.66 7.41 7.66 6.54C7.66 5.67 6.95 4.96 6.08 4.96ZM19.28 12.39C19.28 9.72 17.85 8.48 15.95 8.48C14.42 8.48 13.73 9.32 13.35 9.91V9.17H10.63C10.67 9.94 10.63 17.84 10.63 17.84H13.35V13H13.35C13.35 12.75 13.37 12.49 13.44 12.31C13.65 11.8 14.12 11.26 14.92 11.26C15.96 11.26 16.38 12.05 16.38 13.22V17.84H19.1V12.87C19.1 12.71 19.28 12.55 19.28 12.39Z"
+        fill="#ffffff"
+      />
     </svg>
   );
 }
@@ -84,6 +97,15 @@ export default function Footer() {
                 className="inline-flex items-center justify-center transition-all duration-200 hover:scale-110 hover:-translate-y-0.5 shadow-sm rounded-lg"
               >
                 <InstagramIcon className="h-6 w-6 rounded-md shadow-sm" />
+              </a>
+              <a
+                href={socialLinks.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="inline-flex items-center justify-center transition-all duration-200 hover:scale-110 hover:-translate-y-0.5 shadow-sm rounded-lg"
+              >
+                <LinkedInIcon className="h-6 w-6 rounded-md shadow-sm" />
               </a>
               <a
                 href={socialLinks.youtube}
@@ -203,11 +225,19 @@ export default function Footer() {
               </div>
 
               <div className="pt-2 space-y-1.5 border-t border-white/20">
-                <a href="tel:+917550001106" className="flex items-center gap-2 hover:text-white transition-colors">
+                <a
+                  href="https://wa.me/917550001107"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:text-white transition-colors"
+                >
                   <Phone className="h-3.5 w-3.5 shrink-0" />
-                  <span>+91 75500 01106 (9 AM – 5 PM IST)</span>
+                  <span>+91 755 000 1107 (9 AM – 5 PM IST)</span>
                 </a>
-                <a href="mailto:exodus.exports@gmail.com" className="flex items-center gap-2 hover:text-white transition-colors">
+                <a
+                  href="mailto:exodus.exports@gmail.com"
+                  className="flex items-center gap-2 hover:text-white transition-colors"
+                >
                   <Mail className="h-3.5 w-3.5 shrink-0" />
                   <span>exodus.exports@gmail.com</span>
                 </a>

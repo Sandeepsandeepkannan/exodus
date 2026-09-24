@@ -3,15 +3,15 @@ import SectionHeading from "@/components/SectionHeading";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import CertificateGallery from "@/components/CertificateGallery";
-import { 
-  ShieldCheck, 
-  HeartHandshake, 
-  Globe, 
-  MapPin, 
-  CheckCircle2, 
-  Sparkles, 
-  Building2, 
-  Users, 
+import {
+  ShieldCheck,
+  HeartHandshake,
+  Globe,
+  MapPin,
+  CheckCircle2,
+  Sparkles,
+  Building2,
+  Users,
   FileCheck,
   Phone,
   Mail,
@@ -78,7 +78,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <div className="space-y-0 pt-28">
-      
+
       {/* WHO WE ARE HERO */}
       <section className="py-20 bg-slate-50 border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 max-w-4xl">
@@ -97,7 +97,7 @@ export default function AboutPage() {
       <section className="py-24 bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-            
+
             <ScrollReveal direction="right" className="lg:col-span-5 space-y-6">
               <div className="relative rounded-2xl overflow-hidden shadow-elevated border border-slate-200 bg-slate-100 group">
                 <Image
@@ -164,7 +164,7 @@ export default function AboutPage() {
       {/* LEADERSHIP SECTION */}
       <section className="py-24 bg-slate-50 border-b border-slate-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-          
+
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-3">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-display">
               Leadership
@@ -180,11 +180,11 @@ export default function AboutPage() {
           </ScrollReveal>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-            
+
             {/* Left Column: Dedicated Founder Photo Area */}
             <ScrollReveal direction="right" className="lg:col-span-5 space-y-6">
               <div className="relative rounded-2xl overflow-hidden shadow-elevated border-2 border-slate-200/80 bg-white p-2">
-                
+
                 {/* Founder Photo Container */}
                 <div className="relative w-full aspect-[4/5] rounded-xl bg-slate-100 overflow-hidden group">
                   <Image
@@ -233,7 +233,7 @@ export default function AboutPage() {
 
             {/* Right Column: Founder Profile & Exact Document Content */}
             <ScrollReveal direction="left" className="lg:col-span-7 space-y-8">
-              
+
               {/* Biography Paragraphs */}
               <div className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed bg-white p-8 rounded-2xl border border-slate-200 shadow-subtle">
                 <p>
@@ -397,7 +397,7 @@ export default function AboutPage() {
       {/* PRESS & TV INTERVIEWS */}
       <section className="py-24 bg-slate-50 border-b border-slate-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-          
+
           <ScrollReveal className="text-center max-w-4xl mx-auto space-y-3">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-display">
               Press & TV interviews
@@ -405,9 +405,82 @@ export default function AboutPage() {
           </ScrollReveal>
 
           <div className="space-y-10 max-w-5xl mx-auto">
-            
-            {/* 1. SWR TV (Germany) */}
+
+            {/* NEWS ARTICLES */}
+            {/* 1. The Hindu */}
             <ScrollReveal delay={0.05}>
+              <div className="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-subtle space-y-4">
+                <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-[#A9153B] uppercase tracking-wider font-display">
+                  <Newspaper className="h-4 w-4 text-[#A9153B]" /> The Hindu — Cancer Institute Wig Article (January 2023)
+                </div>
+                <div className="overflow-hidden rounded-xl bg-slate-50 border border-slate-200 p-2 sm:p-4 flex justify-center shadow-sm">
+                  <Image
+                    src="/newsarticles/B - CI WIG ARTICLE IN HINDU JAN 23.jpg"
+                    alt="The Hindu — Cancer Institute Wig Article (January 2023)"
+                    width={2020}
+                    height={3121}
+                    className="w-full h-auto rounded-lg object-contain max-h-[90vh]"
+                  />
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* 2. The Times */}
+            <ScrollReveal delay={0.08}>
+              <div className="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-subtle space-y-4">
+                <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-[#A9153B] uppercase tracking-wider font-display">
+                  <Newspaper className="h-4 w-4 text-[#A9153B]" /> The Times Article (2023)
+                </div>
+                <div className="overflow-hidden rounded-xl bg-slate-50 border border-slate-200 p-2 sm:p-4 flex justify-center shadow-sm">
+                  <Image
+                    src="/newsarticles/C - THE TIMES ARTICLE 2023.jpg"
+                    alt="The Times Article (2023)"
+                    width={1054}
+                    height={517}
+                    className="w-full h-auto rounded-lg object-contain max-h-[90vh]"
+                  />
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* 3. Tirunelveli District Collector Office */}
+            <ScrollReveal delay={0.1}>
+              <div className="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-subtle space-y-4">
+                <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-[#A9153B] uppercase tracking-wider font-display">
+                  <Newspaper className="h-4 w-4 text-[#A9153B]" /> Tirunelveli District Collector Office Hair Donation Article
+                </div>
+                <div className="overflow-hidden rounded-xl bg-slate-50 border border-slate-200 p-2 sm:p-4 flex justify-center shadow-sm">
+                  <Image
+                    src="/newsarticles/D - TIRUNELVELI DISTRICT COLLECTOR OFFICE HAIR DONATION ARTICLE.jpg"
+                    alt="Tirunelveli District Collector Office Hair Donation Article"
+                    width={1600}
+                    height={1309}
+                    className="w-full h-auto rounded-lg object-contain max-h-[90vh]"
+                  />
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* 4. Jesus School */}
+            <ScrollReveal delay={0.12}>
+              <div className="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-subtle space-y-4">
+                <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-[#A9153B] uppercase tracking-wider font-display">
+                  <Newspaper className="h-4 w-4 text-[#A9153B]" /> Hair Donation Article – Jesus School
+                </div>
+                <div className="overflow-hidden rounded-xl bg-slate-50 border border-slate-200 p-2 sm:p-4 flex justify-center shadow-sm">
+                  <Image
+                    src="/newsarticles/F - HAIR DONATION ARTICLE - JESUS SCHOOL.JPG"
+                    alt="Hair Donation Article – Jesus School"
+                    width={761}
+                    height={632}
+                    className="w-full h-auto rounded-lg object-contain max-h-[90vh]"
+                  />
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* 1. SWR TV (Germany) */}
+            <ScrollReveal delay={0.15}>
               <div className="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-subtle space-y-3">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   <div className="space-y-2">
@@ -445,7 +518,7 @@ export default function AboutPage() {
             </ScrollReveal>
 
             {/* 2. Süddeutsche Zeitung — Der goldene Schnitt */}
-            <ScrollReveal delay={0.1}>
+            <ScrollReveal delay={0.18}>
               <div className="bg-white p-6 sm:p-10 lg:p-12 rounded-2xl border border-slate-200 shadow-subtle space-y-8">
                 <div className="space-y-2 border-b border-slate-100 pb-6">
                   <div className="text-xs sm:text-sm font-bold text-[#A9153B] flex items-center gap-2 uppercase tracking-wider font-display">
@@ -525,7 +598,7 @@ export default function AboutPage() {
             </ScrollReveal>
 
             {/* 3. TF-1 TV (France) */}
-            <ScrollReveal delay={0.15}>
+            <ScrollReveal delay={0.21}>
               <div className="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-subtle space-y-2">
                 <div className="text-xs sm:text-sm font-bold text-[#A9153B] flex items-center gap-2 uppercase tracking-wider font-display">
                   <Tv className="h-4 w-4 text-[#A9153B]" /> TF-1 TV (France)
@@ -540,7 +613,7 @@ export default function AboutPage() {
             </ScrollReveal>
 
             {/* 4. eCancer */}
-            <ScrollReveal delay={0.2}>
+            <ScrollReveal delay={0.24}>
               <a
                 href="https://ecancer.org/en/video/12107-alternative-livelihood-training-programme-for-rural-women-who-are-employed-in-the-tobacco-industry-in-india"
                 target="_blank"
@@ -568,139 +641,90 @@ export default function AboutPage() {
               </a>
             </ScrollReveal>
 
+            {/* 5. NABARD Cancer Institute */}
+            <ScrollReveal delay={0.27}>
+              <a
+                href="https://www.instagram.com/reel/DVsx3bEAaFR/?igsh=bHgxYnV6djhhYTZv"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-subtle hover:shadow-md hover:border-[#A9153B]/40 hover:-translate-y-0.5 transition-all duration-300"
+              >
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="space-y-1">
+                    <div className="text-xs sm:text-sm font-bold text-[#A9153B] flex items-center gap-2 uppercase tracking-wider font-display">
+                      <Video className="h-4 w-4 text-[#A9153B]" /> NABARD Cancer Institute
+                    </div>
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900 font-display group-hover:text-[#A9153B] transition-colors">
+                      NABARD Cancer Institute
+                    </h3>
+                  </div>
+                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#A9153B]/5 text-[#A9153B] text-xs font-bold shrink-0 group-hover:bg-[#A9153B] group-hover:text-white transition-all self-start sm:self-center">
+                    <Play className="h-3.5 w-3.5 fill-current" />
+                    <span>Watch video</span>
+                    <ExternalLink className="h-3.5 w-3.5 ml-0.5" />
+                  </div>
+                </div>
+              </a>
+            </ScrollReveal>
+
+            {/* 6. Polimer Video */}
+            <ScrollReveal delay={0.30}>
+              <a
+                href="https://youtu.be/_Q4MisG56bc?si=m2dXahIzza67LA-h"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-subtle hover:shadow-md hover:border-[#A9153B]/40 hover:-translate-y-0.5 transition-all duration-300"
+              >
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="space-y-1">
+                    <div className="text-xs sm:text-sm font-bold text-[#A9153B] flex items-center gap-2 uppercase tracking-wider font-display">
+                      <Video className="h-4 w-4 text-[#A9153B]" /> Polimer Video
+                    </div>
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900 font-display group-hover:text-[#A9153B] transition-colors">
+                      Polimer Video
+                    </h3>
+                  </div>
+                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#A9153B]/5 text-[#A9153B] text-xs font-bold shrink-0 group-hover:bg-[#A9153B] group-hover:text-white transition-all self-start sm:self-center">
+                    <Play className="h-3.5 w-3.5 fill-current" />
+                    <span>Watch video</span>
+                    <ExternalLink className="h-3.5 w-3.5 ml-0.5" />
+                  </div>
+                </div>
+              </a>
+            </ScrollReveal>
+
+            {/* 7. France SOCAP */}
+            <ScrollReveal delay={0.33}>
+              <a
+                href="https://www.instagram.com/reel/DWwa_3_DFI2/?igsh=MXFxaXJheG1tbXV5dw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-subtle hover:shadow-md hover:border-[#A9153B]/40 hover:-translate-y-0.5 transition-all duration-300"
+              >
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="space-y-1">
+                    <div className="text-xs sm:text-sm font-bold text-[#A9153B] flex items-center gap-2 uppercase tracking-wider font-display">
+                      <Video className="h-4 w-4 text-[#A9153B]" /> France SOCAP
+                    </div>
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900 font-display group-hover:text-[#A9153B] transition-colors">
+                      France SOCAP
+                    </h3>
+                  </div>
+                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#A9153B]/5 text-[#A9153B] text-xs font-bold shrink-0 group-hover:bg-[#A9153B] group-hover:text-white transition-all self-start sm:self-center">
+                    <Play className="h-3.5 w-3.5 fill-current" />
+                    <span>Watch video</span>
+                    <ExternalLink className="h-3.5 w-3.5 ml-0.5" />
+                  </div>
+                </div>
+              </a>
+            </ScrollReveal>
+
           </div>
         </div>
       </section>
 
       {/* DIGITAL MEDIA SECTION */}
-      <section className="py-20 bg-white border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-          <ScrollReveal className="text-center max-w-3xl mx-auto space-y-3">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#A9153B]/5 border border-[#A9153B]/10 text-[#A9153B] text-[11px] sm:text-xs font-bold tracking-wider uppercase">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#A9153B]"></span> Connect & Media
-            </div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-display">
-              Digital media
-            </h2>
-          </ScrollReveal>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {/* Facebook */}
-            <ScrollReveal delay={0.05}>
-              <a
-                href="https://www.facebook.com/exodusexportspvtltd/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group p-5 rounded-2xl bg-slate-50 border border-slate-200 shadow-subtle flex items-center justify-between hover:bg-white hover:border-[#A9153B]/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
-              >
-                <div className="flex items-center gap-3.5">
-                  <FacebookIcon className="h-9 w-9 rounded-lg shrink-0 shadow-sm" />
-                  <span className="font-bold text-slate-900 text-sm sm:text-base font-display group-hover:text-[#A9153B] transition-colors">
-                    Facebook
-                  </span>
-                </div>
-                <ExternalLink className="h-4 w-4 text-slate-400 group-hover:text-[#A9153B] group-hover:translate-x-0.5 transition-all shrink-0" />
-              </a>
-            </ScrollReveal>
-
-            {/* Instagram */}
-            <ScrollReveal delay={0.1}>
-              <a
-                href="https://www.instagram.com/exodus.exports/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group p-5 rounded-2xl bg-slate-50 border border-slate-200 shadow-subtle flex items-center justify-between hover:bg-white hover:border-[#A9153B]/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
-              >
-                <div className="flex items-center gap-3.5">
-                  <InstagramIcon className="h-9 w-9 rounded-lg shrink-0 shadow-sm" />
-                  <span className="font-bold text-slate-900 text-sm sm:text-base font-display group-hover:text-[#A9153B] transition-colors">
-                    Instagram
-                  </span>
-                </div>
-                <ExternalLink className="h-4 w-4 text-slate-400 group-hover:text-[#A9153B] group-hover:translate-x-0.5 transition-all shrink-0" />
-              </a>
-            </ScrollReveal>
-
-            {/* LinkedIn */}
-            <ScrollReveal delay={0.15}>
-              <a
-                href="https://www.linkedin.com/in/sheeba-paul-48123455/?originalSubdomain=in"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group p-5 rounded-2xl bg-slate-50 border border-slate-200 shadow-subtle flex items-center justify-between hover:bg-white hover:border-[#A9153B]/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
-              >
-                <div className="flex items-center gap-3.5">
-                  <LinkedInIcon className="h-9 w-9 rounded-lg shrink-0 shadow-sm" />
-                  <span className="font-bold text-slate-900 text-sm sm:text-base font-display group-hover:text-[#A9153B] transition-colors">
-                    LinkedIn
-                  </span>
-                </div>
-                <ExternalLink className="h-4 w-4 text-slate-400 group-hover:text-[#A9153B] group-hover:translate-x-0.5 transition-all shrink-0" />
-              </a>
-            </ScrollReveal>
-
-            {/* eCancer */}
-            <ScrollReveal delay={0.2}>
-              <a
-                href="https://ecancer.org/en/video/12107-alternative-livelihood-training-programme-for-rural-women-who-are-employed-in-the-tobacco-industry-in-india"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group p-5 rounded-2xl bg-slate-50 border border-slate-200 shadow-subtle flex items-center justify-between hover:bg-white hover:border-[#A9153B]/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
-              >
-                <div className="flex items-center gap-3.5">
-                  <div className="h-9 w-9 rounded-lg bg-[#A9153B]/10 text-[#A9153B] flex items-center justify-center shrink-0 shadow-sm">
-                    <Video className="h-5 w-5" />
-                  </div>
-                  <span className="font-bold text-slate-900 text-sm sm:text-base font-display group-hover:text-[#A9153B] transition-colors">
-                    eCancer
-                  </span>
-                </div>
-                <ExternalLink className="h-4 w-4 text-slate-400 group-hover:text-[#A9153B] group-hover:translate-x-0.5 transition-all shrink-0" />
-              </a>
-            </ScrollReveal>
-
-            {/* eCancer video */}
-            <ScrollReveal delay={0.25}>
-              <a
-                href="https://vimeo.com/ecancer/download/1018634498/56d70a2b61"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group p-5 rounded-2xl bg-slate-50 border border-slate-200 shadow-subtle flex items-center justify-between hover:bg-white hover:border-[#A9153B]/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
-              >
-                <div className="flex items-center gap-3.5">
-                  <div className="h-9 w-9 rounded-lg bg-slate-900 text-white flex items-center justify-center shrink-0 shadow-sm">
-                    <Play className="h-4 w-4 fill-white translate-x-0.5" />
-                  </div>
-                  <span className="font-bold text-slate-900 text-sm sm:text-base font-display group-hover:text-[#A9153B] transition-colors">
-                    eCancer video
-                  </span>
-                </div>
-                <ExternalLink className="h-4 w-4 text-slate-400 group-hover:text-[#A9153B] group-hover:translate-x-0.5 transition-all shrink-0" />
-              </a>
-            </ScrollReveal>
-
-            {/* World Cancer Day */}
-            <ScrollReveal delay={0.3}>
-              <a
-                href="https://www.worldcancerday.org/form/submit-wcd-activity?token=WxNBOjHWIbWeMXC3YwmVTr_sT79hLuzhenpiTY6-2Nk"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group p-5 rounded-2xl bg-slate-50 border border-slate-200 shadow-subtle flex items-center justify-between hover:bg-white hover:border-[#A9153B]/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
-              >
-                <div className="flex items-center gap-3.5">
-                  <div className="h-9 w-9 rounded-lg bg-[#A9153B]/10 text-[#A9153B] flex items-center justify-center shrink-0 shadow-sm">
-                    <Globe className="h-5 w-5" />
-                  </div>
-                  <span className="font-bold text-slate-900 text-sm sm:text-base font-display group-hover:text-[#A9153B] transition-colors">
-                    World Cancer Day
-                  </span>
-                </div>
-                <ExternalLink className="h-4 w-4 text-slate-400 group-hover:text-[#A9153B] group-hover:translate-x-0.5 transition-all shrink-0" />
-              </a>
-            </ScrollReveal>
-          </div>
-        </div>
-      </section>
+      
 
       {/* CTA SECTION */}
       <CTASection />

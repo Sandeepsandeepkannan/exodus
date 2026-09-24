@@ -60,7 +60,7 @@ export default function ContactPage() {
                     <div className="space-y-1">
                       <div className="font-bold text-slate-900 text-[11px] uppercase tracking-wider text-[#A9153B]">Regd office:</div>
                       <div className="text-slate-800 text-xs sm:text-sm leading-relaxed font-medium">
-                        EXODUS EXPORTS PVT. LTD.No. 56 A, Thanduma Nagar,Near 100 Ft Road,St. Thomas Mount,Chennai – 600016, India
+                        EXODUS EXPORTS PVT. LTD. <br />No.56 A, Thanduma Nagar,Near 100 Ft Road,St. Thomas Mount, <br />Chennai – 600016,<br /> India
                       </div>
                     </div>
                   </li>
@@ -82,10 +82,29 @@ export default function ContactPage() {
                     <div className="h-10 w-10 rounded-xl bg-[#A9153B]/10 text-[#A9153B] flex items-center justify-center shrink-0 mt-0.5">
                       <Phone className="h-5 w-5" />
                     </div>
-                    <div className="space-y-0.5">
+                    <div className="space-y-1">
                       <div className="font-bold text-slate-900 text-[11px] uppercase tracking-wider text-[#A9153B]">Phone & email:</div>
-                      <div className="text-slate-800 font-bold text-xs sm:text-sm">
-                        📞 +91 75500 01106 (9 AM – 5 PM IST)📧 exodus.exports@gmail.com
+                      <div className="text-slate-800 font-bold text-xs sm:text-sm space-y-1">
+                        <div>
+                          📞{" "}
+                          <a
+                            href="https://wa.me/917550001107"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-[#A9153B] transition-colors"
+                          >
+                            +91 755 000 1107 (9 AM – 5 PM IST)
+                          </a>
+                        </div>
+                        <div>
+                          📧{" "}
+                          <a
+                            href="mailto:exodus.exports@gmail.com"
+                            className="hover:text-[#A9153B] transition-colors"
+                          >
+                            exodus.exports@gmail.com
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </li>
