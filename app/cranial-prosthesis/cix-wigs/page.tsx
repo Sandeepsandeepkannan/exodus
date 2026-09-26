@@ -239,7 +239,7 @@ export default function CixWigsPage() {
       </section>
 
       {/* 5. HAIR DONATION: GIVE THE GIFT OF CONFIDENCE */}
-      <section className="py-20 bg-slate-50 border-b border-slate-200/80">
+      <section id="hair-donation" className="py-20 bg-slate-50 border-b border-slate-200/80 scroll-mt-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 max-w-5xl">
           
           <ScrollReveal className="text-center space-y-3">
@@ -452,6 +452,26 @@ export default function CixWigsPage() {
             </p>
           </div>
 
+        </div>
+      </section>
+
+      {/* 7. SCAN QR CODE */}
+      <section className="py-16 bg-white border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4 max-w-xl">
+          <ScrollReveal className="space-y-4 flex flex-col items-center">
+            <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-display">
+              Scan this QR to get the brochure
+            </h3>
+            <div className="p-4 bg-white rounded-2xl border border-slate-200 shadow-md inline-block">
+              <Image
+                src="/qr.jpg"
+                alt="Scan this QR to get the brochure"
+                width={220}
+                height={220}
+                className="w-48 h-48 sm:w-56 sm:h-56 object-contain rounded-lg"
+              />
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 

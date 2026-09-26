@@ -4,11 +4,24 @@ import { Mail, Phone, MapPin, ShieldCheck, HeartHandshake, Building2 } from "luc
 
 // Social Media Links (Easily edit URLs here)
 const socialLinks = {
+  facebook: "https://www.facebook.com/ExodusExportsIndia/",
   instagram: "https://www.instagram.com/exodus.exports/",
   linkedin: "https://www.linkedin.com/in/sheeba-paul-93945663/",
   youtube: "https://www.youtube.com/@exodusexportsindianhumanha3487",
   whatsapp: "https://wa.me/917550001107",
 };
+
+function FacebookIcon({ className = "h-6 w-6" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <rect width="24" height="24" rx="6" fill="#1877F2" />
+      <path
+        d="M15.12 12.75L15.6 9.6H12.58V7.55C12.58 6.69 13 5.85 14.34 5.85H15.72V3.17C15.72 3.17 14.47 2.96 13.27 2.96C10.78 2.96 9.15 4.47 9.15 7.21V9.6H6.38V12.75H9.15V20.38C9.71 20.47 10.28 20.51 10.86 20.51C11.44 20.51 12.02 20.47 12.58 20.38V12.75H15.12Z"
+        fill="#ffffff"
+      />
+    </svg>
+  );
+}
 
 function InstagramIcon({ className = "h-6 w-6" }: { className?: string }) {
   return (
@@ -89,6 +102,15 @@ export default function Footer() {
 
             {/* Social Media Links */}
             <div className="flex items-center gap-3 pt-1">
+              <a
+                href={socialLinks.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="inline-flex items-center justify-center transition-all duration-200 hover:scale-110 hover:-translate-y-0.5 shadow-sm rounded-lg"
+              >
+                <FacebookIcon className="h-6 w-6 rounded-md shadow-sm" />
+              </a>
               <a
                 href={socialLinks.instagram}
                 target="_blank"
@@ -215,7 +237,7 @@ export default function Footer() {
               <div>
                 <div className="font-bold text-white uppercase tracking-wider text-[11px]">Regd office:</div>
                 <div className="mt-0.5">EXODUS EXPORTS PVT. LTD.</div>
-                <div>No. 56 A, Thanduma Nagar, Near 100 Ft Road, St. Thomas Mount, Chennai – 600016, India</div>
+                <div>No. 56 A, Thanduma Nagar, <br />Near 100 Ft Road,<br /> St. Thomas Mount,<br /> Chennai – 600016,<br /> India</div>
               </div>
 
               <div>
@@ -232,7 +254,7 @@ export default function Footer() {
                   className="flex items-center gap-2 hover:text-white transition-colors"
                 >
                   <Phone className="h-3.5 w-3.5 shrink-0" />
-                  <span>+91 755 000 1107 (9 AM – 5 PM IST)</span>
+                  <span>+91 755 000 1106 <br /> (9 AM – 5 PM IST)</span>
                 </a>
                 <a
                   href="mailto:exodus.exports@gmail.com"

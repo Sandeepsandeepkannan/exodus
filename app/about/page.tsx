@@ -3,6 +3,7 @@ import SectionHeading from "@/components/SectionHeading";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import CertificateGallery from "@/components/CertificateGallery";
+import NewsArticleGallery from "@/components/NewsArticleGallery";
 import {
   ShieldCheck,
   HeartHandshake,
@@ -80,7 +81,7 @@ export default function AboutPage() {
     <div className="space-y-0 pt-28">
 
       {/* WHO WE ARE HERO */}
-      <section className="py-20 bg-slate-50 border-b border-slate-100">
+      <section className="py-20 bg-[#F1F3F6] border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 max-w-4xl">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight font-display">
             Who we are
@@ -128,17 +129,12 @@ export default function AboutPage() {
             </ScrollReveal>
 
             <ScrollReveal direction="left" className="lg:col-span-7 space-y-6">
-              <SectionHeading
-                eyebrow="Our identity & values"
-                title="Who we are"
-              />
+             
 
               <div className="space-y-5 text-slate-600 text-sm sm:text-base leading-relaxed">
+               
                 <p>
-                  We are entrepreneurs who have built this company over more than two decades—guided by strong values, resilience, and an unwavering commitment to integrity, even the toughest business challenges.
-                </p>
-                <p>
-                  What we value most is the trust our clients place in us. We believe in the courage to take responsible risks, the discipline to deliver consistent quality, the honesty to acknowledge our mistakes, and the determination to improve every day. We are simple people offering exceptional products, backed by principles that never change.
+                  As entrepreneurs what we value most is the trust our clients place in us. We believe in the courage to take responsible risks, the discipline to deliver consistent quality, the honesty to acknowledge our mistakes, and the determination to improve every day. We are simple people offering exceptional products, backed by principles that never change.
                 </p>
                 <div className="p-5 rounded-xl bg-[#A9153B]/5 border-l-4 border-[#A9153B]">
                   <p className="font-semibold text-slate-900 text-sm sm:text-base">
@@ -407,209 +403,51 @@ export default function AboutPage() {
           <div className="space-y-10 max-w-5xl mx-auto">
 
             {/* NEWS ARTICLES */}
-            {/* 1. The Hindu */}
-            <ScrollReveal delay={0.05}>
-              <div className="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-subtle space-y-4">
-                <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-[#A9153B] uppercase tracking-wider font-display">
-                  <Newspaper className="h-4 w-4 text-[#A9153B]" /> The Hindu — Cancer Institute Wig Article (January 2023)
-                </div>
-                <div className="overflow-hidden rounded-xl bg-slate-50 border border-slate-200 p-2 sm:p-4 flex justify-center shadow-sm">
-                  <Image
-                    src="/newsarticles/B - CI WIG ARTICLE IN HINDU JAN 23.jpg"
-                    alt="The Hindu — Cancer Institute Wig Article (January 2023)"
-                    width={2020}
-                    height={3121}
-                    className="w-full h-auto rounded-lg object-contain max-h-[90vh]"
-                  />
-                </div>
-              </div>
-            </ScrollReveal>
-
-            {/* 2. The Times */}
-            <ScrollReveal delay={0.08}>
-              <div className="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-subtle space-y-4">
-                <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-[#A9153B] uppercase tracking-wider font-display">
-                  <Newspaper className="h-4 w-4 text-[#A9153B]" /> The Times Article (2023)
-                </div>
-                <div className="overflow-hidden rounded-xl bg-slate-50 border border-slate-200 p-2 sm:p-4 flex justify-center shadow-sm">
-                  <Image
-                    src="/newsarticles/C - THE TIMES ARTICLE 2023.jpg"
-                    alt="The Times Article (2023)"
-                    width={1054}
-                    height={517}
-                    className="w-full h-auto rounded-lg object-contain max-h-[90vh]"
-                  />
-                </div>
-              </div>
-            </ScrollReveal>
-
-            {/* 3. Tirunelveli District Collector Office */}
-            <ScrollReveal delay={0.1}>
-              <div className="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-subtle space-y-4">
-                <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-[#A9153B] uppercase tracking-wider font-display">
-                  <Newspaper className="h-4 w-4 text-[#A9153B]" /> Tirunelveli District Collector Office Hair Donation Article
-                </div>
-                <div className="overflow-hidden rounded-xl bg-slate-50 border border-slate-200 p-2 sm:p-4 flex justify-center shadow-sm">
-                  <Image
-                    src="/newsarticles/D - TIRUNELVELI DISTRICT COLLECTOR OFFICE HAIR DONATION ARTICLE.jpg"
-                    alt="Tirunelveli District Collector Office Hair Donation Article"
-                    width={1600}
-                    height={1309}
-                    className="w-full h-auto rounded-lg object-contain max-h-[90vh]"
-                  />
-                </div>
-              </div>
-            </ScrollReveal>
-
-            {/* 4. Jesus School */}
-            <ScrollReveal delay={0.12}>
-              <div className="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-subtle space-y-4">
-                <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-[#A9153B] uppercase tracking-wider font-display">
-                  <Newspaper className="h-4 w-4 text-[#A9153B]" /> Hair Donation Article – Jesus School
-                </div>
-                <div className="overflow-hidden rounded-xl bg-slate-50 border border-slate-200 p-2 sm:p-4 flex justify-center shadow-sm">
-                  <Image
-                    src="/newsarticles/F - HAIR DONATION ARTICLE - JESUS SCHOOL.JPG"
-                    alt="Hair Donation Article – Jesus School"
-                    width={761}
-                    height={632}
-                    className="w-full h-auto rounded-lg object-contain max-h-[90vh]"
-                  />
-                </div>
-              </div>
-            </ScrollReveal>
+            <NewsArticleGallery />
 
             {/* 1. SWR TV (Germany) */}
             <ScrollReveal delay={0.15}>
-              <div className="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-subtle space-y-3">
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                  <div className="space-y-2">
+              <a
+                href="https://drive.google.com/file/d/1XugbTp0oCTAQ0bjPrA1d7XxZyCjxiiK5/view"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block p-5 sm:p-6 rounded-2xl bg-white border border-slate-200 shadow-subtle hover:shadow-md hover:border-[#A9153B]/40 hover:-translate-y-0.5 transition-all duration-300"
+              >
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-6 justify-between">
+                  <div className="relative w-full sm:w-48 md:w-56 aspect-[16/10] shrink-0 rounded-xl overflow-hidden bg-slate-900 border border-slate-200/80 shadow-sm">
+                    <Image
+                      src="/images/videos/swr_tv_thumb.jpg"
+                      alt="SWR TV (Germany) Documentary"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-slate-950/25 flex items-center justify-center transition-colors group-hover:bg-slate-950/10">
+                      <div className="w-10 h-10 rounded-full bg-[#A9153B] text-white flex items-center justify-center shadow-md transform group-hover:scale-110 transition-transform">
+                        <Play className="h-4 w-4 fill-current ml-0.5" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex-1 space-y-2">
                     <div className="text-xs sm:text-sm font-bold text-[#A9153B] flex items-center gap-2 uppercase tracking-wider font-display">
                       <Tv className="h-4 w-4 text-[#A9153B]" />
-                      <a
-                        href="https://drive.google.com/file/d/1XugbTp0oCTAQ0bjPrA1d7XxZyCjxiiK5/view"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:underline flex items-center gap-1.5"
-                      >
-                        SWR TV (Germany)
-                        <ExternalLink className="h-3.5 w-3.5" />
-                      </a>
+                      <span>SWR TV (Germany)</span>
                     </div>
-                    <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-display">
+                    <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-display group-hover:text-[#A9153B] transition-colors">
                       International documentary telecast on DW TV
                     </h3>
-                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-3xl">
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-2xl">
                       International documentary (2009) telecast on DW TV &amp; global media coverage.
                     </p>
                   </div>
-                  <a
-                    href="https://drive.google.com/file/d/1XugbTp0oCTAQ0bjPrA1d7XxZyCjxiiK5/view"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#A9153B] text-white text-xs font-bold shrink-0 hover:bg-[#A9153B]/90 transition-all self-start sm:self-center shadow-sm"
-                  >
+
+                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#A9153B]/5 text-[#A9153B] text-xs font-bold shrink-0 group-hover:bg-[#A9153B] group-hover:text-white transition-all self-start sm:self-center">
                     <Play className="h-3.5 w-3.5 fill-current" />
                     <span>Watch video</span>
                     <ExternalLink className="h-3.5 w-3.5 ml-0.5" />
-                  </a>
-                </div>
-              </div>
-            </ScrollReveal>
-
-            {/* 2. Süddeutsche Zeitung — Der goldene Schnitt */}
-            <ScrollReveal delay={0.18}>
-              <div className="bg-white p-6 sm:p-10 lg:p-12 rounded-2xl border border-slate-200 shadow-subtle space-y-8">
-                <div className="space-y-2 border-b border-slate-100 pb-6">
-                  <div className="text-xs sm:text-sm font-bold text-[#A9153B] flex items-center gap-2 uppercase tracking-wider font-display">
-                    <Newspaper className="h-4 w-4 text-[#A9153B]" /> Süddeutsche Zeitung
-                  </div>
-                  <div className="text-[11px] font-bold text-slate-500 uppercase tracking-widest">
-                    Süddeutsche Zeitung — Samstag/Sonntag, 12./13. Juli 2008 Nr. 161 / Seite 3 — DIE SEITE DREI
-                  </div>
-                  <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 font-display">
-                    Der goldene Schnitt
-                  </h3>
-                  <p className="text-xs sm:text-sm text-slate-600 italic">
-                    „Im Tempel von Tirupati lassen sich täglich 50 000 Menschen kahlscheren – mit diesem göttlichen Opfer schmückt sich der Rest der Welt für gutes Geld“
-                  </p>
-                </div>
-
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
-                  <div className="lg:col-span-5 space-y-4">
-                    <div className="relative aspect-[3/4] w-full overflow-hidden rounded-xl bg-slate-950 border border-slate-200">
-                      <Image
-                        src="/images/article/suddeutsche_newspaper_page_1.jpg"
-                        alt="Süddeutsche Zeitung - Der goldene Schnitt Article Scan"
-                        fill
-                        sizes="(max-width: 1024px) 100vw, 40vw"
-                        className="object-contain"
-                      />
-                    </div>
-                    <div className="grid grid-cols-3 gap-2">
-                      <div className="relative aspect-square rounded-lg overflow-hidden border border-slate-200">
-                        <Image
-                          src="/images/article/suddeutsche_article_p1_1_Im1.jpg"
-                          alt="Tirupati Temple Hair Tonsuring"
-                          fill
-                          sizes="33vw"
-                          className="object-cover"
-                        />
-                      </div>
-                      <div className="relative aspect-square rounded-lg overflow-hidden border border-slate-200">
-                        <Image
-                          src="/images/article/suddeutsche_article_p1_2_Im2.jpg"
-                          alt="Hair Sorting and Craftsmanship"
-                          fill
-                          sizes="33vw"
-                          className="object-cover"
-                        />
-                      </div>
-                      <div className="relative aspect-square rounded-lg overflow-hidden border border-slate-200">
-                        <Image
-                          src="/images/article/suddeutsche_article_p1_3_Im3.jpg"
-                          alt="Indian Human Hair Bundles"
-                          fill
-                          sizes="33vw"
-                          className="object-cover"
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="lg:col-span-7 space-y-4">
-                    <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-3">
-                      <h4 className="font-bold text-slate-900 text-xs font-display uppercase tracking-wider text-[#A9153B]">
-                        Feature on Mrs. Sheeba Paul & Exodus Exports
-                      </h4>
-                      <blockquote className="border-l-4 border-[#A9153B] pl-4 italic text-slate-800 text-xs sm:text-sm leading-relaxed">
-                        „Sheeba Paul ist seit 2002 im Geschäft. Eine Frau, das ist in Indien einmalig. Nicht weit weg von ‚A.L. Kishore’s Hair Co‘ hat sie ihre Firma ‚Exodus Exports‘, 35 Mitarbeiter. Oben am Dach trocknet das neu gelieferte, frisch gewaschene Haar, Hunderte Zöpfe, an Wäscheständern aufgehängt.“
-                      </blockquote>
-                      <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                        „Sheeba Paul ist klein und energisch, das ist auch nötig in diesem Geschäft, in dem es nur Barzahlung gibt und kein Rückgaberecht. Haar gegen Geld, alles auf Vertrauen. Wer die Ware schickt, bevor das Geld da ist, hat verloren. Und ein Ende ist nicht in Sicht.“
-                      </p>
-                      <blockquote className="border-l-4 border-[#A9153B] pl-4 italic text-slate-800 text-xs sm:text-sm leading-relaxed">
-                        „Sie sagt: ‚Das Haar im Süden ist besser, weil sie es im Norden mit Henna verderben.‘ Dieses Haar sei zwar verlaust, aber jungfräulich. ‚Virgin hair‘, nie gefärbt, nie gebleicht, aus Armut unbehandelt, Haar, das nur mit Öl in Berührung kam. ‚Daraus kannst du jede Farbe machen‘, sagt sie, ein paar kastanienbraune Echthaartressen in der Hand. Sie fährt über das seidige Haar. Lächelt.“
-                      </blockquote>
-                    </div>
                   </div>
                 </div>
-              </div>
-            </ScrollReveal>
-
-            {/* 3. TF-1 TV (France) */}
-            <ScrollReveal delay={0.21}>
-              <div className="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-subtle space-y-2">
-                <div className="text-xs sm:text-sm font-bold text-[#A9153B] flex items-center gap-2 uppercase tracking-wider font-display">
-                  <Tv className="h-4 w-4 text-[#A9153B]" /> TF-1 TV (France)
-                </div>
-                <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-display">
-                  International Documentary
-                </h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-3xl">
-                  International documentary produced in 2025 and telecast in 2026 in France.
-                </p>
-              </div>
+              </a>
             </ScrollReveal>
 
             {/* 4. eCancer */}
@@ -618,20 +456,35 @@ export default function AboutPage() {
                 href="https://ecancer.org/en/video/12107-alternative-livelihood-training-programme-for-rural-women-who-are-employed-in-the-tobacco-industry-in-india"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-subtle hover:shadow-md hover:border-[#A9153B]/40 hover:-translate-y-0.5 transition-all duration-300"
+                className="group block p-5 sm:p-6 rounded-2xl bg-white border border-slate-200 shadow-subtle hover:shadow-md hover:border-[#A9153B]/40 hover:-translate-y-0.5 transition-all duration-300"
               >
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                  <div className="space-y-2">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-6 justify-between">
+                  <div className="relative w-full sm:w-48 md:w-56 aspect-[16/10] shrink-0 rounded-xl overflow-hidden bg-slate-900 border border-slate-200/80 shadow-sm">
+                    <Image
+                      src="/images/videos/ecancer_thumb.jpg"
+                      alt="eCancer Documentary"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-slate-950/25 flex items-center justify-center transition-colors group-hover:bg-slate-950/10">
+                      <div className="w-10 h-10 rounded-full bg-[#A9153B] text-white flex items-center justify-center shadow-md transform group-hover:scale-110 transition-transform">
+                        <Play className="h-4 w-4 fill-current ml-0.5" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex-1 space-y-2">
                     <div className="text-xs sm:text-sm font-bold text-[#A9153B] flex items-center gap-2 uppercase tracking-wider font-display">
-                      <Video className="h-4 w-4 text-[#A9153B]" /> eCancer
+                      <Video className="h-4 w-4 text-[#A9153B]" /> E-Cancer
                     </div>
                     <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-display group-hover:text-[#A9153B] transition-colors">
                       Alternative livelihood training programme for rural women
                     </h3>
-                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-3xl">
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-2xl">
                       Alternative livelihood training programme for rural women who are employed in the tobacco industry in India.
                     </p>
                   </div>
+
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#A9153B]/5 text-[#A9153B] text-xs font-bold shrink-0 group-hover:bg-[#A9153B] group-hover:text-white transition-all self-start sm:self-center">
                     <Play className="h-3.5 w-3.5 fill-current" />
                     <span>Watch video</span>
@@ -647,17 +500,32 @@ export default function AboutPage() {
                 href="https://www.instagram.com/reel/DVsx3bEAaFR/?igsh=bHgxYnV6djhhYTZv"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-subtle hover:shadow-md hover:border-[#A9153B]/40 hover:-translate-y-0.5 transition-all duration-300"
+                className="group block p-5 sm:p-6 rounded-2xl bg-white border border-slate-200 shadow-subtle hover:shadow-md hover:border-[#A9153B]/40 hover:-translate-y-0.5 transition-all duration-300"
               >
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                  <div className="space-y-1">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-6 justify-between">
+                  <div className="relative w-full sm:w-48 md:w-56 aspect-[16/10] shrink-0 rounded-xl overflow-hidden bg-slate-900 border border-slate-200/80 shadow-sm">
+                    <Image
+                      src="/images/videos/nabard_thumb.jpg"
+                      alt="NABARD Project Video"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-slate-950/25 flex items-center justify-center transition-colors group-hover:bg-slate-950/10">
+                      <div className="w-10 h-10 rounded-full bg-[#A9153B] text-white flex items-center justify-center shadow-md transform group-hover:scale-110 transition-transform">
+                        <Play className="h-4 w-4 fill-current ml-0.5" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex-1 space-y-1">
                     <div className="text-xs sm:text-sm font-bold text-[#A9153B] flex items-center gap-2 uppercase tracking-wider font-display">
-                      <Video className="h-4 w-4 text-[#A9153B]" /> NABARD Cancer Institute
+                      <Video className="h-4 w-4 text-[#A9153B]" /> NABARD Project
                     </div>
                     <h3 className="text-base sm:text-lg font-bold text-slate-900 font-display group-hover:text-[#A9153B] transition-colors">
-                      NABARD Cancer Institute
+                      NABARD Project
                     </h3>
                   </div>
+
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#A9153B]/5 text-[#A9153B] text-xs font-bold shrink-0 group-hover:bg-[#A9153B] group-hover:text-white transition-all self-start sm:self-center">
                     <Play className="h-3.5 w-3.5 fill-current" />
                     <span>Watch video</span>
@@ -673,17 +541,32 @@ export default function AboutPage() {
                 href="https://youtu.be/_Q4MisG56bc?si=m2dXahIzza67LA-h"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-subtle hover:shadow-md hover:border-[#A9153B]/40 hover:-translate-y-0.5 transition-all duration-300"
+                className="group block p-5 sm:p-6 rounded-2xl bg-white border border-slate-200 shadow-subtle hover:shadow-md hover:border-[#A9153B]/40 hover:-translate-y-0.5 transition-all duration-300"
               >
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                  <div className="space-y-1">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-6 justify-between">
+                  <div className="relative w-full sm:w-48 md:w-56 aspect-[16/10] shrink-0 rounded-xl overflow-hidden bg-slate-900 border border-slate-200/80 shadow-sm">
+                    <Image
+                      src="/images/videos/polimer_thumb.jpg"
+                      alt="Polimer Documentary Video"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-slate-950/25 flex items-center justify-center transition-colors group-hover:bg-slate-950/10">
+                      <div className="w-10 h-10 rounded-full bg-[#A9153B] text-white flex items-center justify-center shadow-md transform group-hover:scale-110 transition-transform">
+                        <Play className="h-4 w-4 fill-current ml-0.5" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex-1 space-y-1">
                     <div className="text-xs sm:text-sm font-bold text-[#A9153B] flex items-center gap-2 uppercase tracking-wider font-display">
-                      <Video className="h-4 w-4 text-[#A9153B]" /> Polimer Video
+                      <Video className="h-4 w-4 text-[#A9153B]" /> Polimer Documentary
                     </div>
                     <h3 className="text-base sm:text-lg font-bold text-slate-900 font-display group-hover:text-[#A9153B] transition-colors">
-                      Polimer Video
+                      Polimer Documentary
                     </h3>
                   </div>
+
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#A9153B]/5 text-[#A9153B] text-xs font-bold shrink-0 group-hover:bg-[#A9153B] group-hover:text-white transition-all self-start sm:self-center">
                     <Play className="h-3.5 w-3.5 fill-current" />
                     <span>Watch video</span>
@@ -699,17 +582,32 @@ export default function AboutPage() {
                 href="https://www.instagram.com/reel/DWwa_3_DFI2/?igsh=MXFxaXJheG1tbXV5dw=="
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-subtle hover:shadow-md hover:border-[#A9153B]/40 hover:-translate-y-0.5 transition-all duration-300"
+                className="group block p-5 sm:p-6 rounded-2xl bg-white border border-slate-200 shadow-subtle hover:shadow-md hover:border-[#A9153B]/40 hover:-translate-y-0.5 transition-all duration-300"
               >
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                  <div className="space-y-1">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-6 justify-between">
+                  <div className="relative w-full sm:w-48 md:w-56 aspect-[16/10] shrink-0 rounded-xl overflow-hidden bg-slate-900 border border-slate-200/80 shadow-sm">
+                    <Image
+                      src="/images/videos/france_socap_thumb.jpg"
+                      alt="France SOCAP Documentary Video"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-slate-950/25 flex items-center justify-center transition-colors group-hover:bg-slate-950/10">
+                      <div className="w-10 h-10 rounded-full bg-[#A9153B] text-white flex items-center justify-center shadow-md transform group-hover:scale-110 transition-transform">
+                        <Play className="h-4 w-4 fill-current ml-0.5" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex-1 space-y-1">
                     <div className="text-xs sm:text-sm font-bold text-[#A9153B] flex items-center gap-2 uppercase tracking-wider font-display">
-                      <Video className="h-4 w-4 text-[#A9153B]" /> France SOCAP
+                      <Video className="h-4 w-4 text-[#A9153B]" /> France SOCAP Documentary -TF1-TV
                     </div>
                     <h3 className="text-base sm:text-lg font-bold text-slate-900 font-display group-hover:text-[#A9153B] transition-colors">
                       France SOCAP
                     </h3>
                   </div>
+
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#A9153B]/5 text-[#A9153B] text-xs font-bold shrink-0 group-hover:bg-[#A9153B] group-hover:text-white transition-all self-start sm:self-center">
                     <Play className="h-3.5 w-3.5 fill-current" />
                     <span>Watch video</span>

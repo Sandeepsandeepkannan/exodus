@@ -67,7 +67,7 @@ export default function CranialProsthesisPage() {
     <div className="space-y-0 pt-28">
       
       {/* 1. HERO HEADER */}
-      <section className="py-20 bg-slate-50 border-b border-slate-100">
+      <section className="py-20 bg-[#F1F3F6] border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 max-w-4xl">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#A9153B]/5 border border-[#A9153B]/10 text-[#A9153B] text-[11px] sm:text-xs font-bold uppercase tracking-wider">
             <span className="h-1.5 w-1.5 rounded-full bg-[#A9153B]"></span> Cranial prosthesis – the wig bank
@@ -182,7 +182,15 @@ export default function CranialProsthesisPage() {
               href="/cranial-prosthesis/cix-wigs"
               className="p-8 rounded-2xl bg-[#A9153B] text-white shadow-elevated flex flex-col items-center justify-center space-y-3 hover:opacity-95 hover:scale-[1.02] transition-all duration-200 group cursor-pointer"
             >
-              <HeartHandshake className="h-10 w-10 text-white" />
+              <div className="bg-white rounded-xl p-2 shadow-sm flex items-center justify-center">
+                <Image
+                  src="/CIXWIGSlogo.jpg"
+                  alt="CIX Wigs Logo"
+                  width={140}
+                  height={50}
+                  className="h-10 w-auto object-contain rounded"
+                />
+              </div>
               <h3 className="text-xl sm:text-2xl font-extrabold tracking-wider uppercase font-display">
                 CIX wigs
               </h3>
@@ -199,6 +207,32 @@ export default function CranialProsthesisPage() {
               </h3>
             </Link>
 
+          </div>
+
+          {/* HAIR DONATION */}
+          <div className="max-w-2xl mx-auto">
+            <Link
+              href="/cranial-prosthesis/cix-wigs#hair-donation"
+              className="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-subtle hover:shadow-elevated hover:border-[#A9153B]/40 flex flex-col sm:flex-row items-center justify-between gap-4 transition-all duration-200 group cursor-pointer"
+            >
+              <div className="flex items-center gap-4 text-left">
+                <div className="h-12 w-12 rounded-xl bg-[#A9153B]/10 text-[#A9153B] flex items-center justify-center shrink-0 group-hover:bg-[#A9153B] group-hover:text-white transition-colors duration-300">
+                  <Heart className="h-6 w-6" />
+                </div>
+                <div>
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-display group-hover:text-[#A9153B] transition-colors">
+                    Hair donation
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-600">
+                    Learn about guidelines and how to donate hair for cancer and alopecia patients.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#A9153B] group-hover:translate-x-1 transition-transform shrink-0">
+                <span>View Guidelines</span>
+                <ArrowRight className="h-4 w-4" />
+              </div>
+            </Link>
           </div>
 
         </div>

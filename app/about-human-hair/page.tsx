@@ -25,7 +25,7 @@ export default function AboutHumanHairPage() {
     <div className="space-y-0 pt-28">
       
       {/* 1. HERO / WHY INDIAN HUMAN HAIR? */}
-      <section className="py-20 bg-slate-50 border-b border-slate-100">
+      <section className="py-20 bg-[#F1F3F6] border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 max-w-4xl">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#A9153B]/5 border border-[#A9153B]/10 text-[#A9153B] text-[11px] sm:text-xs font-bold uppercase tracking-wider">
             <span className="h-1.5 w-1.5 rounded-full bg-[#A9153B]"></span> About hair
