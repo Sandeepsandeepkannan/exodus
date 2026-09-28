@@ -3,14 +3,14 @@ import Link from "next/link";
 import SectionHeading from "@/components/SectionHeading";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
-import { 
-  Heart, 
-  ShieldCheck, 
-  Sparkles, 
-  CheckCircle2, 
-  ArrowRight, 
-  Building2, 
-  Phone, 
+import {
+  Heart,
+  ShieldCheck,
+  Sparkles,
+  CheckCircle2,
+  ArrowRight,
+  Building2,
+  Phone,
   Mail,
   HeartHandshake,
   UserCheck,
@@ -27,56 +27,23 @@ export const metadata = {
     "Medical-grade wigs designed for comfort and confidence during hair loss from chemotherapy or alopecia. Regain your confidence with medical wigs.",
 };
 
-const whyChoosePoints = [
-  "100% genuine Indian Human Hair supply source",
-  "Temple-auction procured & ethically sourced",
-  "In-house processing from raw hair to final finished products",
-  "Customized solutions for salons, brands & distributors",
-  "Strict adherence to international standards",
-  "Global shipping & export expertise",
-  "Capacity to handle orders from small batches to bulk export",
-  "Consistent delivery schedules",
-  "Long-term partnership approach",
-];
 
-const welfarePrograms = [
-  "Implementing 5S Standards",
-  "Safe working conditions",
-  "Retirement benefits",
-  "Annual bonus & incentives",
-  "Loans & emergency support",
-  "Maternity leave",
-  "Counselling & workshops",
-  "Educational support for employees’ children",
-  "Recreational outings",
-  "Strictly No Child Labour",
-];
-
-const termsAndConditions = [
-  "100% Indian Human Hair only",
-  "No synthetic blends",
-  "100% advance payment via bank transfer",
-  "Ex-Factory Chennai, India",
-  "Exchange within 7 business days (conditions apply)",
-  "No refund policy",
-  "Human hair is a natural product, and slight variations are inherent.",
-];
 
 export default function CranialProsthesisPage() {
   return (
     <div className="space-y-0 pt-28">
-      
+
       {/* 1. HERO HEADER */}
       <section className="py-20 bg-[#F1F3F6] border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 max-w-4xl">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#A9153B]/5 border border-[#A9153B]/10 text-[#A9153B] text-[11px] sm:text-xs font-bold uppercase tracking-wider">
             <span className="h-1.5 w-1.5 rounded-full bg-[#A9153B]"></span> Cranial prosthesis – the wig bank
           </div>
-          
+
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight font-display">
             Regain your confidence with medical wigs
           </h1>
-          
+
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal max-w-3xl mx-auto">
             Hair loss can be an emotionally challenging experience, particularly for people undergoing cancer treatment or living with alopecia. However, hair loss should never diminish your self-confidence or sense of identity. If you have lost your hair due to a medical condition or treatment, a medical wig or cranial hair prosthesis can help you regain your natural appearance while providing comfort and confidence.
           </p>
@@ -87,7 +54,7 @@ export default function CranialProsthesisPage() {
       <section className="py-24 bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-            
+
             {/* Visual Column */}
             <ScrollReveal direction="right" className="lg:col-span-5 space-y-6">
               <div className="relative rounded-2xl overflow-hidden shadow-elevated border border-slate-200 bg-slate-100 group">
@@ -132,9 +99,9 @@ export default function CranialProsthesisPage() {
 
             {/* Editorial Content Column (All paragraphs verbatim) */}
             <ScrollReveal direction="left" className="lg:col-span-7 space-y-6">
-              
+
               <div className="space-y-6 text-slate-600 text-sm sm:text-base leading-relaxed">
-                
+
                 <p>
                   A cranial hair prosthesis, commonly known as a medical wig, is specially designed for individuals who experience hair loss due to chemotherapy, alopecia, breast cancer, or other medical conditions. Unlike conventional wigs, medical wigs are custom-made to suit the individual’s scalp, hair requirements, and personal preferences.
                 </p>
@@ -174,32 +141,30 @@ export default function CranialProsthesisPage() {
       {/* 3. CIX WIGS & THE WIG BANK */}
       <section className="py-20 bg-slate-50 border-b border-slate-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center space-y-8">
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            
+
             {/* CIX WIGS */}
             <Link
               href="/cranial-prosthesis/cix-wigs"
-              className="p-8 rounded-2xl bg-[#A9153B] text-white shadow-elevated flex items-center justify-center hover:opacity-95 hover:scale-[1.02] transition-all duration-200 group cursor-pointer"
+              className="p-2 sm:p-2.5 rounded-2xl bg-[#A9153B] shadow-elevated flex items-center justify-center hover:opacity-95 hover:scale-[1.02] transition-all duration-200 group cursor-pointer overflow-hidden"
             >
-              <div className="w-full bg-white rounded-xl p-4 sm:p-5 border border-slate-200 shadow-sm flex items-center justify-center">
-                <Image
-                  src="/CIXWIGSlogo.jpg"
-                  alt="CIX Wigs Logo"
-                  width={240}
-                  height={80}
-                  className="h-12 sm:h-14 w-auto object-contain rounded"
-                />
-              </div>
+              <Image
+                src="/CIXWIGSlogo.jpg"
+                alt="CIX Wigs Logo"
+                width={500}
+                height={220}
+                className="w-full h-auto max-h-36 sm:max-h-40 object-contain rounded-xl border border-slate-200/80 shadow-sm"
+              />
             </Link>
 
             {/* THE WIG BANK */}
             <Link
               href="/cranial-prosthesis/the-wig-bank"
-              className="p-8 rounded-2xl bg-slate-900 text-white shadow-elevated flex flex-col items-center justify-center space-y-3 hover:opacity-95 hover:scale-[1.02] transition-all duration-200 group cursor-pointer"
+              className="p-6 sm:p-8 rounded-2xl bg-slate-900 text-white shadow-elevated flex flex-col items-center justify-center space-y-3 hover:opacity-95 hover:scale-[1.02] transition-all duration-200 group cursor-pointer"
             >
-              <Building2 className="h-10 w-10 text-white" />
-              <h3 className="text-xl sm:text-2xl font-extrabold tracking-wider uppercase font-display">
+              <Building2 className="h-10 w-10 sm:h-12 sm:w-12 text-white" />
+              <h3 className="text-2xl sm:text-3xl font-extrabold tracking-wider uppercase font-display text-center">
                 The wig bank
               </h3>
             </Link>
@@ -212,7 +177,7 @@ export default function CranialProsthesisPage() {
       {/* 4. HAIR DONATION: GIVE THE GIFT OF CONFIDENCE */}
       <section id="hair-donation" className="py-20 bg-white border-b border-slate-100 scroll-mt-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 max-w-5xl">
-          
+
           <ScrollReveal className="text-center space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#A9153B]/5 border border-[#A9153B]/10 text-[#A9153B] text-[11px] font-bold uppercase tracking-wider">
               Hair Donation
@@ -229,7 +194,7 @@ export default function CranialProsthesisPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            
+
             {/* Guidelines to donate hair */}
             <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 shadow-subtle space-y-4">
               <h3 className="text-sm sm:text-base font-bold text-slate-900 font-display border-b border-slate-200 pb-3 text-[#A9153B]">
@@ -285,107 +250,6 @@ export default function CranialProsthesisPage() {
               All donors receive a recognition certificate from the Cancer Institute (WIA)
             </p>
           </div>
-
-        </div>
-      </section>
-
-      {/* 4. WHY CHOOSE EXODUS EXPORTS? */}
-      <section className="py-24 bg-white border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-          
-          <ScrollReveal className="text-center max-w-3xl mx-auto space-y-4">
-            <SectionHeading
-              eyebrow="Exodus advantage"
-              title="Why choose Exodus Exports?"
-              centered
-            />
-          </ScrollReveal>
-
-          {/* 9 Feature Points Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {whyChoosePoints.map((title, idx) => (
-              <ScrollReveal key={idx} delay={idx * 0.04}>
-                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 shadow-subtle hover:border-[#A9153B]/40 hover:-translate-y-1 transition-all duration-300 group h-full flex items-start gap-4">
-                  <div className="h-10 w-10 rounded-lg bg-[#A9153B]/10 text-[#A9153B] flex items-center justify-center shrink-0 group-hover:bg-[#A9153B] group-hover:text-white transition-colors duration-300">
-                    <CheckCircle2 className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <h3 className="text-sm sm:text-base font-bold text-slate-900 font-display group-hover:text-[#A9153B] transition-colors">
-                      {title}
-                    </h3>
-                  </div>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-
-          {/* Relationship Callout Box */}
-          <ScrollReveal className="max-w-4xl mx-auto">
-            <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 shadow-subtle text-center space-y-2">
-              <p className="text-sm sm:text-base font-bold text-slate-900 leading-relaxed">
-                At Exodus, we don’t sell products—we build relationships.We guide clients, educate them, and ensure they receive the right product for their exact needs.
-              </p>
-            </div>
-          </ScrollReveal>
-
-        </div>
-      </section>
-
-      {/* 5. EMPLOYEE WELFARE */}
-      <section className="py-24 bg-slate-50 border-b border-slate-200/80">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-          
-          <ScrollReveal className="text-center max-w-3xl mx-auto space-y-3">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-display">
-              Employee welfare
-            </h2>
-            <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              We are committed to ethical labour practices with a strong all-women workforce.Our welfare programs include:
-            </p>
-          </ScrollReveal>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-            {welfarePrograms.map((prog, idx) => (
-              <ScrollReveal key={idx} delay={idx * 0.03}>
-                <div className="p-5 rounded-xl bg-white border border-slate-200 shadow-subtle text-center h-full flex flex-col items-center justify-center space-y-2">
-                  <CheckCircle2 className="h-5 w-5 text-[#A9153B]" />
-                  <span className="text-xs sm:text-sm font-semibold text-slate-800">{prog}</span>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-
-        </div>
-      </section>
-
-      {/* 6. TERMS & CONDITIONS OF SALE */}
-      <section className="py-24 bg-white border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-          
-          <ScrollReveal className="text-center max-w-3xl mx-auto space-y-3">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-display">
-              Terms & conditions of sale
-            </h2>
-          </ScrollReveal>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
-            {termsAndConditions.slice(0, 6).map((term, idx) => (
-              <ScrollReveal key={idx} delay={idx * 0.04}>
-                <div className="p-5 rounded-xl bg-slate-50 border border-slate-200 shadow-subtle flex items-start gap-3 h-full">
-                  <CheckCircle2 className="h-5 w-5 text-[#A9153B] shrink-0 mt-0.5" />
-                  <span className="text-xs sm:text-sm text-slate-700 font-medium">{term}</span>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-
-          <ScrollReveal className="max-w-2xl mx-auto">
-            <div className="p-5 rounded-xl bg-slate-50 border border-slate-200 text-center shadow-subtle">
-              <p className="text-xs font-semibold text-slate-800">
-                Human hair is a natural product, and slight variations are inherent.
-              </p>
-            </div>
-          </ScrollReveal>
 
         </div>
       </section>

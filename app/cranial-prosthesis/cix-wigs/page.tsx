@@ -45,7 +45,7 @@ export default function CixWigsPage() {
 
           {/* CIX WIGS LOGO */}
           <div className="flex justify-center">
-            <div className="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200 shadow-sm inline-flex items-center justify-center">
+            <div className="bg-[#A9153B] rounded-2xl p-4 sm:p-2 border border-slate-200 shadow-sm inline-flex items-center justify-center">
               <Image
                 src="/CIXWIGSlogo.jpg"
                 alt="CIX Wigs Logo"
