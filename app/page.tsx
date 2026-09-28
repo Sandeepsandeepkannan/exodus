@@ -52,7 +52,7 @@ export default function HomePage() {
               </div>
 
               {/* Our Philosophy */}
-              <div className="p-6 sm:p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-4">
+              <div className="p-6 sm:p-8 rounded-2xl bg-slate-100 border border-slate-200 space-y-4">
                 <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-display text-[#A9153B] flex items-center gap-2">
                   <Award className="h-5 w-5 text-[#A9153B]" /> Our philosophy
                 </h3>

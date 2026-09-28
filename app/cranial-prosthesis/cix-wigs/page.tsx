@@ -43,9 +43,20 @@ export default function CixWigsPage() {
             <span className="h-1.5 w-1.5 rounded-full bg-[#A9153B]"></span> CIX WIGS
           </div>
 
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight font-display">
-            CIX WIGS
-          </h1>
+          {/* CIX WIGS LOGO */}
+          <div className="flex justify-center">
+            <div className="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200 shadow-sm inline-flex items-center justify-center">
+              <Image
+                src="/CIXWIGSlogo.jpg"
+                alt="CIX Wigs Logo"
+                width={260}
+                height={90}
+                className="h-16 sm:h-20 w-auto object-contain rounded"
+                priority
+              />
+            </div>
+          </div>
+          <h1 className="sr-only">CIX WIGS</h1>
 
           <p className="text-base sm:text-lg font-bold text-[#A9153B] font-display max-w-2xl mx-auto">
             “From Beedi Rolling to Dignified Healing — One Wig at a Time”

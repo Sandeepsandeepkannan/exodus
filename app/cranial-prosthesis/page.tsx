@@ -180,20 +180,17 @@ export default function CranialProsthesisPage() {
             {/* CIX WIGS */}
             <Link
               href="/cranial-prosthesis/cix-wigs"
-              className="p-8 rounded-2xl bg-[#A9153B] text-white shadow-elevated flex flex-col items-center justify-center space-y-3 hover:opacity-95 hover:scale-[1.02] transition-all duration-200 group cursor-pointer"
+              className="p-8 rounded-2xl bg-[#A9153B] text-white shadow-elevated flex items-center justify-center hover:opacity-95 hover:scale-[1.02] transition-all duration-200 group cursor-pointer"
             >
-              <div className="bg-white rounded-xl p-2 shadow-sm flex items-center justify-center">
+              <div className="w-full bg-white rounded-xl p-4 sm:p-5 border border-slate-200 shadow-sm flex items-center justify-center">
                 <Image
                   src="/CIXWIGSlogo.jpg"
                   alt="CIX Wigs Logo"
-                  width={140}
-                  height={50}
-                  className="h-10 w-auto object-contain rounded"
+                  width={240}
+                  height={80}
+                  className="h-12 sm:h-14 w-auto object-contain rounded"
                 />
               </div>
-              <h3 className="text-xl sm:text-2xl font-extrabold tracking-wider uppercase font-display">
-                CIX wigs
-              </h3>
             </Link>
 
             {/* THE WIG BANK */}
@@ -209,30 +206,84 @@ export default function CranialProsthesisPage() {
 
           </div>
 
-          {/* HAIR DONATION */}
-          <div className="max-w-2xl mx-auto">
-            <Link
-              href="/cranial-prosthesis/cix-wigs#hair-donation"
-              className="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-subtle hover:shadow-elevated hover:border-[#A9153B]/40 flex flex-col sm:flex-row items-center justify-between gap-4 transition-all duration-200 group cursor-pointer"
-            >
-              <div className="flex items-center gap-4 text-left">
-                <div className="h-12 w-12 rounded-xl bg-[#A9153B]/10 text-[#A9153B] flex items-center justify-center shrink-0 group-hover:bg-[#A9153B] group-hover:text-white transition-colors duration-300">
-                  <Heart className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-display group-hover:text-[#A9153B] transition-colors">
-                    Hair donation
-                  </h3>
-                  <p className="text-xs sm:text-sm text-slate-600">
-                    Learn about guidelines and how to donate hair for cancer and alopecia patients.
-                  </p>
+        </div>
+      </section>
+
+      {/* 4. HAIR DONATION: GIVE THE GIFT OF CONFIDENCE */}
+      <section id="hair-donation" className="py-20 bg-white border-b border-slate-100 scroll-mt-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 max-w-5xl">
+          
+          <ScrollReveal className="text-center space-y-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#A9153B]/5 border border-[#A9153B]/10 text-[#A9153B] text-[11px] font-bold uppercase tracking-wider">
+              Hair Donation
+            </div>
+            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 font-display">
+              Hair Donation: Give the Gift of Confidence
+            </h2>
+          </ScrollReveal>
+
+          <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 shadow-subtle max-w-4xl mx-auto space-y-3">
+            <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              <strong className="text-slate-900">Why it matters:</strong> Hair loss is one of the most traumatic side effects of chemotherapy. Donated hair allows us to provide natural wigs that restore self-esteem and dignity to patients.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            
+            {/* Guidelines to donate hair */}
+            <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 shadow-subtle space-y-4">
+              <h3 className="text-sm sm:text-base font-bold text-slate-900 font-display border-b border-slate-200 pb-3 text-[#A9153B]">
+                Guidelines to donate hair:
+              </h3>
+              <ul className="space-y-2.5 text-xs sm:text-sm text-slate-700">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[#A9153B] shrink-0 mt-0.5" />
+                  <span>Minimum length: 10” (14” preferred)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[#A9153B] shrink-0 mt-0.5" />
+                  <span>Natural, clean, dry hair; no dye/henna preferred</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[#A9153B] shrink-0 mt-0.5" />
+                  <span>Tie hair into a ponytail or braid</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[#A9153B] shrink-0 mt-0.5" />
+                  <span>Secure with bands on both ends and middle</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[#A9153B] shrink-0 mt-0.5" />
+                  <span>Place in zip lock or thick paper envelope</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Courier Address */}
+            <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 shadow-subtle space-y-4">
+              <h3 className="text-sm sm:text-base font-bold text-slate-900 font-display border-b border-slate-200 pb-3 text-[#A9153B]">
+                Courier to:
+              </h3>
+              <div className="space-y-1.5 text-xs sm:text-sm text-slate-700">
+                <p className="font-bold text-slate-900">Dr. V. Surendran Veeriah</p>
+                <p className="text-slate-600">Professor & Head – Psycho-Oncology</p>
+                <p className="font-semibold text-slate-900">Cancer Institute (WIA)</p>
+                <p>No. 38, Sardar Patel Road, Adyar</p>
+                <p>Chennai – 600036</p>
+                <div className="pt-2 border-t border-slate-200 space-y-1 text-xs">
+                  <p><strong className="text-slate-900">Tel.</strong> 044 - 2235 1615</p>
+                  <p><strong className="text-slate-900">Email:</strong> v.surendran@cancerinstitutewia.org</p>
+                  <p><strong className="text-slate-900">Web:</strong> www.cancerinstitutewia.in</p>
                 </div>
               </div>
-              <div className="flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#A9153B] group-hover:translate-x-1 transition-transform shrink-0">
-                <span>View Guidelines</span>
-                <ArrowRight className="h-4 w-4" />
-              </div>
-            </Link>
+            </div>
+
+          </div>
+
+          <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 shadow-subtle text-center max-w-4xl mx-auto">
+            <p className="text-xs sm:text-sm font-semibold text-slate-800">
+              All donors receive a recognition certificate from the Cancer Institute (WIA)
+            </p>
           </div>
 
         </div>
