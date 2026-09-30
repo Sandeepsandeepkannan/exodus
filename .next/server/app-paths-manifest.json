@@ -1,6 +1,4 @@
 {
   "/about/page": "app/about/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/cranial-prosthesis/page": "app/cranial-prosthesis/page.js",
-  "/cranial-prosthesis/cix-wigs/page": "app/cranial-prosthesis/cix-wigs/page.js"
+  "/contact/page": "app/contact/page.js"
 }

@@ -41,12 +41,7 @@ const certificates: CertificateItem[] = [
     title: "Certificate of Commitment",
     issuer: "Central Vigilance Commission",
   },
-  {
-    src: "/certificate/Screenshot 2026-09-23 123111.png",
-    alt: "World Cancer Congress 2024 – Certificate of Attendance",
-    title: "World Cancer Congress 2024 Attendance",
-    issuer: "Union for International Cancer Control (UICC)",
-  },
+ 
   {
     src: "/certificate/msme.png",
     alt: "Ministry of MSME – Udyam Registration Certificate",

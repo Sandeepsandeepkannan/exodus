@@ -10,7 +10,7 @@ interface CTASectionProps {
 }
 
 export default function CTASection({
-  title = "Looking for premium indian human hair?",
+  title = "Looking for premium Indian human hair?",
   subtitle = "Connect with our Chennai export desk to discuss wholesale hair supply, sample orders, and private labeling.",
   buttonText = "Contact us today",
   darkVariant = false,

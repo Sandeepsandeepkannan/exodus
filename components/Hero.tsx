@@ -34,7 +34,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-[1.15] font-display"
             >
-              Premium indian human hair extensions & wigs – <span className="text-[#A9153B]">ethically sourced from India</span>
+              Premium Indian human hair extensions & wigs – <span className="text-[#A9153B]">ethically sourced from India</span>
             </motion.h1>
 
             {/* Supporting Copy */}
