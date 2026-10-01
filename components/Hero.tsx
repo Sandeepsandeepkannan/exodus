@@ -6,59 +6,101 @@ import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import StatCounter from "./StatCounter";
 
+const titleContainerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.18,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const titleLineVariants = {
+  hidden: { opacity: 0, y: 16 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.65,
+      ease: [0.21, 0.47, 0.32, 0.98],
+    },
+  },
+};
+
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-10 md:pt-36 md:pb-14 bg-gradient-to-b from-slate-50/80 via-white to-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          
-          {/* Left Column (55% on desktop) */}
-          <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
-            className="lg:col-span-7 space-y-8"
-          >
-            {/* Eyebrow badge */}
-            <div className="space-y-2">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-[#A9153B] text-white text-[11px] sm:text-xs font-semibold tracking-wider uppercase shadow-sm">
-                <span className="h-1.5 w-1.5 rounded-full bg-white animate-pulse"></span>
-                Exodus Exports Pvt. Ltd. - Indian human hair exports
-              </div>
+    <>
+      {/* ========================================================
+          1. FIRST HERO FRAME — BLACK BACKGROUND
+          ======================================================== */}
+      <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 bg-black overflow-hidden border-b border-slate-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center min-h-[460px] md:min-h-[500px]">
+            
+            {/* Left Column: Heading in White with Refined Typography & Balanced Lines */}
+            <div className="lg:col-span-7 flex flex-col justify-center">
+              <motion.h1
+                variants={titleContainerVariants}
+                initial="hidden"
+                animate="visible"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[44px] font-bold text-white tracking-tight leading-[1.22] sm:leading-[1.26] font-display max-w-xl space-y-1 sm:space-y-1.5"
+              >
+                <motion.span variants={titleLineVariants} className="block">
+                  Premium Indian human hair
+                </motion.span>
+                <motion.span variants={titleLineVariants} className="block text-white/95">
+                  extensions &amp; wigs –
+                </motion.span>
+                <motion.span variants={titleLineVariants} className="block text-white">
+                  ethically sourced from India
+                </motion.span>
+              </motion.h1>
             </div>
 
-            {/* Main Headline */}
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-[1.15] font-display"
-            >
-              Premium Indian human hair extensions & wigs – <span className="text-[#A9153B]">ethically sourced from India</span>
-            </motion.h1>
-
-            {/* Supporting Copy */}
+            {/* Right Column: Existing Woman/Hair Image (Border Removed) */}
             <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="space-y-3 text-sm sm:text-base text-slate-600 leading-relaxed font-normal max-w-2xl"
+              initial={{ opacity: 0, scale: 0.98 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: [0.21, 0.47, 0.32, 0.98] }}
+              className="lg:col-span-5 relative flex items-center justify-center lg:justify-end"
             >
+              <div className="relative w-full max-w-md lg:max-w-none overflow-hidden rounded-2xl">
+                <Image
+                  src="/images/products/model.jpg"
+                  alt="Authentic Virgin Indian Human Hair Extensions"
+                  width={800}
+                  height={600}
+                  priority
+                  className="w-full h-[360px] sm:h-[440px] md:h-[480px] lg:h-[500px] object-cover rounded-2xl"
+                />
+              </div>
+            </motion.div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* ========================================================
+          2. SECOND FRAME — CLEAN LIGHT BACKGROUND
+          ======================================================== */}
+      <section className="py-20 md:py-24 bg-white border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          
+          <div className="max-w-4xl space-y-8">
+            {/* Paragraphs */}
+            <div className="space-y-4 text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed font-normal">
               <p>
                 Indian human hair has become the most sought-after raw material in the global hair industry, valued for its strength, durability, versatility, and natural texture. With changing fashion trends and increasing demand for hair extensions and wigs, Indian human hair continues to dominate the global market. India is the largest source of human hair in the world, with consistent availability of premium-grade virgin hair sourced ethically from South Indian temples
               </p>
-              <p className="font-semibold text-slate-800">
+              <p className="font-semibold text-slate-900">
                 At Exodus Exports Pvt. Ltd., we specialize in supplying 100% authentic Indian Remy human hair to clients worldwide.
               </p>
-            </motion.div>
+            </div>
 
             {/* CTA Buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2"
-            >
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
               <Link
                 href="/products"
                 className="inline-flex items-center justify-center px-7 py-3.5 text-sm font-semibold text-white bg-[#A9153B] hover:bg-[#A9153B]/90 hover:-translate-y-0.5 rounded-md shadow-sm transition-all duration-300 group text-center"
@@ -72,65 +114,35 @@ export default function Hero() {
               >
                 Contact us
               </Link>
-            </motion.div>
-
-            {/* Key Trust Stats with StatCounter animation */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              className="pt-8 border-t border-slate-100 grid grid-cols-3 gap-6 text-slate-700"
-            >
-              <div className="space-y-1">
-                <div className="flex items-center gap-1.5 text-[#A9153B] font-bold text-lg sm:text-xl font-display">
-                  <StatCounter value={100} suffix="%" />
-                </div>
-                <div className="text-[11px] text-slate-500 font-medium">Virgin Indian Remy</div>
-              </div>
-              <div className="space-y-1">
-                <div className="flex items-center gap-1.5 text-[#A9153B] font-bold text-lg sm:text-xl font-display">
-                  Hand-Made
-                </div>
-                <div className="text-[11px] text-slate-500 font-medium">In-House Wefts & Wigs</div>
-              </div>
-              <div className="space-y-1">
-                <div className="flex items-center gap-1.5 text-[#A9153B] font-bold text-lg sm:text-xl font-display">
-                  Global B2B
-                </div>
-                <div className="text-[11px] text-slate-500 font-medium">Direct Export Facility</div>
-              </div>
-            </motion.div>
-
-          </motion.div>
-
-          {/* Right Column (45% on desktop) */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, delay: 0.3, ease: [0.21, 0.47, 0.32, 0.98] }}
-            className="lg:col-span-5 relative"
-          >
-            <div className="relative mx-auto max-w-md lg:max-w-none group">
-              <div className="absolute -inset-2 bg-[#A9153B]/5 rounded-2xl blur-xl transition-all duration-500 group-hover:bg-[#A9153B]/10"></div>
-              
-              <div className="relative rounded-xl overflow-hidden shadow-elevated border border-slate-100 bg-white">
-                <Image
-                  src="/images/products/model.jpg"
-                  alt="Authentic Virgin Indian Human Hair Extensions"
-                  width={800}
-                  height={600}
-                  priority
-                  className="w-full h-[420px] sm:h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                
-                {/* Overlay Badge */}
-                
-              </div>
             </div>
-          </motion.div>
+          </div>
+
+          {/* Key Trust Stats */}
+          <div className="pt-10 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-3 gap-6 text-slate-700">
+            <div className="p-6 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
+              <div className="flex items-center gap-1.5 text-[#A9153B] font-bold text-xl sm:text-2xl font-display">
+                <StatCounter value={100} suffix="%" />
+              </div>
+              <div className="text-xs sm:text-sm text-slate-600 font-medium">Virgin Indian Remy</div>
+            </div>
+
+            <div className="p-6 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
+              <div className="flex items-center gap-1.5 text-[#A9153B] font-bold text-xl sm:text-2xl font-display">
+                Hand-Made
+              </div>
+              <div className="text-xs sm:text-sm text-slate-600 font-medium">In-House Wefts &amp; Wigs</div>
+            </div>
+
+            <div className="p-6 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
+              <div className="flex items-center gap-1.5 text-[#A9153B] font-bold text-xl sm:text-2xl font-display">
+                Global B2B
+              </div>
+              <div className="text-xs sm:text-sm text-slate-600 font-medium">Direct Export Facility</div>
+            </div>
+          </div>
 
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

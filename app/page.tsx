@@ -42,10 +42,20 @@ export default function HomePage() {
             <ScrollReveal direction="right" className="lg:col-span-6 space-y-6">
               <SectionHeading
                 eyebrow="About us"
-                title="About Exodus Exports Pvt. Ltd."
-                subtitle="Established in 2002, Exodus Exports Pvt. Ltd. is an Export-Oriented Private Limited Company, headquartered in Chennai, South India."
+                title="Exodus Exports Pvt. Ltd."
               />
-              <div className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed pt-2">
+              <div className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
+                <div className="space-y-1 pb-1">
+                  <div className="text-xs sm:text-sm font-bold text-[#A9153B] uppercase tracking-wider font-display">
+                    A COMPANY WITH A DIFFERENCE
+                  </div>
+                  <div className="text-sm sm:text-base font-semibold text-slate-900">
+                    Creating Livelihoods. Creating Dignity. Creating a Future.
+                  </div>
+                </div>
+                <p>
+                  Established in 2002, Exodus Exports Pvt. Ltd. is an Export-Oriented Private Limited Company, headquartered in Chennai, South India.
+                </p>
                 <p>
                   With over two decades of industry experience, we have earned a reputation as one of India’s most trusted suppliers of premium Indian human hair. Our products are exported to over 65 countries across 5 continents, serving wholesalers, distributors, salons, and wig makers.
                 </p>
@@ -95,13 +105,13 @@ export default function HomePage() {
             </ScrollReveal>
 
             <ScrollReveal direction="left" className="lg:col-span-6 space-y-6">
-              <div className="relative w-[500px] rounded-2xl overflow-hidden shadow-elevated border border-slate-100">
+              <div className="relative w-full rounded-2xl overflow-hidden shadow-elevated border border-slate-100">
                 <Image
-                  src="/images/products/WIG-7.png"
+                  src="/images/products/lace.png"
                   alt="Exodus Exports Pvt. Ltd. - Indian Human Hair"
-                  width={700}
+                  width={600}
                   height={700}
-                  className="w-[500px] h-[530px] "
+                  className="w-full h-[480px] sm:h-[530px] object-cover"
                 />
                 <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/90 via-slate-900/60 to-transparent p-6 text-white">
                   <div className="font-bold text-lg sm:text-xl font-display">Exodus Exports Pvt. Ltd.</div>

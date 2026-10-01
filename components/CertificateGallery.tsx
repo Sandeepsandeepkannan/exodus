@@ -12,7 +12,7 @@ export interface CertificateItem {
 }
 
 const certificates: CertificateItem[] = [
-  // FIRST ROW — EXACT ORDER:
+  // FIRST ROW (4 certificates on desktop):
   // 1. Cancer Institute certificate
   {
     src: "/certificate/A - CI_EVC_REF_LTR_JAN_25.jpg",
@@ -34,19 +34,34 @@ const certificates: CertificateItem[] = [
     title: "Certificate of Award",
     issuer: "Evento Hair Products Ltd.",
   },
-  // SECOND ROW: Remaining existing certificates continuing in order
+  // 4. Central Vigilance Commission certificate
   {
     src: "/certificate/EXODUS_CVC_Cert.jpg",
     alt: "Central Vigilance Commission – Certificate of Commitment",
     title: "Certificate of Commitment",
     issuer: "Central Vigilance Commission",
   },
- 
+  // SECOND ROW (3 certificates on desktop):
+  // 5. MSME Certificate
   {
     src: "/certificate/msme.png",
     alt: "Ministry of MSME – Udyam Registration Certificate",
     title: "Udyam Registration Certificate",
     issuer: "Ministry of MSME, Govt. of India",
+  },
+  // 6. World and Lean Scheme certificate
+  {
+    src: "/certificate/world.png",
+    alt: "World Cancer Congress",
+    title: "World Cancer Congress Certificate",
+    issuer: "World Cancer Congress",
+  },
+  // 7. Lean Scheme certificate
+  {
+    src: "/certificate/Leanscheme.png",
+    alt: "Lean Scheme Certificate",
+    title: "Lean Scheme Certificate",
+    issuer: "MSME Lean Scheme",
   },
 ];
 
@@ -94,21 +109,21 @@ export default function CertificateGallery() {
 
   return (
     <div className="pt-2 space-y-6">
-      {/* Certificates Responsive Grid: Desktop 3 cols, Tablet 2 cols, Mobile 1 col (Compact & balanced) */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
+      {/* Certificates Responsive Layout: Desktop 4 cols (Row 1: 4, Row 2: 3 centered), Tablet 2 cols, Mobile 1 col */}
+      <div className="flex flex-wrap justify-center gap-4 sm:gap-5 max-w-7xl mx-auto">
         {certificates.map((cert, index) => (
           <div
             key={index}
             onClick={() => setSelectedIndex(index)}
-            className="group relative bg-white rounded-2xl border border-slate-200 shadow-subtle hover:shadow-lg hover:border-[#A9153B]/40 transition-all duration-300 cursor-pointer overflow-hidden flex flex-col justify-between"
+            className="w-full sm:w-[calc(50%-10px)] lg:w-[calc(25%-15px)] shrink-0 group relative bg-white rounded-2xl border border-slate-200 shadow-subtle hover:shadow-lg hover:border-[#A9153B]/40 transition-all duration-300 cursor-pointer overflow-hidden flex flex-col justify-between"
           >
-            {/* Slightly more compact Thumbnail Image Container with object-contain */}
+            {/* Thumbnail Image Container with object-contain */}
             <div className="relative w-full aspect-[4/3] bg-slate-50 flex items-center justify-center p-2.5 overflow-hidden border-b border-slate-100">
               <Image
                 src={cert.src}
                 alt={cert.alt}
                 fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 className="object-contain p-2 transition-transform duration-500 group-hover:scale-105"
               />
 
@@ -121,8 +136,8 @@ export default function CertificateGallery() {
               </div>
             </div>
 
-            {/* Certificate Title & Issuer Footer (Compact) */}
-            <div className="p-3.5 sm:p-4 bg-white space-y-2 flex-1 flex flex-col justify-between">
+            {/* Certificate Title & Issuer Footer */}
+            <div className="p-3.5 bg-white space-y-2 flex-1 flex flex-col justify-between">
               <div className="space-y-0.5">
                 <div className="text-[10px] sm:text-[11px] font-bold text-[#A9153B] uppercase tracking-wider font-display">
                   {cert.issuer}
@@ -133,8 +148,8 @@ export default function CertificateGallery() {
               </div>
 
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-xs">
-                <span className="text-slate-500 font-medium text-[11px]">Official Certificate</span>
-                <span className="text-[#A9153B] text-[11px] font-bold group-hover:underline flex items-center gap-1 shrink-0">
+                <span className="text-slate-500 font-medium text-[10px] sm:text-[11px]">Official Certificate</span>
+                <span className="text-[#A9153B] text-[10px] sm:text-[11px] font-bold group-hover:underline flex items-center gap-1 shrink-0">
                   Click to view &rarr;
                 </span>
               </div>
