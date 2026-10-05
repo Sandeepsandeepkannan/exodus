@@ -66,13 +66,13 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 flex items-center ${
         scrolled
-          ? "bg-white/95 backdrop-blur-md shadow-subtle border-b border-slate-100 py-3.5"
-          : "bg-white/90 backdrop-blur-sm border-b border-slate-100/80 py-4.5"
+          ? "bg-white/95 backdrop-blur-md shadow-subtle border-b border-slate-100 h-20 sm:h-24 md:h-28"
+          : "bg-white/90 backdrop-blur-sm border-b border-slate-100/80 h-24 sm:h-28 md:h-32"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
           {/* Left: Official Exodus Exports Logo */}

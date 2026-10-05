@@ -45,13 +45,24 @@ export default function HomePage() {
                 title="Exodus Exports Pvt. Ltd."
               />
               <div className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
-                <div className="space-y-1 pb-1">
-                  <div className="text-xs sm:text-sm font-bold text-[#A9153B] uppercase tracking-wider font-display">
+                <div className="space-y-2 pb-1">
+                  <div className="text-sm sm:text-base md:text-lg font-extrabold text-[#A9153B] uppercase tracking-wider font-display">
                     A COMPANY WITH A DIFFERENCE
                   </div>
-                  <div className="text-sm sm:text-base font-semibold text-slate-900">
-                    Creating Livelihoods. Creating Dignity. Creating a Future.
-                  </div>
+                  <ul className="space-y-1.5 text-sm sm:text-base font-semibold text-slate-900">
+                    <li className="flex items-center gap-2.5">
+                      <span className="h-1.5 w-1.5 rounded-full bg-[#A9153B] shrink-0"></span>
+                      <span>Creating Livelihoods.</span>
+                    </li>
+                    <li className="flex items-center gap-2.5">
+                      <span className="h-1.5 w-1.5 rounded-full bg-[#A9153B] shrink-0"></span>
+                      <span>Creating Dignity.</span>
+                    </li>
+                    <li className="flex items-center gap-2.5">
+                      <span className="h-1.5 w-1.5 rounded-full bg-[#A9153B] shrink-0"></span>
+                      <span>Creating a Future.</span>
+                    </li>
+                  </ul>
                 </div>
                 <p>
                   Established in 2002, Exodus Exports Pvt. Ltd. is an Export-Oriented Private Limited Company, headquartered in Chennai, South India.
