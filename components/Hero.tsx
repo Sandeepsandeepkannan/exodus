@@ -56,7 +56,7 @@ export default function Hero() {
                     extensions &amp; wigs –
                   </motion.span>
                   <motion.span variants={titleLineVariants} className="block font-bold tracking-tight text-white">
-                    ethically sourced from
+                    Ethically sourced from
                   </motion.span>
                   <motion.span variants={titleLineVariants} className="block font-bold tracking-tight text-white">
                     India
