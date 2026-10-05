@@ -35,14 +35,16 @@ export default function Hero() {
       {/* ========================================================
           1. FIRST HERO FRAME — COMPACT BLACK BAND WITH WHITE SPACE ABOVE & BELOW
           ======================================================== */}
-      <section className="relative pt-24 pb-8 sm:pt-28 sm:pb-10 md:pt-32 md:pb-12 bg-white overflow-hidden">
-        {/* Compact horizontal black band */}
-        <div className="w-full bg-black py-4 sm:py-5 md:py-6">
+      <section className="relative pt-24 pb-3 sm:pt-28 sm:pb-4 md:pt-32 md:pb-5 bg-white overflow-hidden">
+        {/* Compact horizontal black band with matching 1px solid white line on the FAR LEFT EDGE */}
+        <div className="w-full bg-black py-0 relative border-l border-white">
+          {/* Exact 1px solid white vertical line along the far left edge */}
+          <div className="absolute left-0 top-0 bottom-0 w-[1px] bg-white pointer-events-none z-10" />
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-              
-              {/* Left Column: Heading in White (Vertically Centered Relative to Image) */}
-              <div className="lg:col-span-7 flex flex-col justify-center">
+
+              {/* Left Column: Heading & Description in White (Vertically Centered Relative to Image) */}
+              <div className="lg:col-span-7 flex flex-col justify-center py-6 sm:py-8 lg:py-10 space-y-4 sm:space-y-5">
                 <motion.h1
                   variants={titleContainerVariants}
                   initial="hidden"
@@ -62,14 +64,24 @@ export default function Hero() {
                     India
                   </motion.span>
                 </motion.h1>
+
+                {/* Small Description directly below headline (Two lines on desktop) */}
+                <motion.p
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.4 }}
+                  className="text-white/80 text-xs sm:text-sm lg:text-[13px] xl:text-sm font-normal tracking-normal max-w-xl lg:max-w-none lg:whitespace-nowrap"
+                >
+                  At Exodus Exports Pvt. Ltd., we specialize in supplying 100% authentic Indian Remy human hair
+                </motion.p>
               </div>
 
-              {/* Right Column: Existing Woman/Hair Image (Proportionate & Compact) */}
+              {/* Right Column: Existing Woman/Hair Image (Clean vertical alignment) */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.98 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.2, ease: [0.21, 0.47, 0.32, 0.98] }}
-                className="lg:col-span-5 relative flex items-center justify-center lg:justify-end"
+                className="lg:col-span-5 relative flex items-center justify-center lg:justify-end py-0"
               >
                 <div className="relative w-full max-w-md lg:max-w-none overflow-hidden rounded-2xl bg-black">
                   <Image
@@ -78,7 +90,7 @@ export default function Hero() {
                     width={800}
                     height={600}
                     priority
-                    className="w-full h-[320px] sm:h-[380px] md:h-[420px] lg:h-[450px] object-cover rounded-2xl"
+                    className="w-full h-[370px] sm:h-[400px] md:h-[480px] lg:h-[530px] object-cover rounded-2xl"
                   />
                 </div>
               </motion.div>
@@ -91,18 +103,16 @@ export default function Hero() {
       {/* ========================================================
           2. SECOND FRAME — CLEAN LIGHT BACKGROUND
           ======================================================== */}
-      <section className="py-20 md:py-24 bg-white border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <section className="pt-6 pb-14 sm:pt-8 sm:pb-16 md:pt-10 md:pb-18 bg-white border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
 
-          <div className="max-w-4xl space-y-8">
+          <div className="max-w-4xl space-y-6">
             {/* Paragraphs */}
             <div className="space-y-4 text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed font-normal">
               <p>
                 Indian human hair has become the most sought-after raw material in the global hair industry, valued for its strength, durability, versatility, and natural texture. With changing fashion trends and increasing demand for hair extensions and wigs, Indian human hair continues to dominate the global market. India is the largest source of human hair in the world, with consistent availability of premium-grade virgin hair sourced ethically from South Indian temples
               </p>
-              <p className="font-semibold text-slate-900">
-                At Exodus Exports Pvt. Ltd., we specialize in supplying 100% authentic Indian Remy human hair to clients worldwide.
-              </p>
+
             </div>
 
             {/* CTA Buttons */}
@@ -124,7 +134,7 @@ export default function Hero() {
           </div>
 
           {/* Key Trust Stats */}
-          <div className="pt-10 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-3 gap-6 text-slate-700">
+          <div className="pt-8 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-3 gap-6 text-slate-700">
             <div className="p-6 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
               <div className="flex items-center gap-1.5 text-[#A9153B] font-bold text-xl sm:text-2xl font-display">
                 <StatCounter value={100} suffix="%" />

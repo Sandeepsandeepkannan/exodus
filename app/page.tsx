@@ -29,15 +29,18 @@ import {
 const ethicalSourcingCards = [
   {
     image: "/images/products/1..png",
-    description: "Ethically Sourced: Hair procured through South Indian temple auctions, with a commitment to 100% ethical and traceable sourcing and no child labour.",
+    label: "Ethically Sourced:",
+    description: "Hair procured through South Indian temple auctions, with a commitment to 100% ethical and traceable sourcing and no child labour.",
   },
   {
     image: "/images/products/2.JPG",
-    description: "Women Empowerment: Our production units employ 100% rural women formerly engaged in beedi rolling, providing dignified and sustainable livelihoods.",
+    label: "Women Empowerment:",
+    description: "Our production units employ 100% rural women formerly engaged in beedi rolling, providing dignified and sustainable livelihoods.",
   },
   {
     image: "/images/products/4.JPG",
-    description: "Responsible Workplace: We are committed to employee welfare, safety, and sustainable employment, creating positive social impact alongside quality products.",
+    label: "Responsible Workplace:",
+    description: "We are committed to employee welfare, safety, and sustainable employment, creating positive social impact alongside quality products.",
   },
 ];
 
@@ -45,11 +48,11 @@ const ethicalSourcingCards = [
 const beediWorkerImages = [
   {
     image: "/images/products/b1.JPG",
-    title: "Women rolling Beedi",
+    title: "Woman rolling Beedi - then",
   },
   {
     image: "/images/products/b2.JPG",
-    title: "Women making Wigs",
+    title: "Woman making Wigs - Now",
   },
 ];
 
@@ -63,7 +66,7 @@ export default function HomePage() {
       <Hero />
 
       {/* ABOUT EXODUS EXPORTS PVT. LTD. & OUR PHILOSOPHY */}
-      <section className="pt-10 pb-24 md:pt-14 md:pb-24 bg-white border-b border-slate-100">
+      <section className="pt-8 pb-14 md:pt-10 md:pb-16 bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
 
@@ -164,8 +167,8 @@ export default function HomePage() {
       </section>
 
       {/* ETHICAL SOURCING & WOMEN EMPOWERMENT */}
-      <section className="py-24 bg-slate-50 border-b border-slate-200/80">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <section className="py-14 sm:py-16 md:py-18 bg-slate-50 border-b border-slate-200/80">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-10">
 
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-3">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-display">
@@ -194,6 +197,7 @@ export default function HomePage() {
                   <div className="p-6 sm:p-7 space-y-3 flex-1 flex flex-col">
                     
                     <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">
+                      <strong className="font-bold text-slate-900">{card.label} </strong>
                       {card.description}
                     </p>
                   </div>
@@ -207,8 +211,8 @@ export default function HomePage() {
       </section>
 
       {/* SOCIAL IMPACT & SUSTAINABLE LIVELIHOOD BUSINESS INITIATIVE */}
-      <section className="py-24 bg-[#A9153B] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 lg:space-y-16">
+      <section className="py-14 sm:py-16 md:py-18 bg-[#A9153B] text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-10">
 
           <ScrollReveal className="text-center max-w-4xl mx-auto space-y-4">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white font-display">
@@ -233,12 +237,6 @@ export default function HomePage() {
               <p>
                 This program reflects our commitment to public health, women’s empowerment, and responsible business practices, ensuring that economic progress goes hand in hand with social well-being. Hence, to undertake this mission, we moved from Chennai to a remote village in the Tirunelveli district of Tamil Nadu, approximately 650 kilometres away, which lies at the heart of the state’s beedi industry. We have been operating our factory here for the past five years.
               </p>
-              <div className="p-6 rounded-2xl bg-white text-slate-900 shadow-elevated space-y-2">
-                <div className="text-[11px] font-bold text-[#A9153B] uppercase tracking-wider">Next expansion project</div>
-                <p className="font-semibold text-slate-900 text-xs sm:text-sm leading-relaxed">
-                  Our current project, undertaken in collaboration with NABARD and the Cancer Institute (WIA), Chennai, aims to recruit and train 300 beedi rollers in Tenkasi district. This initiative is expected to commence shortly and represents an important step towards creating sustainable livelihood opportunities while promoting awareness and healthier alternatives within the beedi-rolling community.
-                </p>
-              </div>
             </div>
 
             {/* RIGHT COLUMN: Image & Dedicated Image Content/Description Area */}
@@ -264,11 +262,23 @@ export default function HomePage() {
 
           </div>
 
+          {/* FULL-WIDTH CARD: Next Expansion Project */}
+          <ScrollReveal>
+            <div className="w-full p-6 sm:p-8 rounded-2xl bg-white text-slate-900 shadow-elevated space-y-2.5">
+              <div className="text-xs sm:text-[13px] font-bold text-[#A9153B] uppercase tracking-wider">
+                Next expansion project
+              </div>
+              <p className="font-semibold text-slate-900 text-sm sm:text-base leading-relaxed">
+                Our current project, undertaken in collaboration with NABARD and the Cancer Institute (WIA), Chennai, aims to recruit and train 300 beedi rollers in Tenkasi district. This initiative is expected to commence shortly and represents an important step towards creating sustainable livelihood opportunities while promoting awareness and healthier alternatives within the beedi-rolling community.
+              </p>
+            </div>
+          </ScrollReveal>
+
         </div>
       </section>
 
       {/* WHO ARE THESE BEEDI WORKERS? */}
-      <section className="py-24 bg-white border-b border-slate-100">
+      <section className="py-14 sm:py-16 md:py-18 bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
 

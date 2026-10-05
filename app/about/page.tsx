@@ -102,7 +102,7 @@ export default function AboutPage() {
             <ScrollReveal direction="right" className="lg:col-span-5 space-y-6">
               <div className="relative rounded-2xl overflow-hidden shadow-elevated border border-slate-200 bg-slate-100 group">
                 <Image
-                  src="/images/products/hair_wigs.jpg"
+                  src="/images/products/md.JPG"
                   alt="Exodus Exports Pvt. Ltd."
                   width={800}
                   height={900}
