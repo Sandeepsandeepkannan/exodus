@@ -48,7 +48,7 @@ const ethicalSourcingCards = [
 const beediWorkerImages = [
   {
     image: "/images/products/b1.JPG",
-    title: "Woman rolling Beedi - then",
+    title: "Woman rolling Beedi - Then",
   },
   {
     image: "/images/products/b2.JPG",
@@ -72,7 +72,7 @@ export default function HomePage() {
 
             <ScrollReveal direction="right" className="lg:col-span-6 space-y-6">
               <SectionHeading
-                eyebrow="About us"
+          
                 title="Exodus Exports Pvt. Ltd."
               />
               <div className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">

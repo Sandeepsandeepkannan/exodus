@@ -43,8 +43,8 @@ export default function Hero() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
 
-              {/* Left Column: Heading & Description in White (Vertically Centered Relative to Image) */}
-              <div className="lg:col-span-7 flex flex-col justify-center py-6 sm:py-8 lg:py-10 space-y-4 sm:space-y-5">
+              {/* Left Column: Heading in White (Vertically Centered Relative to Image) */}
+              <div className="lg:col-span-7 flex flex-col justify-center py-6 sm:py-8 lg:py-10">
                 <motion.h1
                   variants={titleContainerVariants}
                   initial="hidden"
@@ -64,16 +64,6 @@ export default function Hero() {
                     India
                   </motion.span>
                 </motion.h1>
-
-                {/* Small Description directly below headline (Two lines on desktop) */}
-                <motion.p
-                  initial={{ opacity: 0, y: 12 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.4 }}
-                  className="text-white/80 text-xs sm:text-sm lg:text-[13px] xl:text-sm font-normal tracking-normal max-w-xl lg:max-w-none lg:whitespace-nowrap"
-                >
-                  At Exodus Exports Pvt. Ltd., we specialize in supplying 100% authentic Indian Remy human hair
-                </motion.p>
               </div>
 
               {/* Right Column: Existing Woman/Hair Image (Clean vertical alignment) */}
@@ -103,10 +93,24 @@ export default function Hero() {
       {/* ========================================================
           2. SECOND FRAME — CLEAN LIGHT BACKGROUND
           ======================================================== */}
-      <section className="pt-6 pb-14 sm:pt-8 sm:pb-16 md:pt-10 md:pb-18 bg-white border-b border-slate-100">
+      <section className="pt-8 pb-14 sm:pt-10 sm:pb-16 md:pt-12 md:pb-18 bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
 
-          <div className="max-w-4xl space-y-6">
+          {/* Centered + Bold + Strictly Two-Line Heading on Desktop with Background */}
+          <div className="text-center w-full">
+            <div className="inline-block px-5 py-4 sm:px-8 sm:py-5 rounded-2xl bg-slate-50 border border-slate-200 shadow-subtle">
+              <h2 className="text-2xl sm:text-3xl md:text-[30px] lg:text-[32px] xl:text-[34px] font-black text-slate-950 font-display tracking-tight leading-[1.25] text-center max-w-5xl mx-auto space-y-1">
+                <span className="block md:whitespace-nowrap">
+                  At Exodus Exports Pvt. Ltd., We specialize in supplying
+                </span>
+                <span className="block md:whitespace-nowrap">
+                  100% Authentic Indian Remy human hair
+                </span>
+              </h2>
+            </div>
+          </div>
+
+          <div className="max-w-4xl space-y-8">
             {/* Paragraphs */}
             <div className="space-y-4 text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed font-normal">
               <p>

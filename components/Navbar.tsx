@@ -80,10 +80,10 @@ export default function Navbar() {
             <Image
               src="/EXODUS-Logo.png"
               alt="Exodus Exports"
-              width={165}
-              height={68}
+              width={210}
+              height={88}
               priority
-              className="h-[50px] sm:h-[55px] w-auto object-contain"
+              className="h-[58px] sm:h-[66px] md:h-[74px] w-auto object-contain"
             />
           </Link>
 

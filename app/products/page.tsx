@@ -26,6 +26,7 @@ import {
 
 const categoryAnchorIds: Record<string, string> = {
   "Hair Types": "hair-products",
+  "Wefts & Extensions": "extensions-wefts",
   "Extensions & Wefts": "extensions-wefts",
   "Wigs & Hairpieces": "wigs-hairpieces",
   "Cranial Prosthesis": "cranial-prosthesis",
@@ -116,21 +117,26 @@ export default function ProductsPage() {
                     : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                 }`}
               >
-                All Products ({sampleProducts.length})
+                All Products
               </button>
               {productCategories.map((cat) => {
-                const count = sampleProducts.filter((p) => p.category === cat.id).length;
                 return (
                   <button
                     key={cat.id}
-                    onClick={() => setActiveCategory(cat.id)}
+                    onClick={() => {
+                      setActiveCategory(cat.id);
+                      if (cat.id === "Hair Types") {
+                        const el = document.getElementById("hair-products");
+                        if (el) el.scrollIntoView({ behavior: "smooth" });
+                      }
+                    }}
                     className={`px-4 py-2 rounded-lg text-xs font-medium transition-colors ${
                       activeCategory === cat.id
                         ? "bg-[#A9153B] text-white"
                         : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                     }`}
                   >
-                    {cat.name} ({count})
+                    {cat.name}
                   </button>
                 );
               })}
@@ -151,37 +157,39 @@ export default function ProductsPage() {
 
           {/* Categorized Product Display */}
           <div className="space-y-16">
-            {categoriesToDisplay.map((cat) => {
-              const catProducts = filteredProducts.filter((p) => p.category === cat.id);
-              if (catProducts.length === 0) return null;
+            {categoriesToDisplay
+              .filter((cat) => cat.id !== "Hair Types")
+              .map((cat) => {
+                const catProducts = filteredProducts.filter((p) => p.category === cat.id);
+                if (catProducts.length === 0) return null;
 
-              const anchorId = categoryAnchorIds[cat.id];
+                const anchorId = categoryAnchorIds[cat.id];
 
-              return (
-                <div key={cat.id} id={anchorId} className="space-y-8 scroll-mt-32">
-                  <div className="flex items-center gap-3 border-b border-slate-100 pb-4">
-                    <h2 className="text-xl sm:text-2xl font-bold text-slate-900 font-display">
-                      {cat.name === "Hair Types" ? "Hair Products" : cat.name}
-                    </h2>
-                    <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 font-semibold">
-                      {catProducts.length} items
-                    </span>
+                return (
+                  <div key={cat.id} id={anchorId} className="space-y-8 scroll-mt-32">
+                    <div className="flex items-center gap-3 border-b border-slate-100 pb-4">
+                      <h2 className="text-xl sm:text-2xl font-bold text-slate-900 font-display">
+                        {cat.name}
+                      </h2>
+                      <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 font-semibold">
+                        {catProducts.length} items
+                      </span>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                      {catProducts.map((product) => (
+                        <ProductCard
+                          key={product.id}
+                          product={product}
+                          onQuickView={(p) => setSelectedProduct(p)}
+                        />
+                      ))}
+                    </div>
                   </div>
+                );
+              })}
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {catProducts.map((product) => (
-                      <ProductCard
-                        key={product.id}
-                        product={product}
-                        onQuickView={(p) => setSelectedProduct(p)}
-                      />
-                    ))}
-                  </div>
-                </div>
-              );
-            })}
-
-            {filteredProducts.length === 0 && (
+            {filteredProducts.filter((p) => p.category !== "Hair Types").length === 0 && activeCategory !== "Hair Types" && (
               <div className="text-center py-16 bg-slate-50 rounded-2xl border border-dashed border-slate-300">
                 <p className="text-slate-500 text-xs sm:text-sm">No products found matching your search.</p>
               </div>
@@ -192,7 +200,7 @@ export default function ProductsPage() {
       </section>
 
       {/* 3. INDIAN HUMAN HAIR TYPES */}
-      <section className="py-24 bg-slate-50 border-b border-slate-200/80">
+      <section id="hair-products" className="py-24 bg-slate-50 border-b border-slate-200/80 scroll-mt-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
           
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-4">

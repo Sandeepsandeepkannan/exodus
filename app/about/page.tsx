@@ -97,42 +97,60 @@ export default function AboutPage() {
       {/* WHO WE ARE DETAILED CONTENT */}
       <section className="py-24 bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
 
-            <ScrollReveal direction="right" className="lg:col-span-5 space-y-6">
-              <div className="relative rounded-2xl overflow-hidden shadow-elevated border border-slate-200 bg-slate-100 group">
-                <Image
-                  src="/images/products/md.JPG"
-                  alt="Exodus Exports Pvt. Ltd."
-                  width={800}
-                  height={900}
-                  className="w-full h-[480px] object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/90 via-slate-900/60 to-transparent p-6 text-white">
-                  <div className="font-bold text-lg sm:text-xl font-display">Exodus Exports (P). Ltd.</div>
-                  <div className="text-white/90 text-[11px] font-medium mt-0.5">Chennai, South India</div>
+            {/* Left Column: 2 Images Side-by-Side in 1 Row */}
+            <ScrollReveal direction="right" className="lg:col-span-6 space-y-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
+                
+                {/* IMAGE 1 */}
+                <div className="space-y-3 group">
+                  <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-elevated border border-slate-200 bg-slate-100">
+                    <Image
+                      src="/images/sheeba.JPG"
+                      alt="Mrs. Sheeba Paul"
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="text-left px-0.5">
+                    <h3 className="font-bold text-base sm:text-lg text-slate-900 font-display">
+                      Mrs. Sheeba Paul
+                    </h3>
+                    <p className="text-xs sm:text-sm font-semibold text-[#A9153B] mt-0.5">
+                      Managing Director
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              {/* Core Philosophy Callout */}
-              <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-3">
-                <h4 className="font-bold text-slate-900 text-xs font-display uppercase tracking-wider text-[#A9153B]">
-                  Our philosophy
-                </h4>
-                <p className="text-xs sm:text-sm font-semibold text-slate-800">
-                  Our philosophy is rooted in the belief that business must grow alongside humanity.
-                </p>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  Commercial success, for us, is meaningful only when it is accompanied by social responsibility, ethical practices, and respect for people at every level of the value chain.
-                </p>
+                {/* IMAGE 2 */}
+                <div className="space-y-3 group">
+                  <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-elevated border border-slate-200 bg-slate-100">
+                    <Image
+                      src="/images/paul.jpg"
+                      alt="Exodus Exports (P). Ltd."
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="text-left px-0.5">
+                    <h3 className="font-bold text-base sm:text-lg text-slate-900 font-display">
+                      Mr. Paul J Rajasekaran
+                    </h3>
+                    <p className="text-xs sm:text-sm font-semibold text-[#A9153B] mt-0.5">
+                      Director
+                    </p>
+                  </div>
+                </div>
+
               </div>
             </ScrollReveal>
 
-            <ScrollReveal direction="left" className="lg:col-span-7 space-y-6">
-             
-
+            {/* Right Column: Existing About Us Content Unchanged */}
+            <ScrollReveal direction="left" className="lg:col-span-6 space-y-6">
               <div className="space-y-5 text-slate-600 text-sm sm:text-base leading-relaxed">
-               
                 <p>
                   As entrepreneurs what we value most is the trust our clients place in us. We believe in the courage to take responsible risks, the discipline to deliver consistent quality, the honesty to acknowledge our mistakes, and the determination to improve every day. We are simple people offering exceptional products, backed by principles that never change.
                 </p>

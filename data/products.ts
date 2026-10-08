@@ -23,8 +23,8 @@ export const productCategories = [
     image: "/images/products/hair_extensions.jpg",
   },
   {
-    id: "Extensions & Wefts",
-    name: "Extensions & Wefts",
+    id: "Wefts & Extensions",
+    name: "Wefts & Extensions",
     badge: "Custom Handcrafted",
     shortDesc: "Hand-Tied Wefts, Micro Wefts, Pre-Bonded Keratin Tips & Clip-Ins",
     image: "/images/extensionsandwefts/Handtiedwefts/mainDSC01649.JPG",
@@ -120,11 +120,11 @@ export const sampleProducts: ProductItem[] = [
     image: "/images/products/hair_extensions.jpg",
   },
 
-  // --- EXTENSIONS & WEFTS ---
+  // --- WEFTS & EXTENSIONS ---
   {
     id: "ext-handtied",
     name: "Hand-Tied Wefts",
-    category: "Extensions & Wefts",
+    category: "Wefts & Extensions",
     description: "Custom-made, processed in-house, and tailored to client specifications.",
     specs: {
       type: "Hand-Tied Wefts",
@@ -143,7 +143,7 @@ export const sampleProducts: ProductItem[] = [
   {
     id: "ext-micro",
     name: "Micro Wefts",
-    category: "Extensions & Wefts",
+    category: "Wefts & Extensions",
     description: "Custom-made, processed in-house, and tailored to client specifications.",
     specs: {
       type: "Micro Wefts",
@@ -162,7 +162,7 @@ export const sampleProducts: ProductItem[] = [
   {
     id: "ext-keratin",
     name: "Pre-Bonded Keratin Tips",
-    category: "Extensions & Wefts",
+    category: "Wefts & Extensions",
     description: "Custom-made, processed in-house, and tailored to client specifications.",
     specs: {
       type: "Pre-Bonded Keratin Tips",
@@ -183,7 +183,7 @@ export const sampleProducts: ProductItem[] = [
   {
     id: "ext-clips",
     name: "Clip-In Extensions",
-    category: "Extensions & Wefts",
+    category: "Wefts & Extensions",
     description: "Custom-made, processed in-house, and tailored to client specifications.",
     specs: {
       type: "Clip-In Extensions",
