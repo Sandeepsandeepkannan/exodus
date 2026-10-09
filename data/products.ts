@@ -122,6 +122,25 @@ export const sampleProducts: ProductItem[] = [
 
   // --- WEFTS & EXTENSIONS ---
   {
+    id: "ext-machineweft",
+    name: "Machine Wefts",
+    category: "Wefts & Extensions",
+    description: "Custom-made, processed in-house, and tailored to client specifications.",
+    specs: {
+      type: "Machine Wefts",
+      processing: "In-house processed",
+      customization: "Custom-made and tailored to client specifications",
+    },
+    image: "/images/extensionsandwefts/machinewefts/MACHINE WEFT-2.JPG",
+    images: [
+      "/images/extensionsandwefts/machinewefts/MACHINE WEFT-2.JPG",
+      "/images/extensionsandwefts/machinewefts/MACHINE WEFT-3.jpg",
+      "/images/extensionsandwefts/machinewefts/MACHINE WEFT-6.JPG",
+      "/images/extensionsandwefts/machinewefts/MACHINE WEFT-7.JPG",
+      "/images/extensionsandwefts/machinewefts/MACHINE WEFT-8.JPG",
+    ],
+  },
+  {
     id: "ext-handtied",
     name: "Hand-Tied Wefts",
     category: "Wefts & Extensions",
@@ -295,7 +314,7 @@ export const sampleProducts: ProductItem[] = [
       processing: "Custom-made and handcrafted in-house",
       customization: "100% natural human hair with scalp-friendly base",
     },
-    image: "/images/products/hair_wigs.jpg",
+    image: "/images/products/cprod.jpg",
   },
 ];
 

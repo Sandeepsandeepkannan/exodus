@@ -72,7 +72,7 @@ export default function CixWigsPage() {
             <ScrollReveal direction="right" className="lg:col-span-5 space-y-6">
               <div className="relative rounded-2xl overflow-hidden shadow-elevated border border-slate-200 bg-slate-100">
                 <Image
-                  src="/images/products/cranial_prostheses.jpg"
+                  src="/images/cranialimages/cix.png"
                   alt="CIX Wigs"
                   width={800}
                   height={900}

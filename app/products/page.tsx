@@ -201,7 +201,7 @@ export default function ProductsPage() {
 
       {/* 3. INDIAN HUMAN HAIR TYPES */}
       <section id="hair-products" className="py-24 bg-slate-50 border-b border-slate-200/80 scroll-mt-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-4">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#A9153B]/5 border border-[#A9153B]/10 text-[#A9153B] text-[11px] sm:text-xs font-bold uppercase tracking-wider">
@@ -212,95 +212,114 @@ export default function ProductsPage() {
             </h2>
           </ScrollReveal>
 
-          {/* Remy Hair Hero Callout */}
-          <div className="p-8 rounded-2xl bg-white border border-slate-200 shadow-subtle max-w-4xl mx-auto text-center space-y-2">
-            <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-display text-[#A9153B]">
-              Remy hair
-            </h3>
-            <p className="text-sm sm:text-base text-slate-700 leading-relaxed max-w-2xl mx-auto">
-              Indian Remy Hair is the highest natural grade of human hair. Cuticles are aligned in one direction, reducing tangling and increasing durability.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* 1. Remy Hair & Non-Remy Hair Boxes */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             
-            {/* Remy Single Drawn */}
-            <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-subtle space-y-3">
-              <div className="text-[11px] font-bold text-[#A9153B] uppercase tracking-wider">Remy hair</div>
-              <h3 className="text-base font-bold text-slate-900 font-display">Remy single drawn</h3>
-              <ul className="space-y-1.5 text-xs sm:text-sm text-slate-600">
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#A9153B] shrink-0" />
-                  <span>Natural length variation</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#A9153B] shrink-0" />
-                  <span>Ponytail-like appearance</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#A9153B] shrink-0" />
-                  <span>Cost-effective and authentic</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Remy Double Drawn */}
-            <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-subtle space-y-3">
-              <div className="text-[11px] font-bold text-[#A9153B] uppercase tracking-wider">Remy hair</div>
-              <h3 className="text-base font-bold text-slate-900 font-display">Remy double drawn</h3>
-              <ul className="space-y-1.5 text-xs sm:text-sm text-slate-600">
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#A9153B] shrink-0" />
-                  <span>Uniform length bundles</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#A9153B] shrink-0" />
-                  <span>Minimal tapering</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[#A9153B] shrink-0" />
-                  <span>Premium quality and appearance</span>
-                </li>
-              </ul>
+            {/* Remy Hair */}
+            <div className="p-8 rounded-2xl bg-white border border-slate-200 shadow-subtle space-y-4">
+              <h3 className="text-xl sm:text-2xl font-bold text-slate-900 font-display">
+                Remy Hair
+              </h3>
+              <div className="space-y-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+                <p>
+                  Indian Remy Hair is the highest natural grade of human hair and is the most expensive.
+                </p>
+                <p>
+                  Cuticles are aligned in one direction, reducing tangling and increasing durability.
+                </p>
+              </div>
             </div>
 
             {/* Non-Remy Hair */}
-            <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-subtle space-y-3">
-              <div className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Commercial</div>
-              <h3 className="text-base font-bold text-slate-900 font-display">Non-Remy hair</h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Collected fallen hair with mixed cuticle directions.
-              </p>
-              <ul className="space-y-1.5 text-xs sm:text-sm text-slate-600 pt-1">
-                <li className="flex items-center gap-2">
-                  <span className="h-1.5 w-1.5 rounded-full bg-slate-400 shrink-0"></span>
-                  <span>Affordable</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="h-1.5 w-1.5 rounded-full bg-slate-400 shrink-0"></span>
-                  <span>More prone to tangling</span>
-                </li>
-              </ul>
+            <div className="p-8 rounded-2xl bg-white border border-slate-200 shadow-subtle space-y-5">
+              <div className="space-y-4">
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 font-display">
+                  Non-Remy Hair
+                </h3>
+                <div className="space-y-2 text-sm sm:text-base text-slate-600 leading-relaxed">
+                  <p>
+                    Collected fallen hair with mixed cuticle directions.
+                  </p>
+                  <p>
+                    Affordable, more prone to tangling
+                  </p>
+                </div>
+              </div>
+
+              {/* Subsections under Non-Remy */}
+              <div className="pt-4 border-t border-slate-100 space-y-4">
+                {/* Cuticle-Free / Tangle-Free Hair */}
+                <div className="space-y-1.5">
+                  <h4 className="text-sm sm:text-base font-bold text-slate-900 font-display">
+                    Cuticle-Free / Tangle-Free Hair
+                  </h4>
+                  <div className="space-y-1 text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    <p>Chemically treated non-Remy hair to reduce tangling.</p>
+                    <p>This effect is temporary and diminishes after multiple washes.</p>
+                  </div>
+                </div>
+
+                {/* Converted Remy Hair */}
+                <div className="space-y-1.5">
+                  <h4 className="text-sm sm:text-base font-bold text-slate-900 font-display">
+                    Converted Remy Hair
+                  </h4>
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    The inverted cuticles are converted to the same direction using a machine.
+                  </p>
+                </div>
+              </div>
             </div>
 
-            {/* Cuticle-Free / Tangle-Free Hair */}
-            <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-subtle space-y-3">
-              <div className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Treated</div>
-              <h3 className="text-base font-bold text-slate-900 font-display">Cuticle-free / tangle-free hair</h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Chemically treated non-Remy hair to reduce tangling. This effect is temporary and diminishes after multiple washes.
-              </p>
-            </div>
+          </div>
 
-            {/* Converted Remy Hair */}
-            <div className="p-6 rounded-xl bg-white border border-slate-200 shadow-subtle space-y-3 md:col-span-2 lg:col-span-2">
-              <div className="text-[11px] font-bold text-[#A9153B] uppercase tracking-wider">Machine processed</div>
-              <h3 className="text-base font-bold text-slate-900 font-display">Converted Remy hair</h3>
-              <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                The inverted cuticles are converted to the same direction using a machine.
-              </p>
-            </div>
+          {/* 2. Single Drawn & Double Drawn Combined Box */}
+          <div className="p-8 rounded-2xl bg-white border border-slate-200 shadow-subtle">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 divide-y md:divide-y-0 md:divide-x divide-slate-200">
+              
+              {/* Single Drawn */}
+              <div className="space-y-4">
+                <h4 className="text-lg sm:text-xl font-bold text-slate-900 font-display">
+                  Single Drawn
+                </h4>
+                <ul className="space-y-2 text-xs sm:text-sm text-slate-600">
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#A9153B] shrink-0" />
+                    <span>Natural length variation</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#A9153B] shrink-0" />
+                    <span>Ponytail-like appearance</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#A9153B] shrink-0" />
+                    <span>Cost-effective and authentic</span>
+                  </li>
+                </ul>
+              </div>
 
+              {/* Double Drawn */}
+              <div className="pt-6 md:pt-0 md:pl-8 space-y-4">
+                <h4 className="text-lg sm:text-xl font-bold text-slate-900 font-display">
+                  Double Drawn
+                </h4>
+                <ul className="space-y-2 text-xs sm:text-sm text-slate-600">
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#A9153B] shrink-0" />
+                    <span>Uniform length bundles</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#A9153B] shrink-0" />
+                    <span>Minimal tapering</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#A9153B] shrink-0" />
+                    <span>Premium quality and appearance</span>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
           </div>
 
         </div>
@@ -322,7 +341,17 @@ export default function ProductsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             
             {/* Indian Straight Hair */}
-            <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+            <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-4 group">
+              <div className="relative w-full aspect-[16/9] sm:aspect-[2/1] rounded-xl overflow-hidden bg-slate-200 border border-slate-200 shadow-sm">
+                <Image
+                  src="/images/Indianhumanhairtextures/STRAIGHT TEXTURE.jpg"
+                  alt="Indian straight hair"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+
               <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-display">
                 Indian straight hair
               </h3>
@@ -332,7 +361,17 @@ export default function ProductsPage() {
             </div>
 
             {/* Indian Wavy Hair */}
-            <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+            <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-4 group">
+              <div className="relative w-full aspect-[16/9] sm:aspect-[2/1] rounded-xl overflow-hidden bg-slate-200 border border-slate-200 shadow-sm">
+                <Image
+                  src="/images/Indianhumanhairtextures/INDIAN WAVY.JPG"
+                  alt="Indian wavy hair"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+
               <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-display">
                 Indian wavy hair
               </h3>
@@ -356,7 +395,17 @@ export default function ProductsPage() {
             </div>
 
             {/* Indian Curly Hair */}
-            <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+            <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-4 group">
+              <div className="relative w-full aspect-[16/9] sm:aspect-[2/1] rounded-xl overflow-hidden bg-slate-200 border border-slate-200 shadow-sm">
+                <Image
+                  src="/images/Indianhumanhairtextures/NATURAL CURLY-1.jpg"
+                  alt="Indian curly hair"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+
               <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-display">
                 Indian curly hair
               </h3>
@@ -380,7 +429,17 @@ export default function ProductsPage() {
             </div>
 
             {/* Indian Deep Wavy Hair */}
-            <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+            <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200 space-y-4 group">
+              <div className="relative w-full aspect-[16/9] sm:aspect-[2/1] rounded-xl overflow-hidden bg-slate-200 border border-slate-200 shadow-sm">
+                <Image
+                  src="/images/Indianhumanhairtextures/INDIAN DEEP WAVY-KINKY.JPG"
+                  alt="Indian deep wavy hair"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+
               <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-display">
                 Indian deep wavy hair
               </h3>

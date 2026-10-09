@@ -61,7 +61,7 @@ export default function TheWigBankPage() {
             <ScrollReveal direction="right" className="lg:col-span-5 space-y-6">
               <div className="relative rounded-2xl overflow-hidden shadow-elevated border border-slate-200 bg-slate-100">
                 <Image
-                  src="/images/products/hair_wigs.jpg"
+                  src="/images/cranialimages/wigbank.jpeg"
                   alt="The Wig Bank"
                   width={800}
                   height={900}
