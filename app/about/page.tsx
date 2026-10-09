@@ -128,7 +128,7 @@ export default function AboutPage() {
                 <div className="space-y-3 group">
                   <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-elevated border border-slate-200 bg-slate-100">
                     <Image
-                      src="/images/paul.jpg"
+                      src="/images/paul.JPG"
                       alt="Exodus Exports (P). Ltd."
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"

@@ -83,7 +83,7 @@ interface ContentCardGridProps {
 // Default placeholder items (replace with your custom content)
 export const defaultContentCards: ContentCardItem[] = [
   {
-    image: "/images/products/weft.jpg",
+    image: "/images/products/hair_extensions.jpg",
     badge: "Category 1",
     title: "Premium Hair Extensions & Wefts",
     description:
@@ -92,7 +92,7 @@ export const defaultContentCards: ContentCardItem[] = [
     linkText: "Explore extensions",
   },
   {
-    image: "/images/products/wig.jpg",
+    image: "/images/products/hair_wigs.jpg",
     badge: "Category 2",
     title: "Hand-Tied Wigs & Cranial Prostheses",
     description:
@@ -101,7 +101,7 @@ export const defaultContentCards: ContentCardItem[] = [
     linkText: "View wigs collection",
   },
   {
-    image: "/images/products/bulk.jpg",
+    image: "/images/products/hair_extensions.jpg",
     badge: "Category 3",
     title: "Temple Bulk & Virgin Raw Hair",
     description:
