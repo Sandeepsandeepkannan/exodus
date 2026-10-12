@@ -326,6 +326,30 @@ export default function CixWigsPage() {
             </p>
           </div>
 
+          {/* Hair Donation Campaign Images */}
+          <ScrollReveal>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <div className="relative aspect-[16/10] sm:aspect-[16/9] rounded-2xl overflow-hidden shadow-subtle border border-slate-200 bg-white group">
+                <Image
+                  src="/hairdonation/CANCER INSTITUTE WIA - CHENNAI DOCTORS VISIT.jpg"
+                  alt="Cancer Institute WIA - Chennai Doctors Visit"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              <div className="relative aspect-[16/10] sm:aspect-[16/9] rounded-2xl overflow-hidden shadow-subtle border border-slate-200 bg-white group">
+                <Image
+                  src="/hairdonation/HAIR DONATION CAMP.jpg"
+                  alt="Hair Donation Camp"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+            </div>
+          </ScrollReveal>
+
         </div>
       </section>
 

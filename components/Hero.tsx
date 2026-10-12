@@ -110,17 +110,17 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="max-w-4xl space-y-8">
+          <div className="max-w-5xl mx-auto space-y-8 text-center">
             {/* Paragraphs */}
-            <div className="space-y-4 text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed font-normal">
-              <p>
+            <div className="max-w-5xl mx-auto space-y-4 text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed font-normal">
+              <p className="text-balance">
                 Indian human hair has become the most sought-after raw material in the global hair industry, valued for its strength, durability, versatility, and natural texture. With changing fashion trends and increasing demand for hair extensions and wigs, Indian human hair continues to dominate the global market. India is the largest source of human hair in the world, with consistent availability of premium-grade virgin hair sourced ethically from South Indian temples
               </p>
 
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 pt-2">
               <Link
                 href="/products"
                 className="inline-flex items-center justify-center px-7 py-3.5 text-sm font-semibold text-white bg-[#A9153B] hover:bg-[#A9153B]/90 hover:-translate-y-0.5 rounded-md shadow-sm transition-all duration-300 group text-center"

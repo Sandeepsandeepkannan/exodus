@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import Image from "next/image";
 import SectionHeading from "@/components/SectionHeading";
 import ContactForm from "@/components/ContactForm";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -117,6 +118,30 @@ export default function ContactPage() {
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
               We are committed to ethical labour practices with a strong all-women workforce.Our welfare programs include:
             </p>
+          </ScrollReveal>
+
+          {/* Employee Welfare Images */}
+          <ScrollReveal>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+              <div className="relative aspect-[16/10] sm:aspect-[16/9] rounded-2xl overflow-hidden shadow-elevated border border-slate-200 bg-slate-100 group">
+                <Image
+                  src="/welfare/GAMES.jpeg"
+                  alt="Employee Welfare - Recreational Activities & Games"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              <div className="relative aspect-[16/10] sm:aspect-[16/9] rounded-2xl overflow-hidden shadow-elevated border border-slate-200 bg-slate-100 group">
+                <Image
+                  src="/welfare/PONGAL CELEBRATION.jpg"
+                  alt="Employee Welfare - Pongal Celebration"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+            </div>
           </ScrollReveal>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
