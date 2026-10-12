@@ -1,8 +1,3 @@
 {
-  "/about/page": "app/about/page.js",
-  "/about-human-hair/page": "app/about-human-hair/page.js",
-  "/page": "app/page.js",
-  "/cranial-prosthesis/the-wig-bank/page": "app/cranial-prosthesis/the-wig-bank/page.js",
-  "/products/page": "app/products/page.js",
-  "/cranial-prosthesis/page": "app/cranial-prosthesis/page.js"
+  "/products/page": "app/products/page.js"
 }

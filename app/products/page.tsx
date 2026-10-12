@@ -515,6 +515,48 @@ export default function ProductsPage() {
             </div>
           </div>
 
+          {/* Manufacturing & Quality Control Images */}
+          <ScrollReveal>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-subtle border border-slate-200 bg-white group">
+                <Image
+                  src="/manufacturingandqualitycontrol/EXODUS FACTORY-1.JPG"
+                  alt="Exodus Factory & Quality Control 1"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-subtle border border-slate-200 bg-white group">
+                <Image
+                  src="/manufacturingandqualitycontrol/EXODUS FACTORY - 2.JPG"
+                  alt="Exodus Factory & Quality Control 2"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-subtle border border-slate-200 bg-white group">
+                <Image
+                  src="/manufacturingandqualitycontrol/EXODUS FACTORY - 3.JPG"
+                  alt="Exodus Factory & Quality Control 3"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-subtle border border-slate-200 bg-white group">
+                <Image
+                  src="/manufacturingandqualitycontrol/EXODUS FACTORY - 4.JPG"
+                  alt="Exodus Factory & Quality Control 4"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+            </div>
+          </ScrollReveal>
+
         </div>
       </section>
 

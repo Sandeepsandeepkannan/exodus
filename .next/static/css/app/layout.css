@@ -662,6 +662,9 @@ video {
 .aspect-\[16\/9\] {
   aspect-ratio: 16/9;
 }
+.aspect-\[3\/4\] {
+  aspect-ratio: 3/4;
+}
 .aspect-\[4\/3\] {
   aspect-ratio: 4/3;
 }
@@ -670,9 +673,6 @@ video {
 }
 .aspect-square {
   aspect-ratio: 1 / 1;
-}
-.aspect-\[3\/4\] {
-  aspect-ratio: 3/4;
 }
 .h-0\.5 {
   height: 0.125rem;
@@ -2023,16 +2023,16 @@ h1, h2, h3, h4, .font-display {
     display: block;
   }
 
+  .sm\:aspect-\[16\/9\] {
+    aspect-ratio: 16/9;
+  }
+
   .sm\:aspect-\[2\/1\] {
     aspect-ratio: 2/1;
   }
 
   .sm\:aspect-\[4\/3\] {
     aspect-ratio: 4/3;
-  }
-
-  .sm\:aspect-\[16\/9\] {
-    aspect-ratio: 16/9;
   }
 
   .sm\:h-12 {
