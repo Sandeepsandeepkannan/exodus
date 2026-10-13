@@ -782,6 +782,9 @@ video {
 .w-4 {
   width: 1rem;
 }
+.w-44 {
+  width: 11rem;
+}
 .w-48 {
   width: 12rem;
 }
@@ -1049,9 +1052,6 @@ video {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.text-balance {
-  text-wrap: balance;
 }
 .rounded {
   border-radius: 0.25rem;
@@ -1420,6 +1420,9 @@ video {
 .pb-2\.5 {
   padding-bottom: 0.625rem;
 }
+.pb-20 {
+  padding-bottom: 5rem;
+}
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -1446,6 +1449,9 @@ video {
 }
 .pt-1 {
   padding-top: 0.25rem;
+}
+.pt-10 {
+  padding-top: 2.5rem;
 }
 .pt-16 {
   padding-top: 4rem;
@@ -2091,6 +2097,11 @@ h1, h2, h3, h4, .font-display {
     width: calc(50% - 10px);
   }
 
+  .sm\:translate-x-8 {
+    --tw-translate-x: 2rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2131,6 +2142,12 @@ h1, h2, h3, h4, .font-display {
     --tw-space-y-reverse: 0;
     margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+  }
+
+  .sm\:space-y-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
   }
 
   .sm\:self-center {
@@ -2206,12 +2223,20 @@ h1, h2, h3, h4, .font-display {
     padding-bottom: 4rem;
   }
 
+  .sm\:pb-24 {
+    padding-bottom: 6rem;
+  }
+
   .sm\:pb-4 {
     padding-bottom: 1rem;
   }
 
   .sm\:pt-10 {
     padding-top: 2.5rem;
+  }
+
+  .sm\:pt-12 {
+    padding-top: 3rem;
   }
 
   .sm\:pt-28 {
@@ -2430,6 +2455,11 @@ h1, h2, h3, h4, .font-display {
 
   .lg\:max-w-none {
     max-width: none;
+  }
+
+  .lg\:translate-x-12 {
+    --tw-translate-x: 3rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .lg\:grid-cols-12 {

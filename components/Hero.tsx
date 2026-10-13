@@ -101,7 +101,7 @@ export default function Hero() {
             <div className="inline-block px-5 py-4 sm:px-8 sm:py-5 rounded-2xl bg-slate-50 border border-slate-200 shadow-subtle">
               <h2 className="text-2xl sm:text-3xl md:text-[30px] lg:text-[32px] xl:text-[34px] font-black text-slate-950 font-display tracking-tight leading-[1.25] text-center max-w-5xl mx-auto space-y-1">
                 <span className="block md:whitespace-nowrap">
-                  At Exodus Exports Pvt. Ltd., We specialize in supplying
+                  At Exodus Exports Pvt. Ltd., we specialize in supplying
                 </span>
                 <span className="block md:whitespace-nowrap">
                   100% Authentic Indian Remy human hair
@@ -113,7 +113,7 @@ export default function Hero() {
           <div className="max-w-5xl mx-auto space-y-8 text-center">
             {/* Paragraphs */}
             <div className="max-w-5xl mx-auto space-y-4 text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed font-normal">
-              <p className="text-balance">
+              <p className="text-left">
                 Indian human hair has become the most sought-after raw material in the global hair industry, valued for its strength, durability, versatility, and natural texture. With changing fashion trends and increasing demand for hair extensions and wigs, Indian human hair continues to dominate the global market. India is the largest source of human hair in the world, with consistent availability of premium-grade virgin hair sourced ethically from South Indian temples
               </p>
 

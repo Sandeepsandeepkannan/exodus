@@ -95,22 +95,22 @@ export default function AboutPage() {
       </section>
 
       {/* WHO WE ARE DETAILED CONTENT */}
-      <section className="py-24 bg-white border-b border-slate-100">
+      <section className="pt-10 pb-20 sm:pt-12 sm:pb-24 bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
 
-            {/* Left Column: 2 Images Side-by-Side in 1 Row */}
-            <ScrollReveal direction="right" className="lg:col-span-6 space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
-                
+            {/* Left Column: 2 Director Cards Stacked Vertically */}
+            <ScrollReveal direction="right" className="lg:col-span-4 space-y-6">
+              <div className="flex flex-col gap-6 items-start sm:translate-x-8 lg:translate-x-12">
+
                 {/* IMAGE 1 */}
-                <div className="space-y-3 group">
+                <div className="space-y-2 group w-44 sm:w-48">
                   <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-elevated border border-slate-200 bg-slate-100">
                     <Image
                       src="/images/sheeba.JPG"
                       alt="Mrs. Sheeba Paul"
                       fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      sizes="(max-width: 640px) 176px, 192px"
                       className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
                     />
                   </div>
@@ -125,13 +125,13 @@ export default function AboutPage() {
                 </div>
 
                 {/* IMAGE 2 */}
-                <div className="space-y-3 group">
+                <div className="space-y-2 group w-44 sm:w-48">
                   <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-elevated border border-slate-200 bg-slate-100">
                     <Image
-                      src="/images/paul.JPG"
+                      src="/images/DIRECTOR.JPG"
                       alt="Exodus Exports (P). Ltd."
                       fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      sizes="(max-width: 640px) 176px, 192px"
                       className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
                     />
                   </div>
@@ -149,12 +149,12 @@ export default function AboutPage() {
             </ScrollReveal>
 
             {/* Right Column: Existing About Us Content Unchanged */}
-            <ScrollReveal direction="left" className="lg:col-span-6 space-y-6">
-              <div className="space-y-5 text-slate-600 text-sm sm:text-base leading-relaxed">
+            <ScrollReveal direction="left" className="lg:col-span-8">
+              <div className="space-y-5 sm:space-y-6 text-slate-600 text-sm sm:text-base leading-relaxed">
                 <p>
-                  As entrepreneurs what we value most is the trust our clients place in us. We believe in the courage to take responsible risks, the discipline to deliver consistent quality, the honesty to acknowledge our mistakes, and the determination to improve every day. We are simple people offering exceptional products, backed by principles that never change.
+                  As entrepreneurs what we value most is the trust our clients place in us. We believe in the courage to take responsible risks, the discipline to deliver consistent quality, the honesty to acknowledge our mistakes, and the determination to improve every day. We are simple people offering exceptional products, backed by principles that never change.We believe that lasting success is built on meaningful partnerships, mutual respect, and a shared vision for a better future. Every step we take reflects our commitment to creating value that extends beyond business.
                 </p>
-                <div className="p-5 rounded-xl bg-[#A9153B]/5 border-l-4 border-[#A9153B]">
+                <div className="p-5 sm:p-6 rounded-2xl bg-[#A9153B]/5 border-l-4 border-[#A9153B]">
                   <p className="font-semibold text-slate-900 text-sm sm:text-base">
                     Our philosophy is rooted in the belief that business must grow alongside humanity.
                   </p>
@@ -165,7 +165,7 @@ export default function AboutPage() {
                 <p>
                   Many of our initiatives are designed to reach beyond urban centres—extending opportunities to tribal regions and remote villages, where talent and potential often go unnoticed. We choose to grow with those who are most in need of opportunity, not merely those who already have access to it.
                 </p>
-                <p className="font-semibold text-[#A9153B] text-base pt-2">
+                <p className="font-semibold text-[#A9153B] text-base pt-1">
                   This is why we enjoy what we do. Our growth is not just measured in numbers, but in the lives, we touch, the trust we earn, and the long-term relationships we build.
                 </p>
               </div>
@@ -640,7 +640,7 @@ export default function AboutPage() {
       </section>
 
       {/* DIGITAL MEDIA SECTION */}
-      
+
 
       {/* CTA SECTION */}
       <CTASection />

@@ -32,7 +32,7 @@ export default function AboutHumanHairPage() {
             <span className="h-1.5 w-1.5 rounded-full bg-[#A9153B]"></span> About hair
           </div>
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight font-display">
-            Why indian human hair?
+            Why Indian human hair?
           </h1>
           <p className="text-base sm:text-lg text-slate-700 font-medium leading-relaxed">
             Indian hair is naturally strong, resilient, and adaptable. It can be:
@@ -82,7 +82,7 @@ export default function AboutHumanHairPage() {
             <Globe className="h-4 w-4" /> Global industry insight
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white font-display">
-            The truth about “brazilian”, “malaysian” & “peruvian” hair
+            The truth about “Brazilian”, “Malaysian” & “Peruvian” hair
           </h2>
           <div className="space-y-6 text-white/95 text-sm sm:text-base leading-relaxed">
             <p>

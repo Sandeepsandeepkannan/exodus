@@ -28,7 +28,7 @@ import {
 // 3 Content Cards for "Ethical sourcing & women empowerment" (Replace with your actual images & content)
 const ethicalSourcingCards = [
   {
-    image: "/images/products/1..png",
+    image: "/images/products/torn.png",
     label: "Ethically Sourced:",
     description: "Hair procured through South Indian temple auctions, with a commitment to 100% ethical and traceable sourcing and no child labour.",
   },

@@ -25,7 +25,7 @@ import {
 } from "lucide-react";
 
 const categoryAnchorIds: Record<string, string> = {
-  "Hair Types": "hair-products",
+  "Hair Types": "hair-types",
   "Wefts & Extensions": "extensions-wefts",
   "Extensions & Wefts": "extensions-wefts",
   "Wigs & Hairpieces": "wigs-hairpieces",
@@ -102,7 +102,7 @@ export default function ProductsPage() {
       </section>
 
       {/* 2. PRODUCT CATALOGUE WITH CATEGORY TABS */}
-      <section className="py-20 bg-white border-b border-slate-100">
+      <section id="hair-products" className="py-20 bg-white border-b border-slate-100 scroll-mt-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           
           {/* Controls: Search & Category Filter */}
@@ -126,7 +126,7 @@ export default function ProductsPage() {
                     onClick={() => {
                       setActiveCategory(cat.id);
                       if (cat.id === "Hair Types") {
-                        const el = document.getElementById("hair-products");
+                        const el = document.getElementById("hair-types");
                         if (el) el.scrollIntoView({ behavior: "smooth" });
                       }
                     }}
@@ -200,7 +200,7 @@ export default function ProductsPage() {
       </section>
 
       {/* 3. INDIAN HUMAN HAIR TYPES */}
-      <section id="hair-products" className="py-24 bg-slate-50 border-b border-slate-200/80 scroll-mt-28">
+      <section id="hair-types" className="py-24 bg-slate-50 border-b border-slate-200/80 scroll-mt-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-4">
@@ -515,48 +515,6 @@ export default function ProductsPage() {
             </div>
           </div>
 
-          {/* Manufacturing & Quality Control Images */}
-          <ScrollReveal>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-subtle border border-slate-200 bg-white group">
-                <Image
-                  src="/manufacturingandqualitycontrol/EXODUS FACTORY-1.JPG"
-                  alt="Exodus Factory & Quality Control 1"
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-subtle border border-slate-200 bg-white group">
-                <Image
-                  src="/manufacturingandqualitycontrol/EXODUS FACTORY - 2.JPG"
-                  alt="Exodus Factory & Quality Control 2"
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-subtle border border-slate-200 bg-white group">
-                <Image
-                  src="/manufacturingandqualitycontrol/EXODUS FACTORY - 3.JPG"
-                  alt="Exodus Factory & Quality Control 3"
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-subtle border border-slate-200 bg-white group">
-                <Image
-                  src="/manufacturingandqualitycontrol/EXODUS FACTORY - 4.JPG"
-                  alt="Exodus Factory & Quality Control 4"
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-            </div>
-          </ScrollReveal>
-
         </div>
       </section>
 
@@ -624,6 +582,48 @@ export default function ProductsPage() {
               Approximately 25–35% weight loss occurs during processing due to removal of impurities and short hair.
             </p>
           </div>
+
+          {/* Processing Hair Factory Images */}
+          <ScrollReveal>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-subtle border border-slate-200 bg-white group">
+                <Image
+                  src="/manufacturingandqualitycontrol/EXODUS FACTORY - 3.JPG"
+                  alt="Processing Hair Factory 1"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-subtle border border-slate-200 bg-white group">
+                <Image
+                  src="/manufacturingandqualitycontrol/EXODUS FACTORY - 2.JPG"
+                  alt="Processing Hair Factory 2"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-subtle border border-slate-200 bg-white group">
+                <Image
+                  src="/images/manufacturing/WIGDIVISION.JPG"
+                  alt="Processing Hair Factory 3"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-subtle border border-slate-200 bg-white group">
+                <Image
+                  src="/manufacturingandqualitycontrol/EXODUS FACTORY - 4.JPG"
+                  alt="Processing Hair Factory 4"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+            </div>
+          </ScrollReveal>
 
         </div>
       </section>
