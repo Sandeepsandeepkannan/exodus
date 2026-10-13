@@ -7,10 +7,8 @@ import { usePathname } from "next/navigation";
 import { Menu, X, ArrowUpRight, ChevronDown } from "lucide-react";
 
 const productSections = [
-  { name: "Hair products", href: "/products#hair-products" },
-  { name: "Extensions & wefts", href: "/products#extensions-wefts" },
+  { name: "Wefts & Extensions", href: "/products#extensions-wefts" },
   { name: "Wigs & hairpieces", href: "/products#wigs-hairpieces" },
-  { name: "Cranial prosthesis", href: "/products#cranial-prosthesis" },
   { name: "Indian human hair textures", href: "/products#indian-human-hair-textures" },
   { name: "Manufacturing & processing", href: "/products#manufacturing-processing" },
   { name: "Colour shades", href: "/products#colour-shades" },
@@ -66,15 +64,14 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 flex items-center ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 flex items-center ${scrolled
           ? "bg-white/95 backdrop-blur-md shadow-subtle border-b border-slate-100 h-20 sm:h-24 md:h-28"
           : "bg-white/90 backdrop-blur-sm border-b border-slate-100/80 h-24 sm:h-28 md:h-32"
-      }`}
+        }`}
     >
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          
+
           {/* Left: Official Exodus Exports Logo */}
           <Link href="/" className="flex items-center group transition-transform duration-200 hover:opacity-95 shrink-0 py-1">
             <Image
@@ -97,18 +94,16 @@ export default function Navbar() {
                     <button
                       type="button"
                       onClick={() => setProductsDropdownOpen(!productsDropdownOpen)}
-                      className={`text-sm font-medium transition-colors duration-200 relative py-1 flex items-center gap-1.5 focus:outline-none ${
-                        isProductsActive
+                      className={`text-sm font-medium transition-colors duration-200 relative py-1 flex items-center gap-1.5 focus:outline-none ${isProductsActive
                           ? "text-[#A9153B] font-bold"
                           : "text-slate-700 hover:text-[#A9153B]"
-                      }`}
+                        }`}
                       aria-expanded={productsDropdownOpen}
                     >
                       {link.name}
                       <ChevronDown
-                        className={`h-3.5 w-3.5 transition-transform duration-200 ${
-                          productsDropdownOpen ? "rotate-180 text-[#A9153B]" : isProductsActive ? "text-[#A9153B]" : "text-slate-400"
-                        }`}
+                        className={`h-3.5 w-3.5 transition-transform duration-200 ${productsDropdownOpen ? "rotate-180 text-[#A9153B]" : isProductsActive ? "text-[#A9153B]" : "text-slate-400"
+                          }`}
                       />
                       {isProductsActive && (
                         <>
@@ -142,11 +137,10 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`text-sm font-medium transition-colors duration-200 relative py-1 flex items-center gap-1.5 ${
-                    isActive
+                  className={`text-sm font-medium transition-colors duration-200 relative py-1 flex items-center gap-1.5 ${isActive
                       ? "text-[#A9153B] font-bold"
                       : "text-slate-700 hover:text-[#A9153B]"
-                  }`}
+                    }`}
                 >
                   {link.name}
                   {isActive && (
@@ -200,17 +194,15 @@ export default function Navbar() {
                     <button
                       type="button"
                       onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
-                      className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
-                        isProductsActive
+                      className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${isProductsActive
                           ? "bg-[#A9153B]/10 text-[#A9153B] font-bold"
                           : "text-slate-700 hover:bg-slate-50 hover:text-slate-900"
-                      }`}
+                        }`}
                     >
                       <span>{link.name}</span>
                       <ChevronDown
-                        className={`h-4 w-4 transition-transform duration-200 ${
-                          mobileProductsOpen ? "rotate-180 text-[#A9153B]" : "text-slate-400"
-                        }`}
+                        className={`h-4 w-4 transition-transform duration-200 ${mobileProductsOpen ? "rotate-180 text-[#A9153B]" : "text-slate-400"
+                          }`}
                       />
                     </button>
 
@@ -240,11 +232,10 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`block px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
-                    isActive
+                  className={`block px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${isActive
                       ? "bg-[#A9153B]/10 text-[#A9153B] font-bold"
                       : "text-slate-700 hover:bg-slate-50 hover:text-slate-900"
-                  }`}
+                    }`}
                 >
                   {link.name}
                 </Link>

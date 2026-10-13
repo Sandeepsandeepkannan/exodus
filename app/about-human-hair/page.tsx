@@ -297,7 +297,7 @@ export default function AboutHumanHairPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-subtle border border-slate-200 bg-white group">
                 <Image
-                  src="/applyandmaintenance/HAIR FIXING-1.JPG"
+                  src="/Applyandmaintenance/HAIR FIXING-1.JPG"
                   alt="Hair Extension Application & Fixing"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -306,7 +306,7 @@ export default function AboutHumanHairPage() {
               </div>
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-subtle border border-slate-200 bg-white group">
                 <Image
-                  src="/applyandmaintenance/HAIR FIXING-2.JPG"
+                  src="/Applyandmaintenance/HAIR FIXING-2.JPG"
                   alt="Hair Extension Application & Fixing"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -315,7 +315,7 @@ export default function AboutHumanHairPage() {
               </div>
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-subtle border border-slate-200 bg-white group">
                 <Image
-                  src="/applyandmaintenance/HAIR FIXED-1.JPG"
+                  src="/Applyandmaintenance/HAIR FIXED-1.JPG"
                   alt="Hair Extension Fixed Result"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -324,7 +324,7 @@ export default function AboutHumanHairPage() {
               </div>
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-subtle border border-slate-200 bg-white group">
                 <Image
-                  src="/applyandmaintenance/HAIR FIXED-2.JPG"
+                  src="/Applyandmaintenance/HAIR FIXED-2.JPG"
                   alt="Hair Extension Fixed Result"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
