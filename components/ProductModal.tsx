@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { X, Award, Package, CheckCircle2, MapPin, ArrowRight, ShieldCheck } from "lucide-react";
+import { X, Award, Package, CheckCircle2, MapPin, ArrowRight, ShieldCheck, Ruler, Palette, Layers } from "lucide-react";
 import { ProductItem } from "@/data/products";
 
 interface ProductModalProps {
@@ -31,7 +31,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
       <div className="absolute inset-0" onClick={onClose} />
 
       {/* Modal Card */}
-      <div className="relative bg-white w-full max-w-3xl rounded-2xl shadow-2xl overflow-hidden z-10 border border-slate-200 max-h-[92vh] flex flex-col md:flex-row animate-in zoom-in-95 duration-200">
+      <div className="relative bg-white w-full max-w-3xl lg:max-w-4xl rounded-2xl shadow-2xl overflow-hidden z-10 border border-slate-200 max-h-[92vh] flex flex-col md:flex-row animate-in zoom-in-95 duration-200">
         
         {/* Close Button */}
         <button
@@ -98,16 +98,68 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
               <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 font-display mt-1.5">
                 {product.name}
               </h2>
+              {product.narration?.subtitle && (
+                <p className="text-xs sm:text-sm font-semibold text-[#A9153B] mt-1">
+                  {product.narration.subtitle}
+                </p>
+              )}
             </div>
 
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              {product.description}
-            </p>
+            {/* Narration Story / Description */}
+            {product.narration ? (
+              <div className="space-y-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed">
+                {product.narration.story.map((paragraph, idx) => (
+                  <p key={idx}>{paragraph}</p>
+                ))}
+              </div>
+            ) : (
+              product.description && (
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  {product.description}
+                </p>
+              )
+            )}
+
+            {/* Available Styles */}
+            {product.narration?.availableStyles && product.narration.availableStyles.length > 0 && (
+              <div className="space-y-2">
+                <span className="text-[11px] font-bold text-slate-900 uppercase tracking-wider block">
+                  Available Styles
+                </span>
+                <div className="flex flex-wrap gap-1.5">
+                  {product.narration.availableStyles.map((style, idx) => (
+                    <span
+                      key={idx}
+                      className="px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 text-xs font-medium border border-slate-200"
+                    >
+                      {style}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Key Features */}
+            {product.narration?.keyFeatures && product.narration.keyFeatures.length > 0 && (
+              <div className="bg-slate-50/90 p-4 rounded-xl border border-slate-200/80 space-y-2.5">
+                <span className="text-[11px] font-bold text-slate-900 uppercase tracking-wider block">
+                  Key Features
+                </span>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
+                  {product.narration.keyFeatures.map((feat, idx) => (
+                    <li key={idx} className="flex items-start gap-1.5">
+                      <CheckCircle2 className="h-3.5 w-3.5 text-[#A9153B] shrink-0 mt-0.5" />
+                      <span>{feat}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             {/* Specifications */}
-            {product.specs && (
+            {(product.specs || product.narration?.lengths || product.narration?.colours || product.narration?.textures) && (
               <div className="bg-slate-50 p-4 sm:p-5 rounded-xl border border-slate-200/80 space-y-3 text-xs text-slate-700">
-                {product.specs.type && (
+                {product.specs?.type && (
                   <div className="flex items-center justify-between border-b border-slate-200/60 pb-2.5">
                     <span className="flex items-center gap-2 text-slate-500 font-medium">
                       <Award className="h-4 w-4 text-[#A9153B] shrink-0" /> Product Type:
@@ -116,7 +168,34 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                   </div>
                 )}
 
-                {product.specs.processing && (
+                {product.narration?.lengths && (
+                  <div className="flex items-center justify-between border-b border-slate-200/60 pb-2.5">
+                    <span className="flex items-center gap-2 text-slate-500 font-medium">
+                      <Ruler className="h-4 w-4 text-[#A9153B] shrink-0" /> Lengths:
+                    </span>
+                    <span className="font-bold text-slate-900 text-right">{product.narration.lengths}</span>
+                  </div>
+                )}
+
+                {product.narration?.colours && (
+                  <div className="flex items-center justify-between border-b border-slate-200/60 pb-2.5">
+                    <span className="flex items-center gap-2 text-slate-500 font-medium">
+                      <Palette className="h-4 w-4 text-[#A9153B] shrink-0" /> Colours:
+                    </span>
+                    <span className="font-semibold text-slate-900 text-right max-w-[65%]">{product.narration.colours}</span>
+                  </div>
+                )}
+
+                {product.narration?.textures && (
+                  <div className="flex items-center justify-between border-b border-slate-200/60 pb-2.5">
+                    <span className="flex items-center gap-2 text-slate-500 font-medium">
+                      <Layers className="h-4 w-4 text-[#A9153B] shrink-0" /> Textures:
+                    </span>
+                    <span className="font-semibold text-slate-900 text-right max-w-[65%]">{product.narration.textures}</span>
+                  </div>
+                )}
+
+                {product.specs?.processing && (
                   <div className="flex items-center justify-between border-b border-slate-200/60 pb-2.5">
                     <span className="flex items-center gap-2 text-slate-500 font-medium">
                       <Package className="h-4 w-4 text-[#A9153B] shrink-0" /> Manufacturing:
@@ -125,7 +204,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                   </div>
                 )}
 
-                {product.specs.customization && (
+                {product.specs?.customization && (
                   <div className="flex items-center justify-between">
                     <span className="flex items-center gap-2 text-slate-500 font-medium">
                       <CheckCircle2 className="h-4 w-4 text-[#A9153B] shrink-0" /> Customization:
