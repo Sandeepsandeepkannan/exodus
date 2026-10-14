@@ -77,7 +77,7 @@ export default function HomePage() {
               />
               <div className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
                 <div className="space-y-2 pb-1">
-                  <div className="text-sm sm:text-base md:text-lg font-extrabold text-[#A9153B] uppercase tracking-wider font-display">
+                  <div className="inline-block px-3.5 py-1.5 rounded-lg bg-[#A9153B]/10 border border-[#A9153B]/20 text-sm sm:text-base md:text-lg font-extrabold text-[#A9153B] uppercase tracking-wider font-display">
                     A COMPANY WITH A DIFFERENCE
                   </div>
                   <ul className="space-y-1.5 text-sm sm:text-base font-semibold text-slate-900">
@@ -130,7 +130,7 @@ export default function HomePage() {
                   </li>
                   <li className="flex items-start gap-2.5">
                     <CheckCircle2 className="h-4 w-4 text-[#A9153B] shrink-0 mt-0.5" />
-                    <span className="font-semibold text-[#A9153B]">And we employ 100% Beedi rolling women</span>
+                    <span className="font-semibold text-black">And we employ 100% Beedi rolling women</span>
                   </li>
                 </ul>
               </div>
@@ -225,13 +225,13 @@ export default function HomePage() {
 
             {/* LEFT COLUMN: Existing Text Content */}
             <div className="space-y-6 text-white/95 text-sm sm:text-base leading-relaxed">
-              <p className="p-6 rounded-2xl bg-white/10 border border-white/20">
+              <p>
                 Since 2021, teaming up with the Cancer Institute (WIA), Chennai, Exodus Exports has been actively involved in providing alternative, sustainable livelihood opportunities to women previously engaged in beedi rolling.
               </p>
               <p>
                 This initiative was launched under the leadership of Dr. Shanta, Chairperson of the Cancer Institute WIA, Adyar – Chennai. Now with additional support from the District Administration, Skill India, and NABARD, through this collaborative effort, nearly 160 women have been successfully rehabilitated, enabling them to transition away from tobacco-related occupations into safer and more dignified employment.
               </p>
-              <p>
+              <p className="p-6 rounded-2xl bg-white/10 border border-white/20">
                 The project is aligned with Article 17 of the World Health Organization (WHO) Framework Convention on Tobacco Control (FCTC), which promotes the development of economically viable alternatives for workers involved in the tobacco industry.
               </p>
               <p>

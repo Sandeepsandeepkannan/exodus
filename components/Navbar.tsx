@@ -8,10 +8,10 @@ import { Menu, X, ArrowUpRight, ChevronDown } from "lucide-react";
 
 const productSections = [
   { name: "Wefts & Extensions", href: "/products#extensions-wefts" },
-  { name: "Wigs & hairpieces", href: "/products#wigs-hairpieces" },
-  { name: "Indian human hair textures", href: "/products#indian-human-hair-textures" },
-  { name: "Manufacturing & processing", href: "/products#manufacturing-processing" },
-  { name: "Colour shades", href: "/products#colour-shades" },
+  { name: "Wigs & Hairpieces", href: "/products#wigs-hairpieces" },
+  { name: "Indian Human Hair Textures", href: "/products#indian-human-hair-textures" },
+  { name: "Manufacturing & Processing", href: "/products#manufacturing-processing" },
+  { name: "Colour Shades", href: "/products#colour-shades" },
 ];
 
 const navLinks = [

@@ -42,22 +42,16 @@ export default function ProductCard({ product, onQuickView, onSelect }: ProductC
 
       {/* 2. Product Details Body */}
       <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between space-y-4">
-        <div className="space-y-2">
+        <div>
           <h3 className="text-base font-bold text-slate-900 group-hover:text-[#A9153B] transition-colors duration-200 font-display line-clamp-1">
             {product.name}
           </h3>
-
-          <p className="text-slate-600 text-xs leading-relaxed line-clamp-2 min-h-[2.5rem]">
-            {product.description}
-          </p>
         </div>
 
-        {/* 3. Action Row */}
-        <div className="pt-3 flex items-center justify-between text-[11px] sm:text-xs font-bold text-[#A9153B] border-t border-slate-100 group-hover:text-[#A9153B]">
-          <span className="inline-flex items-center gap-1">
-            View Product Details
-          </span>
-          <div className="h-7 w-7 rounded-full bg-slate-100 group-hover:bg-[#A9153B] group-hover:text-white flex items-center justify-center transition-all duration-200">
+        {/* 3. Action Area */}
+        <div className="pt-2">
+          <div className="w-full py-2.5 px-4 rounded-lg bg-[#A9153B] group-hover:bg-[#88102F] text-white text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-sm transition-all duration-200">
+            <span>View Product Details</span>
             <ArrowUpRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </div>
         </div>

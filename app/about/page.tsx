@@ -107,7 +107,7 @@ export default function AboutPage() {
                 <div className="space-y-2 group w-44 sm:w-48">
                   <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-elevated border border-slate-200 bg-slate-100">
                     <Image
-                      src="/images/sheeba.JPG"
+                      src="/images/sheebamam.JPG"
                       alt="Mrs. Sheeba Paul"
                       fill
                       sizes="(max-width: 640px) 176px, 192px"
@@ -152,7 +152,7 @@ export default function AboutPage() {
             <ScrollReveal direction="left" className="lg:col-span-8">
               <div className="space-y-5 sm:space-y-6 text-slate-600 text-sm sm:text-base leading-relaxed">
                 <p>
-                  As entrepreneurs what we value most is the trust our clients place in us. We believe in the courage to take responsible risks, the discipline to deliver consistent quality, the honesty to acknowledge our mistakes, and the determination to improve every day. We are simple people offering exceptional products, backed by principles that never change.We believe that lasting success is built on meaningful partnerships, mutual respect, and a shared vision for a better future. Every step we take reflects our commitment to creating value that extends beyond business.
+                  As entrepreneurs what we value most is the trust our clients place in us. We believe in the courage to take responsible risks, the discipline to deliver consistent quality, the honesty to acknowledge our mistakes, and the determination to improve every day. We are simple people offering exceptional products, backed by principles that never change. <br /> <br /> We believe that lasting success is built on meaningful partnerships, mutual respect, and a shared vision for a better future. Every step we take reflects our commitment to creating value that extends beyond business.
                 </p>
                 <div className="p-5 sm:p-6 rounded-2xl bg-[#A9153B]/5 border-l-4 border-[#A9153B]">
                   <p className="font-semibold text-slate-900 text-sm sm:text-base">

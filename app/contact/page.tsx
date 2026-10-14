@@ -66,7 +66,7 @@ export default function ContactPage() {
       </section>
 
       {/* 1. WHY CHOOSE EXODUS EXPORTS? */}
-      <section className="py-24 bg-slate-50 border-b border-slate-200/80">
+      <section id="why-choose-us" className="py-24 bg-slate-50 border-b border-slate-200/80 scroll-mt-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
           
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-4">
@@ -108,7 +108,7 @@ export default function ContactPage() {
       </section>
 
       {/* 2. EMPLOYEE WELFARE */}
-      <section className="py-24 bg-white border-b border-slate-100">
+      <section id="employee-welfare" className="py-24 bg-white border-b border-slate-100 scroll-mt-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-3">
@@ -159,7 +159,7 @@ export default function ContactPage() {
       </section>
 
       {/* 3. TERMS & CONDITIONS OF SALE */}
-      <section className="py-24 bg-slate-50 border-b border-slate-200/80">
+      <section id="terms-and-conditions" className="py-24 bg-slate-50 border-b border-slate-200/80 scroll-mt-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           
           <ScrollReveal className="text-center max-w-3xl mx-auto space-y-3">

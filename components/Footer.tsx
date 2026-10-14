@@ -194,35 +194,30 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 4: Hair Range */}
+          {/* Col 4: Product range */}
           <div className="space-y-4">
             <h3 className="text-white text-sm font-semibold tracking-wider uppercase font-display flex items-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-white"></span> Product range
+              <span className="h-1.5 w-1.5 rounded-full bg-white"></span> Others
             </h3>
             <ul className="space-y-2.5 text-sm text-white/90">
               <li>
-                <Link href="/products" className="hover:text-white transition-colors">
-                  100% Virgin Indian Remy Hair
+                <Link href="/contact#why-choose-us" className="hover:text-white transition-colors">
+                  Why choose Exodus Exports?
                 </Link>
               </li>
               <li>
-                <Link href="/products" className="hover:text-white transition-colors">
-                  RSD – Remy Single Drawn
+                <Link href="/contact#employee-welfare" className="hover:text-white transition-colors">
+                  Employee welfare
                 </Link>
               </li>
               <li>
-                <Link href="/products" className="hover:text-white transition-colors">
-                  Remy Double Drawn Hair
+                <Link href="/contact#terms-and-conditions" className="hover:text-white transition-colors">
+                  Terms & conditions of sale
                 </Link>
               </li>
               <li>
-                <Link href="/products" className="hover:text-white transition-colors">
-                  Hand-tied & machine wefts
-                </Link>
-              </li>
-              <li>
-                <Link href="/cranial-prosthesis" className="hover:text-white transition-colors">
-                  Cranial prosthesis (medical wigs)
+                <Link href="/policies" className="hover:text-white transition-colors">
+                  Privacy Policy
                 </Link>
               </li>
             </ul>
