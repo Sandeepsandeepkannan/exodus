@@ -538,7 +538,7 @@ export default function TheWigBankPage() {
                   />
                 </div>
                 <h4 className="text-center text-xs sm:text-sm font-bold text-slate-800 tracking-wide font-display">
-                  THE WIG BANK - 1
+                  Hair Donation Camp
                 </h4>
               </div>
               <div className="space-y-3">
@@ -552,7 +552,7 @@ export default function TheWigBankPage() {
                   />
                 </div>
                 <h4 className="text-center text-xs sm:text-sm font-bold text-slate-800 tracking-wide font-display">
-                  THE WIG BANK - 2
+                  Auxillium College Hair Donation Camp
                 </h4>
               </div>
             </div>

@@ -147,7 +147,7 @@ export default function HomePage() {
             </ScrollReveal>
 
             <ScrollReveal direction="left" className="lg:col-span-6 space-y-6">
-              <div className="relative w-full rounded-2xl overflow-hidden shadow-elevated border border-slate-100">
+              <div className="relative w-full rounded-2xl overflow-hidden shadow-elevated border border-slate-100 pt-10">
                 <Image
                   src="/images/products/machine.png"
                   alt="Exodus Exports Pvt. Ltd. - Indian Human Hair"

@@ -342,7 +342,7 @@ export default function CixWigsPage() {
                   />
                 </div>
                 <h4 className="text-center text-xs sm:text-sm font-bold text-slate-800 tracking-wide font-display">
-                  CIX WIGS - 1
+                  Hair Donors
                 </h4>
               </div>
               <div className="space-y-3">
@@ -356,7 +356,7 @@ export default function CixWigsPage() {
                   />
                 </div>
                 <h4 className="text-center text-xs sm:text-sm font-bold text-slate-800 tracking-wide font-display">
-                  CIX WIGS - 2
+                  Hair Donation Camp
                 </h4>
               </div>
             </div>

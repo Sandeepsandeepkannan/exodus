@@ -265,7 +265,7 @@ export default function CranialProsthesisPage() {
                   />
                 </div>
                 <h4 className="text-center text-xs sm:text-sm font-bold text-slate-800 tracking-wide font-display">
-                  CANCER INSTITUTE WIA - CHENNAI DOCTORS VISIT
+                  CANCER INSTITUTE WIA - CHENNAI DOCTOR'S VISIT
                 </h4>
               </div>
               <div className="space-y-3">

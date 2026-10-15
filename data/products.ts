@@ -313,7 +313,7 @@ export const sampleProducts: ProductItem[] = [
         "No permanent application required",
         "Available in a variety of colours",
       ],
-      lengths: '18" – 26"',
+      lengths: '16" – 26"',
       colours: "Natural, Browns, Blondes, 613, Gray, Jet Black, Auburn",
     },
     specs: {
