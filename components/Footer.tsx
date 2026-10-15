@@ -149,44 +149,120 @@ export default function Footer() {
               </a>
             </div>
 
-            {/* Shipping & Logistics Partners */}
-            <div className="space-y-2 pt-1">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-white/90 block">
-                Shipping & Logistics Partners
-              </span>
-              <div className="flex items-center gap-3">
-                <a
-                  href="https://www.dhl.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center bg-white px-3 py-1.5 rounded-lg shadow-sm border border-white/20 hover:scale-105 hover:opacity-95 transition-all"
-                  aria-label="DHL"
-                  title="DHL"
-                >
-                  <Image
-                    src="/dhl-logo.svg"
-                    alt="DHL"
-                    width={72}
-                    height={18}
-                    className="h-4 sm:h-4.5 w-auto object-contain"
-                  />
-                </a>
-                <a
-                  href="https://www.shiprocket.in"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center bg-white px-3 py-1.5 rounded-lg shadow-sm border border-white/20 hover:scale-105 hover:opacity-95 transition-all"
-                  aria-label="Shiprocket"
-                  title="Shiprocket"
-                >
-                  <Image
-                    src="/shiprocket-logo.svg"
-                    alt="Shiprocket"
-                    width={85}
-                    height={18}
-                    className="h-4 sm:h-4.5 w-auto object-contain"
-                  />
-                </a>
+            {/* Shipping Partners: International & Domestic */}
+            <div className="space-y-4 pt-1">
+              {/* International Shipping Partners */}
+              <div className="space-y-2">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-white/90 block">
+                  International Shipping Partners
+                </span>
+                <div className="flex flex-wrap items-center gap-2.5 sm:gap-3">
+                  <a
+                    href="https://www.dhl.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-white px-3 py-1.5 rounded-lg shadow-sm border border-white/20 hover:scale-105 hover:opacity-95 transition-all"
+                    aria-label="DHL"
+                    title="DHL"
+                  >
+                    <Image
+                      src="/dhl-logo.svg"
+                      alt="DHL"
+                      width={72}
+                      height={18}
+                      className="h-4 sm:h-4.5 w-auto object-contain"
+                    />
+                  </a>
+                  <a
+                    href="https://www.fedex.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-white px-3 py-1.5 rounded-lg shadow-sm border border-white/20 hover:scale-105 hover:opacity-95 transition-all"
+                    aria-label="FedEx"
+                    title="FedEx"
+                  >
+                    <Image
+                      src="/fedex-logo.svg"
+                      alt="FedEx"
+                      width={68}
+                      height={18}
+                      className="h-4 sm:h-4.5 w-auto object-contain"
+                    />
+                  </a>
+                  <a
+                    href="https://www.ups.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-white px-3 py-1.5 rounded-lg shadow-sm border border-white/20 hover:scale-105 hover:opacity-95 transition-all"
+                    aria-label="UPS"
+                    title="UPS"
+                  >
+                    <Image
+                      src="/ups-logo.svg"
+                      alt="UPS"
+                      width={24}
+                      height={18}
+                      className="h-4 sm:h-4.5 w-auto object-contain"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              {/* Domestic Shipping Partners */}
+              <div className="space-y-2">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-white/90 block">
+                  Domestic Shipping Partners
+                </span>
+                <div className="flex flex-wrap items-center gap-2.5 sm:gap-3">
+                  <a
+                    href="https://www.tpcindia.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-white px-3 py-1.5 rounded-lg shadow-sm border border-white/20 hover:scale-105 hover:opacity-95 transition-all"
+                    aria-label="The Professional Couriers"
+                    title="The Professional Couriers"
+                  >
+                    <Image
+                      src="/professional-courier-logo.svg"
+                      alt="The Professional Couriers"
+                      width={90}
+                      height={18}
+                      className="h-4 sm:h-4.5 w-auto object-contain"
+                    />
+                  </a>
+                  <a
+                    href="https://www.bluedart.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-white px-3 py-1.5 rounded-lg shadow-sm border border-white/20 hover:scale-105 hover:opacity-95 transition-all"
+                    aria-label="Blue Dart"
+                    title="Blue Dart"
+                  >
+                    <Image
+                      src="/bluedart-logo.svg"
+                      alt="Blue Dart"
+                      width={75}
+                      height={18}
+                      className="h-4 sm:h-4.5 w-auto object-contain"
+                    />
+                  </a>
+                  <a
+                    href="https://www.shiprocket.in"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-white px-3 py-1.5 rounded-lg shadow-sm border border-white/20 hover:scale-105 hover:opacity-95 transition-all"
+                    aria-label="Shiprocket"
+                    title="Shiprocket"
+                  >
+                    <Image
+                      src="/shiprocket-logo.svg"
+                      alt="Shiprocket"
+                      width={85}
+                      height={18}
+                      className="h-4 sm:h-4.5 w-auto object-contain"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
 

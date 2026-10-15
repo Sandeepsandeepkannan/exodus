@@ -529,7 +529,13 @@ export const sampleProducts: ProductItem[] = [
       lengths: '14" – 26"',
       colours: "Natural, Browns, Blondes, 613, Gray, Jet Black, Auburn",
     },
-    image: "/images/products/placeholder.svg",
+    image: "/images/wigsandhairpieces/fringes and ponytails/FRINGE-1.png",
+    images: [
+      "/images/wigsandhairpieces/fringes and ponytails/FRINGE-1.png",
+      "/images/wigsandhairpieces/fringes and ponytails/FRINGE-2.png",
+      "/images/wigsandhairpieces/fringes and ponytails/WhatsApp Image 2026-10-15 at 3.07.15 PM.jpeg",
+      "/images/wigsandhairpieces/fringes and ponytails/WhatsApp Image 2026-10-15 at 3.07.49 PM.jpeg",
+    ],
   },
   {
     id: "wig-full-lace",

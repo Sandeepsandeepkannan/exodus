@@ -329,32 +329,34 @@ export default function CixWigsPage() {
           {/* Hair Donation Campaign Images */}
           <ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+             
+              
               <div className="space-y-3">
                 <div className="relative aspect-[16/10] sm:aspect-[16/9] rounded-2xl overflow-hidden shadow-subtle border border-slate-200 bg-white group">
                   <Image
-                    src="/hairdonation/CANCER INSTITUTE WIA - CHENNAI DOCTORS VISIT.jpg"
-                    alt="Cancer Institute WIA - Chennai Doctors Visit"
+                    src="/hairdonation/CIX WIGS -1.jpg"
+                    alt="CIX Wigs"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
                 <h4 className="text-center text-xs sm:text-sm font-bold text-slate-800 tracking-wide font-display">
-                  CANCER INSTITUTE WIA - CHENNAI DOCTORS VISIT
+                  CIX WIGS - 1
                 </h4>
               </div>
               <div className="space-y-3">
                 <div className="relative aspect-[16/10] sm:aspect-[16/9] rounded-2xl overflow-hidden shadow-subtle border border-slate-200 bg-white group">
                   <Image
-                    src="/hairdonation/HAIR DONATION CAMP.jpg"
-                    alt="Hair Donation Camp"
+                    src="/hairdonation/CIX WIGS - 2.jpg"
+                    alt="CIX Wigs"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
                 <h4 className="text-center text-xs sm:text-sm font-bold text-slate-800 tracking-wide font-display">
-                  HAIR DONATION CAMP
+                  CIX WIGS - 2
                 </h4>
               </div>
             </div>
