@@ -149,6 +149,47 @@ export default function Footer() {
               </a>
             </div>
 
+            {/* Shipping & Logistics Partners */}
+            <div className="space-y-2 pt-1">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-white/90 block">
+                Shipping & Logistics Partners
+              </span>
+              <div className="flex items-center gap-3">
+                <a
+                  href="https://www.dhl.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-white px-3 py-1.5 rounded-lg shadow-sm border border-white/20 hover:scale-105 hover:opacity-95 transition-all"
+                  aria-label="DHL"
+                  title="DHL"
+                >
+                  <Image
+                    src="/dhl-logo.svg"
+                    alt="DHL"
+                    width={72}
+                    height={18}
+                    className="h-4 sm:h-4.5 w-auto object-contain"
+                  />
+                </a>
+                <a
+                  href="https://www.shiprocket.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-white px-3 py-1.5 rounded-lg shadow-sm border border-white/20 hover:scale-105 hover:opacity-95 transition-all"
+                  aria-label="Shiprocket"
+                  title="Shiprocket"
+                >
+                  <Image
+                    src="/shiprocket-logo.svg"
+                    alt="Shiprocket"
+                    width={85}
+                    height={18}
+                    className="h-4 sm:h-4.5 w-auto object-contain"
+                  />
+                </a>
+              </div>
+            </div>
+
             <div className="p-4 rounded-xl bg-white/10 border border-white/20 text-xs text-white/95 leading-relaxed space-y-1">
               <div className="font-bold uppercase tracking-wider text-white">Distributor & wholesale enquiries</div>
               <p>We welcome distributors, partners, and JV enquiries worldwide. Grow your business with a trusted Indian human hair manufacturer.</p>
