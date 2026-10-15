@@ -118,13 +118,18 @@ export default function CertificateGallery() {
             className="w-full sm:w-[calc(50%-10px)] lg:w-[calc(25%-15px)] shrink-0 group relative bg-white rounded-2xl border border-slate-200 shadow-subtle hover:shadow-lg hover:border-[#A9153B]/40 transition-all duration-300 cursor-pointer overflow-hidden flex flex-col justify-between"
           >
             {/* Thumbnail Image Container with object-contain */}
-            <div className="relative w-full aspect-[4/3] bg-slate-50 flex items-center justify-center p-2.5 overflow-hidden border-b border-slate-100">
+            <div
+              onContextMenu={(e) => e.preventDefault()}
+              onDragStart={(e) => e.preventDefault()}
+              className="relative w-full aspect-[4/3] bg-slate-50 flex items-center justify-center p-2.5 overflow-hidden border-b border-slate-100 select-none"
+            >
               <Image
                 src={cert.src}
                 alt={cert.alt}
                 fill
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                className="object-contain p-2 transition-transform duration-500 group-hover:scale-105"
+                className="object-contain p-2 transition-transform duration-500 group-hover:scale-105 pointer-events-none select-none"
+                draggable={false}
               />
 
               {/* Hover Overlay */}
@@ -195,14 +200,19 @@ export default function CertificateGallery() {
             </div>
 
             {/* Certificate Display Area with object-contain */}
-            <div className="relative w-full h-[65vh] sm:h-[78vh] bg-slate-900/60 rounded-2xl border border-white/10 overflow-hidden flex items-center justify-center p-2 sm:p-4 shadow-2xl">
+            <div
+              onContextMenu={(e) => e.preventDefault()}
+              onDragStart={(e) => e.preventDefault()}
+              className="relative w-full h-[65vh] sm:h-[78vh] bg-slate-900/60 rounded-2xl border border-white/10 overflow-hidden flex items-center justify-center p-2 sm:p-4 shadow-2xl select-none"
+            >
               <Image
                 src={certificates[selectedIndex].src}
                 alt={certificates[selectedIndex].alt}
                 fill
                 priority
                 sizes="(max-width: 1280px) 100vw, 1280px"
-                className="object-contain"
+                className="object-contain pointer-events-none select-none"
+                draggable={false}
               />
 
               {/* Navigation: Prev Button */}

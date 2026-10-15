@@ -24,17 +24,25 @@ export default function ProductCard({ product, onQuickView, onSelect }: ProductC
       className="group bg-white rounded-xl border border-slate-200/90 hover:border-[#A9153B]/50 shadow-subtle hover:shadow-card transition-all duration-300 flex flex-col h-full overflow-hidden cursor-pointer hover:-translate-y-1"
     >
       {/* 1. Product Image Container */}
-      <div className="relative aspect-[4/3] w-full bg-slate-100 overflow-hidden shrink-0">
+      <div
+        onContextMenu={(e) => e.preventDefault()}
+        onDragStart={(e) => e.preventDefault()}
+        className="relative aspect-[4/3] w-full bg-slate-100 overflow-hidden shrink-0 select-none"
+      >
         <Image
           src={product.image}
           alt={product.name}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          className="object-cover transition-transform duration-700 ease-out group-hover:scale-105 pointer-events-none select-none"
+          draggable={false}
         />
         
+        {/* Transparent Shield Overlay */}
+        <div className="absolute inset-0 z-10 select-none" aria-hidden="true" />
+
         {/* Category Badge */}
-        <div className="absolute top-3.5 left-3.5 flex items-center gap-1.5 px-3 py-1 rounded-md bg-white/95 backdrop-blur-md border border-slate-200/90 text-[11px] font-bold text-[#A9153B] uppercase tracking-wide shadow-sm">
+        <div className="absolute top-3.5 left-3.5 z-20 flex items-center gap-1.5 px-3 py-1 rounded-md bg-white/95 backdrop-blur-md border border-slate-200/90 text-[11px] font-bold text-[#A9153B] uppercase tracking-wide shadow-sm select-none">
           <span className="h-1.5 w-1.5 rounded-full bg-[#A9153B]"></span>
           {product.category}
         </div>

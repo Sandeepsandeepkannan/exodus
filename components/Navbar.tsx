@@ -20,7 +20,7 @@ const navLinks = [
   { name: "Products", href: "/products" },
   { name: "About hair", href: "/about-human-hair" },
   { name: "Cranial prosthesis", href: "/cranial-prosthesis" },
-  { name: "Contact us", href: "/contact" },
+  { name: "Contact us", href: "/contact#b2b-inquiry" },
 ];
 
 export default function Navbar() {
@@ -132,11 +132,22 @@ export default function Navbar() {
                 );
               }
 
-              const isActive = pathname === link.href;
+              const isActive = pathname === link.href || (link.href.startsWith("/contact") && pathname === "/contact");
               return (
                 <Link
                   key={link.name}
                   href={link.href}
+                  onClick={(e) => {
+                    if (link.href.includes("#") && pathname === "/contact") {
+                      e.preventDefault();
+                      const hashId = link.href.split("#")[1];
+                      const el = document.getElementById(hashId);
+                      if (el) {
+                        el.scrollIntoView({ behavior: "smooth" });
+                        window.history.pushState(null, "", link.href);
+                      }
+                    }
+                  }}
                   className={`text-sm font-medium transition-colors duration-200 relative py-1 flex items-center gap-1.5 ${isActive
                       ? "text-[#A9153B] font-bold"
                       : "text-slate-700 hover:text-[#A9153B]"
@@ -157,7 +168,17 @@ export default function Navbar() {
           {/* Right: Primary CTA Button */}
           <div className="hidden lg:flex items-center space-x-4">
             <Link
-              href="/contact"
+              href="/contact#b2b-inquiry"
+              onClick={(e) => {
+                if (pathname === "/contact") {
+                  e.preventDefault();
+                  const el = document.getElementById("b2b-inquiry");
+                  if (el) {
+                    el.scrollIntoView({ behavior: "smooth" });
+                    window.history.pushState(null, "", "/contact#b2b-inquiry");
+                  }
+                }
+              }}
               className="inline-flex items-center justify-center px-5 py-2.5 text-xs font-bold text-white bg-[#A9153B] hover:bg-[#A9153B]/90 rounded-lg shadow-sm transition-all duration-200 group"
             >
               Enquire now
@@ -226,12 +247,23 @@ export default function Navbar() {
                 );
               }
 
-              const isActive = pathname === link.href;
+              const isActive = pathname === link.href || (link.href.startsWith("/contact") && pathname === "/contact");
               return (
                 <Link
                   key={link.name}
                   href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={(e) => {
+                    setMobileMenuOpen(false);
+                    if (link.href.includes("#") && pathname === "/contact") {
+                      e.preventDefault();
+                      const hashId = link.href.split("#")[1];
+                      const el = document.getElementById(hashId);
+                      if (el) {
+                        el.scrollIntoView({ behavior: "smooth" });
+                        window.history.pushState(null, "", link.href);
+                      }
+                    }
+                  }}
                   className={`block px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${isActive
                       ? "bg-[#A9153B]/10 text-[#A9153B] font-bold"
                       : "text-slate-700 hover:bg-slate-50 hover:text-slate-900"
@@ -243,8 +275,18 @@ export default function Navbar() {
             })}
             <div className="pt-4 border-t border-slate-100">
               <Link
-                href="/contact"
-                onClick={() => setMobileMenuOpen(false)}
+                href="/contact#b2b-inquiry"
+                onClick={(e) => {
+                  setMobileMenuOpen(false);
+                  if (pathname === "/contact") {
+                    e.preventDefault();
+                    const el = document.getElementById("b2b-inquiry");
+                    if (el) {
+                      el.scrollIntoView({ behavior: "smooth" });
+                      window.history.pushState(null, "", "/contact#b2b-inquiry");
+                    }
+                  }
+                }}
                 className="w-full inline-flex items-center justify-center px-4 py-3 text-sm font-bold text-white bg-[#A9153B] rounded-lg shadow-sm"
               >
                 Enquire now

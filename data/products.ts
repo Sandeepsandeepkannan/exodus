@@ -576,13 +576,13 @@ export const sampleProducts: ProductItem[] = [
       lengths: '14" – 26"',
       colours: "Natural, Browns, Blondes, 613, Gray, Jet Black, Auburn",
     },
-    image: "/images/wigsandhairpieces/workout wigs/WORKOUTN WIG-1.JPG",
+    image: "/images/wigsandhairpieces/workout wigs/WORKOUT WIG - 5.jpg",
     images: [
-      "/images/wigsandhairpieces/workout wigs/WORKOUTN WIG-1.JPG",
+      "/images/wigsandhairpieces/workout wigs/WORKOUT WIG - 5.jpg",
       "/images/wigsandhairpieces/workout wigs/WORKOUT WIG-2.jpg",
       "/images/wigsandhairpieces/workout wigs/WORKOUT WIG - 3.JPG",
       "/images/wigsandhairpieces/workout wigs/WORKOUT WIG - 4.JPG",
-      "/images/wigsandhairpieces/workout wigs/WORKOUT WIG - 5.jpg",
+      "/images/wigsandhairpieces/workout wigs/WORKOUTN WIG-1.JPG",
       "/images/wigsandhairpieces/workout wigs/WORKOUT WIG - 6.jpg",
     ],
   },
@@ -595,6 +595,8 @@ export const sampleProducts: ProductItem[] = [
     images: [
       "/images/wigsandhairpieces/cranialprosthesis/WhatsApp Image 2026-10-13 at 12.47.33 PM.jpeg",
       "/images/wigsandhairpieces/cranialprosthesis/WhatsApp Image 2026-10-13 at 12.47.34 PM.jpeg",
+      "/images/wigsandhairpieces/cranialprosthesis/CANCER WIG - 9.JPG",
+      "/images/wigsandhairpieces/cranialprosthesis/CANCER WIG - 10.JPG",
     ],
   },
 

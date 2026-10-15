@@ -362,6 +362,17 @@ export default function HomePage() {
                   <p className="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-slate-800 font-medium text-sm sm:text-base">
                     Recognizing these challenges, and being in a position to make a meaningful difference, we are committed to expanding our operations in this region to support and empower these communities. In this endeavour, we are grateful to receive the support and partnership of the Cancer Institute (WIA), Chennai, which strengthens our efforts to create sustainable and positive change.
                   </p>
+                  <div className="pt-2">
+                    <a
+                      href="/Exodus%20CIX%20wigs%20Beedi%20project%20Brochure.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-sm sm:text-base font-bold text-[#A9153B] hover:text-[#8b1130] underline underline-offset-4 transition-colors"
+                    >
+                      To know more about beedi workers check here
+                      <ArrowUpRight className="h-4 w-4 shrink-0" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

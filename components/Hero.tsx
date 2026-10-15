@@ -80,7 +80,7 @@ export default function Hero() {
                     width={800}
                     height={600}
                     priority
-                    className="w-full h-[370px] sm:h-[400px] md:h-[480px] lg:h-[530px] object-cover rounded-2xl"
+                    className="w-full h-[370px] sm:h-[400px] md:h-[480px] lg:h-[530px] object-cover object-[center_25%] rounded-2xl"
                   />
                 </div>
               </motion.div>
@@ -101,10 +101,10 @@ export default function Hero() {
             <div className="inline-block px-5 py-4 sm:px-8 sm:py-5 rounded-2xl bg-slate-50 border border-slate-200 shadow-subtle">
               <h2 className="text-2xl sm:text-3xl md:text-[30px] lg:text-[32px] xl:text-[34px] font-black text-slate-950 font-display tracking-tight leading-[1.25] text-center max-w-5xl mx-auto space-y-1">
                 <span className="block md:whitespace-nowrap">
-                  At Exodus Exports Pvt. Ltd., we specialize in supplying
+                  AT EXODUS EXPORTS PVT. LTD., WE SPECIALIZE IN SUPPLYING
                 </span>
                 <span className="block md:whitespace-nowrap">
-                  100% Authentic Indian Remy human hair
+                  100% AUTHENTIC INDIAN REMY HUMAN HAIR.
                 </span>
               </h2>
             </div>

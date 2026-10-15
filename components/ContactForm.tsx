@@ -23,6 +23,17 @@ export default function ContactForm() {
     }
   }, [initialProduct]);
 
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.location.hash === "#b2b-inquiry") {
+      const el = document.getElementById("b2b-inquiry");
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth" });
+        }, 150);
+      }
+    }
+  }, []);
+
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -43,9 +54,9 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="bg-white p-8 sm:p-10 rounded-xl border border-slate-200 shadow-subtle">
+    <div id="b2b-inquiry" className="bg-white p-8 sm:p-10 rounded-xl border border-slate-200 shadow-subtle scroll-mt-28">
       <h3 className="text-xl font-bold text-slate-900 font-display mb-2">
-        Send a B2B hair export inquiry
+        Send a B2B hair inquiry
       </h3>
       <p className="text-xs sm:text-sm text-slate-600 mb-8">
         Fill in your requirements below.

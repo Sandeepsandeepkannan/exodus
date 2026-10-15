@@ -43,33 +43,55 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
         </button>
 
         {/* Product Image Column */}
-        <div className="relative md:w-5/12 bg-slate-100 shrink-0 flex flex-col">
-          <div className="relative h-64 md:h-80 w-full bg-slate-100 overflow-hidden">
+        <div className="relative md:w-5/12 bg-slate-100 shrink-0 flex flex-col select-none">
+          <div
+            onContextMenu={(e) => e.preventDefault()}
+            onDragStart={(e) => e.preventDefault()}
+            className="relative h-64 md:h-80 w-full bg-slate-100 overflow-hidden select-none"
+          >
             <Image
               src={currentImage}
               alt={product.name}
               fill
               priority
-              className="object-cover transition-all duration-300"
+              className="object-cover transition-all duration-300 pointer-events-none select-none"
+              draggable={false}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent md:hidden" />
             
-            <div className="absolute top-4 left-4">
-              <span className="bg-[#A9153B] text-white text-[11px] font-bold px-3 py-1 rounded-md uppercase tracking-wider shadow-sm flex items-center gap-1.5">
+            {/* Transparent Shield Overlay */}
+            <div className="absolute inset-0 z-10 select-none" aria-hidden="true" />
+
+            {/* Category Badge */}
+            <div className="absolute top-4 left-4 z-20">
+              <span className="bg-[#A9153B] text-white text-[11px] font-bold px-3 py-1 rounded-md uppercase tracking-wider shadow-sm flex items-center gap-1.5 select-none">
                 <span className="h-1.5 w-1.5 rounded-full bg-white"></span>
                 {product.category}
               </span>
+            </div>
+
+            {/* Subtle Exodus Exports Watermark Overlay */}
+            <div className="absolute bottom-3 right-3 z-20 pointer-events-none select-none px-2.5 py-1 rounded-md bg-slate-950/50 backdrop-blur-xs border border-white/20 text-white/85 text-[10px] sm:text-[11px] font-semibold tracking-wider uppercase font-display flex items-center gap-1.5 shadow-sm">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#A9153B]"></span>
+              <span>Exodus Exports</span>
             </div>
           </div>
 
           {/* Thumbnail Gallery if multiple images exist */}
           {galleryImages.length > 1 && (
-            <div className="p-3 bg-slate-50 border-t border-slate-200 flex items-center gap-2 overflow-x-auto">
+            <div
+              onContextMenu={(e) => e.preventDefault()}
+              onDragStart={(e) => e.preventDefault()}
+              className="p-3 bg-slate-50 border-t border-slate-200 flex items-center gap-2 overflow-x-auto select-none"
+            >
               {galleryImages.map((img, idx) => (
                 <button
                   key={idx}
+                  type="button"
                   onClick={() => setActiveImage(img)}
-                  className={`relative h-12 w-12 rounded-lg overflow-hidden border-2 shrink-0 transition-all ${
+                  onContextMenu={(e) => e.preventDefault()}
+                  draggable={false}
+                  className={`relative h-12 w-12 rounded-lg overflow-hidden border-2 shrink-0 transition-all select-none ${
                     currentImage === img
                       ? "border-[#A9153B] shadow-sm scale-105"
                       : "border-slate-200 opacity-70 hover:opacity-100"
@@ -79,7 +101,8 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                     src={img}
                     alt={`${product.name} thumbnail ${idx + 1}`}
                     fill
-                    className="object-cover"
+                    className="object-cover pointer-events-none select-none"
+                    draggable={false}
                   />
                 </button>
               ))}
@@ -99,30 +122,30 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                 {product.name}
               </h2>
               {product.narration?.subtitle && (
-                <p className="text-xs sm:text-sm font-semibold text-[#A9153B] mt-1">
+                <p className="text-xs sm:text-sm font-semibold text-[#A9153B] mt-1 select-none">
                   {product.narration.subtitle}
                 </p>
               )}
             </div>
 
-            {/* Narration Story / Description */}
+            {/* Narration Story / Description (select-none) */}
             {product.narration ? (
-              <div className="space-y-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <div className="space-y-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed select-none">
                 {product.narration.story.map((paragraph, idx) => (
                   <p key={idx}>{paragraph}</p>
                 ))}
               </div>
             ) : (
               product.description && (
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed select-none">
                   {product.description}
                 </p>
               )
             )}
 
-            {/* Available Styles */}
+            {/* Available Styles (select-none) */}
             {product.narration?.availableStyles && product.narration.availableStyles.length > 0 && (
-              <div className="space-y-2">
+              <div className="space-y-2 select-none">
                 <span className="text-[11px] font-bold text-slate-900 uppercase tracking-wider block">
                   Available Styles
                 </span>
@@ -130,7 +153,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                   {product.narration.availableStyles.map((style, idx) => (
                     <span
                       key={idx}
-                      className="px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 text-xs font-medium border border-slate-200"
+                      className="px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 text-xs font-medium border border-slate-200 select-none"
                     >
                       {style}
                     </span>
@@ -139,9 +162,9 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
               </div>
             )}
 
-            {/* Key Features */}
+            {/* Key Features (select-none) */}
             {product.narration?.keyFeatures && product.narration.keyFeatures.length > 0 && (
-              <div className="bg-slate-50/90 p-4 rounded-xl border border-slate-200/80 space-y-2.5">
+              <div className="bg-slate-50/90 p-4 rounded-xl border border-slate-200/80 space-y-2.5 select-none">
                 <span className="text-[11px] font-bold text-slate-900 uppercase tracking-wider block">
                   Key Features
                 </span>
@@ -156,9 +179,9 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
               </div>
             )}
 
-            {/* Specifications */}
+            {/* Specifications (select-none) */}
             {(product.specs || product.narration?.lengths || product.narration?.colours || product.narration?.textures) && (
-              <div className="bg-slate-50 p-4 sm:p-5 rounded-xl border border-slate-200/80 space-y-3 text-xs text-slate-700">
+              <div className="bg-slate-50 p-4 sm:p-5 rounded-xl border border-slate-200/80 space-y-3 text-xs text-slate-700 select-none">
                 {product.specs?.type && (
                   <div className="flex items-center justify-between border-b border-slate-200/60 pb-2.5">
                     <span className="flex items-center gap-2 text-slate-500 font-medium">
@@ -219,7 +242,11 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
           {/* Action Row */}
           <div className="pt-4 border-t border-slate-100 flex items-center justify-between gap-3">
             <Link
-              href="/contact"
+              href={
+                product.id === "wig-cranial-prosthesis" || product.name.toLowerCase().includes("cranial")
+                  ? "/cranial-prosthesis"
+                  : `/contact?product=${encodeURIComponent(product.name)}#b2b-inquiry`
+              }
               onClick={onClose}
               className="flex-1 inline-flex items-center justify-center px-4 py-2.5 text-xs font-bold text-white bg-[#A9153B] hover:bg-[#A9153B]/90 rounded-lg shadow-sm transition-all"
             >
