@@ -41,7 +41,7 @@ const termsAndConditions = [
   "No synthetic blends",
   "100% advance payment via bank transfer",
   "Ex-Factory Chennai, India",
-  "Exchange within 7 business days (conditions apply)",
+  "Exchange within 10 business days (conditions apply)",
   "No refund policy",
   "Human hair is a natural product, and slight variations are inherent.",
 ];

@@ -227,7 +227,7 @@ export default function Footer() {
                       alt="The Professional Couriers"
                       width={90}
                       height={18}
-                      className="h-4 sm:h-4.5 w-auto object-contain"
+                      className="h-4 sm:h-4.5 w-auto object-contain scale-[1.7]"
                     />
                   </a>
                   <a
