@@ -180,7 +180,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
             )}
 
             {/* Specifications (select-none) */}
-            {(product.specs || product.narration?.lengths || product.narration?.colours || product.narration?.textures) && (
+            {(product.specs || product.narration?.lengths || product.narration?.size || product.narration?.colours || product.narration?.textures) && (
               <div className="bg-slate-50 p-4 sm:p-5 rounded-xl border border-slate-200/80 space-y-3 text-xs text-slate-700 select-none">
                 {product.specs?.type && (
                   <div className="flex items-center justify-between border-b border-slate-200/60 pb-2.5">
@@ -197,6 +197,15 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                       <Ruler className="h-4 w-4 text-[#A9153B] shrink-0" /> Lengths:
                     </span>
                     <span className="font-bold text-slate-900 text-right">{product.narration.lengths}</span>
+                  </div>
+                )}
+
+                {(product.narration?.size || product.specs?.size) && (
+                  <div className="flex items-center justify-between border-b border-slate-200/60 pb-2.5">
+                    <span className="flex items-center gap-2 text-slate-500 font-medium">
+                      <Ruler className="h-4 w-4 text-[#A9153B] shrink-0" /> Size:
+                    </span>
+                    <span className="font-bold text-slate-900 text-right">{product.narration?.size || product.specs?.size}</span>
                   </div>
                 )}
 
